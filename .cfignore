@@ -1,0 +1,13 @@
+# Cloudflare Pages Ignore
+node_modules
+.next
+.env*.local
+.git
+*.log
+out
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+*~

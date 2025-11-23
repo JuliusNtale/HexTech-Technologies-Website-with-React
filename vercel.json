@@ -1,8 +1,0 @@
-{
-  "framework": "nextjs",
-  "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install --frozen-lockfile",
-  "env": {
-    "NEXT_TELEMETRY_DISABLED": "1"
-  }
-}

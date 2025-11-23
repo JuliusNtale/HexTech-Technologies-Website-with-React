@@ -11,7 +11,10 @@ pnpm-debug.log*
 out/
 build/
 .turbo/
-.vercel/
+
+# Cloudflare
+.wrangler/
+wrangler-output/
 
 # Production builds
 dist/

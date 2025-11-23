@@ -1,0 +1,11 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "/",
+    "output": "out"
+  },
+  "env": {
+    "NODE_VERSION": "18",
+    "NPM_FLAGS": "--legacy-peer-deps"
+  }
+}
