@@ -29,6 +29,33 @@ const CaseStudiesPage = () => {
 
   const caseStudies = [
     {
+      id: 0,
+      category: 'retail',
+      title: 'NEURALTALE E-shop: Modern E-commerce Platform',
+      client: 'NEURALTALE Technologies',
+      industry: 'Online Retail & E-commerce',
+      location: 'Dar es Salaam, Tanzania',
+      duration: 'Ongoing',
+      teamSize: '5 specialists',
+      challenge: 'Need for 24/7 online shopping experience with secure payments and nationwide delivery for technology equipment.',
+      solution: 'Built comprehensive e-commerce platform with product catalog, secure checkout, M-Pesa integration, and order tracking.',
+      results: [
+        { metric: 'Product Catalog', value: '500+', period: 'products' },
+        { metric: 'Secure Checkout', value: '100%', period: 'encrypted' },
+        { metric: 'Payment Options', value: 'Multiple', period: 'methods' },
+        { metric: 'Delivery Coverage', value: 'Nationwide', period: 'Tanzania' }
+      ],
+      technologies: ['Next.js E-commerce', 'M-Pesa Integration', 'Secure Payment Gateway', 'Order Management System'],
+      testimonial: {
+        quote: "Our e-shop provides customers with 24/7 access to quality technology equipment with secure payments and reliable delivery across Tanzania.",
+        author: "Julius Peter Ntale",
+        position: "CEO, NEURALTALE Technologies"
+      },
+      images: ['/images/case-studies/eshop-home.jpg', '/images/case-studies/eshop-products.jpg'],
+      featured: true,
+      liveUrl: 'https://eshop.neuraltale.com'
+    },
+    {
       id: 1,
       category: 'sme',
       title: 'Mwenge Electronics: Digital Transformation Success',
@@ -397,6 +424,17 @@ const CaseStudiesPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                {selectedCase.liveUrl && (
+                  <a
+                    href={selectedCase.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  >
+                    <FaArrowRight className="w-4 h-4" />
+                    <span>Visit Website</span>
+                  </a>
+                )}
                 <Link
                   href="/contact"
                   className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
