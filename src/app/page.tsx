@@ -8,18 +8,7 @@ import { organizationSchema, localBusinessSchema, serviceSchemas, logoSchema, we
 // Hero is static content, no need for client-side JS initially
 const Hero = dynamic(() => import('@/components/sections/Hero'), {
   ssr: true,
-  loading: () => (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-          Technology Solutions Provider Tanzania
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          Custom Software • AI Integration • M-Pesa Systems • Enterprise IT
-        </p>
-      </div>
-    </section>
-  ),
+  loading: () => <div className="min-h-screen bg-black" />,
 })
 
 // Below-the-fold components - lazy load for better performance
