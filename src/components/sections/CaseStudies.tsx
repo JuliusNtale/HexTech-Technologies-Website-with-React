@@ -31,9 +31,9 @@ const CaseStudiesPage = () => {
     {
       id: 0,
       category: 'retail',
-      title: 'NEURALTALE E-shop: Modern E-commerce Platform',
+      title: 'Neurashop: AI-Powered E-commerce Platform',
       client: 'NEURALTALE Technologies',
-      industry: 'Online Retail & E-commerce',
+      industry: 'AI E-commerce & Online Retail',
       location: 'Dar es Salaam, Tanzania',
       duration: 'Ongoing',
       teamSize: '5 specialists',

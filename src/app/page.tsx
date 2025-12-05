@@ -39,8 +39,9 @@ const ContactForm = dynamic(() => import('@/components/sections/ContactForm'), {
   loading: () => <div className="min-h-[600px] bg-gray-50" />,
 })
 
-const EshopShowcase = dynamic(() => import('@/components/sections/EshopShowcase'), {
-  loading: () => <div className="min-h-[400px] bg-gray-50" />,
+
+const AIProducts = dynamic(() => import('@/components/sections/AIProducts'), {
+  loading: () => <div className="min-h-[400px] bg-gray-900" />,
   ssr: true,
 })
 
@@ -164,7 +165,7 @@ export default function Home() {
       <main className="min-h-screen bg-white overflow-hidden">
         <Hero />
         <About />
-        <EshopShowcase />
+        <AIProducts />
         <ServicesGrid />
         <StatsCounter />
         <Testimonials />

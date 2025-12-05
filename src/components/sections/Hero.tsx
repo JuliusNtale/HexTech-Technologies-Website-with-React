@@ -42,8 +42,8 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto animate-fade-in-up animation-delay-200">
-            From cutting-edge equipment to custom software, we deliver integrated technology 
-            solutions that transform businesses and empower communities across Africa.
+            NEURALTALE delivers AI-powered solutions through <span className="text-blue-400 font-semibold">Neuraflow</span> and 
+            <span className="text-green-400 font-semibold"> Neurashop</span> to transform businesses across Africa.
           </p>
 
           {/* CTA Buttons - Critical, load immediately */}
@@ -54,11 +54,11 @@ export default function Hero() {
                 Explore Our Services
               </button>
             </Link>
-            <Link href="https://eshop.neuraltale.com">
-              <button className="border-2 border-gray-300 text-gray-200 px-8 py-4 rounded-xl text-lg font-semibold hover:border-blue-400 hover:text-blue-400 hover:bg-white/10 transition-all duration-300">
-               🛒 Shop Online
+            <a href="https://eshop.neuraltale.com" target="_blank" rel="noopener noreferrer">
+              <button className="border-2 border-green-400 text-green-400 px-8 py-4 rounded-xl text-lg font-semibold hover:border-green-300 hover:text-green-300 hover:bg-white/10 transition-all duration-300">
+               🛒 Neurashop
               </button>
-            </Link>
+            </a>
           </div>
 
           {/* Scroll indicator */}
