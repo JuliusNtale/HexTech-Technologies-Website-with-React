@@ -26,24 +26,6 @@ const stats: Stat[] = [
     value: 500,
     label: 'Projects Completed',
     suffix: '+',
-  },
-  {
-    id: '4',
-    value: 24,
-    label: 'Support',
-    suffix: '/7',
-  },
-  {
-    id: '5',
-    value: 50,
-    label: 'Team Members',
-    suffix: '+',
-  },
-  {
-    id: '6',
-    value: 95,
-    label: 'Client Satisfaction',
-    suffix: '%',
   }
 ]
 
