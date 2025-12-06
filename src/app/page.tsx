@@ -5,25 +5,18 @@ import ResourceHints from '@/components/utils/ResourceHints'
 import { organizationSchema, localBusinessSchema, serviceSchemas, logoSchema, websiteSchema, productCatalogSchema, storeSchema } from '@/lib/seo'
 
 // Critical above-the-fold component - load immediately with high priority
-// Hero is static content, no need for client-side JS initially
 const Hero = dynamic(() => import('@/components/sections/Hero'), {
   ssr: true,
   loading: () => <div className="min-h-screen bg-black" />,
 })
 
-// Below-the-fold components - lazy load for better performance
+// Below-the-fold components - keep SSR for static generation
 const About = dynamic(() => import('@/components/sections/About'), {
-  loading: () => <div className="min-h-[400px] bg-gray-50 flex items-center justify-center">
-    <div className="text-gray-400">Loading...</div>
-  </div>,
-  ssr: true,
+  loading: () => <div className="min-h-[400px] bg-gray-50" />,
 })
 
 const ServicesGrid = dynamic(() => import('@/components/sections/ServicesGrid'), {
-  loading: () => <div className="min-h-[600px] bg-white flex items-center justify-center">
-    <div className="text-gray-400">Loading...</div>
-  </div>,
-  ssr: true,
+  loading: () => <div className="min-h-[600px] bg-white" />,
 })
 
 const StatsCounter = dynamic(() => import('@/components/sections/StatsCounter'), {
@@ -32,17 +25,18 @@ const StatsCounter = dynamic(() => import('@/components/sections/StatsCounter'),
 
 const Testimonials = dynamic(() => import('@/components/sections/Testimonials'), {
   loading: () => <div className="min-h-[500px] bg-white" />,
-  ssr: true,
 })
 
 const ContactForm = dynamic(() => import('@/components/sections/ContactForm'), {
   loading: () => <div className="min-h-[600px] bg-gray-50" />,
 })
 
+const EshopShowcase = dynamic(() => import('@/components/sections/EshopShowcase'), {
+  loading: () => <div className="min-h-[400px] bg-gray-50" />,
+})
 
 const AIProducts = dynamic(() => import('@/components/sections/AIProducts'), {
   loading: () => <div className="min-h-[400px] bg-gray-900" />,
-  ssr: true,
 })
 
 const LocationMap = dynamic(() => import('@/components/sections/LocationMap'), {

@@ -131,6 +131,9 @@ export default function Navbar() {
               }
               
               const NavComponent = isInternalLink(item.href) ? Link : 'a'
+              const linkProps = isInternalLink(item.href) 
+                ? { href: item.href }
+                : { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
               
               return (
                 <motion.div
@@ -141,7 +144,7 @@ export default function Navbar() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <NavComponent
-                    href={item.href}
+                    {...linkProps}
                     className="relative text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -242,6 +245,9 @@ export default function Navbar() {
                 }
                 
                 const NavComponent = isInternalLink(item.href) ? Link : 'a'
+                const linkProps = isInternalLink(item.href) 
+                  ? { href: item.href }
+                  : { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
                 
                 return (
                   <motion.div
@@ -252,7 +258,7 @@ export default function Navbar() {
                     whileHover={{ x: 10 }}
                   >
                     <NavComponent
-                      href={item.href}
+                      {...linkProps}
                       className="block text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
