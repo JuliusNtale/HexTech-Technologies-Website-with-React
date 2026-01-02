@@ -10,7 +10,7 @@ import type { NavItem } from '@/types'
 
 const navItems: NavItem[] = [
   { title: 'Home', href: '/' },
-  { title: 'Eshop', href: 'https://eshop.neuraltale.com' },
+  { title: 'Eshop', href: 'https://neurashop.neuraltale.com' },
   { title: 'Solutions', href: '/solutions' },
   { 
     title: 'Services', 

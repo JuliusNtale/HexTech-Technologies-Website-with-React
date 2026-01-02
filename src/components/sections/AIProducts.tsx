@@ -31,7 +31,7 @@ export default function AIProducts() {
         { icon: FaShoppingCart, text: '500+ Products' }
       ],
       cta: 'Shop Now',
-      link: 'https://eshop.neuraltale.com'
+      link: 'https://neurashop.neuraltale.com'
     }
   ]
 

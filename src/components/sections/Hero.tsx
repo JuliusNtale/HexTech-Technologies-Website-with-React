@@ -37,7 +37,7 @@ export default function Hero() {
                 Explore Our Services
               </button>
             </Link>
-            <a href="https://eshop.neuraltale.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://neurashop.neuraltale.com" target="_blank" rel="noopener noreferrer">
               <button className="border-2 border-green-400 text-green-400 px-8 py-4 rounded-xl text-lg font-semibold hover:border-green-300 hover:text-green-300 hover:bg-white/10 transition-all duration-300">
                🛒 Neurashop
               </button>

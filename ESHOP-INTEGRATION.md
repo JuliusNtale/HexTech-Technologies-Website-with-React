@@ -2,7 +2,7 @@
 
 ## 🛒 NEURALTALE E-shop Showcase Added
 
-Your e-commerce website **eshop.neuraltale.com** is now prominently featured across your main website!
+Your e-commerce website **neurashop.neuraltale.com** is now prominently featured across your main website!
 
 ---
 
@@ -12,7 +12,7 @@ Your e-commerce website **eshop.neuraltale.com** is now prominently featured acr
 - Added **"🛒 Shop Online"** as the primary CTA button
 - Green gradient design (stands out from other CTAs)
 - Positioned first to grab immediate attention
-- Links directly to: `https://eshop.neuraltale.com`
+- Links directly to: `https://neurashop.neuraltale.com`
 
 ### 2. **New E-shop Showcase Section (Homepage)**
 **Location:** Between About and Services sections
@@ -41,7 +41,7 @@ Your e-commerce website **eshop.neuraltale.com** is now prominently featured acr
 
 ### 3. **Navigation Bar**
 - Already has **"Eshop"** link in main navigation
-- External link to `https://eshop.neuraltale.com`
+- External link to `https://neurashop.neuraltale.com`
 - Accessible from all pages
 
 ### 4. **Case Studies Page**
@@ -123,7 +123,7 @@ Your e-commerce website **eshop.neuraltale.com** is now prominently featured acr
 
 ### Path 1: Immediate Shop
 ```
-User lands → Sees "🛒 Shop Online" button → Clicks → eshop.neuraltale.com
+User lands → Sees "🛒 Shop Online" button → Clicks → neurashop.neuraltale.com
 ```
 
 ### Path 2: Learn Then Shop
@@ -133,7 +133,7 @@ User lands → Scrolls to E-shop Showcase → Reads features → Clicks "Visit E
 
 ### Path 3: Navigation
 ```
-User on any page → Clicks "Eshop" in nav → eshop.neuraltale.com
+User on any page → Clicks "Eshop" in nav → neurashop.neuraltale.com
 ```
 
 ### Path 4: Case Study Discovery
@@ -212,7 +212,7 @@ Cloudflare Pages will automatically build and deploy your updated site.
 
 ---
 
-**E-shop URL:** https://eshop.neuraltale.com
+**E-shop URL:** https://neurashop.neuraltale.com
 **Main Website:** https://neuraltale.com
 
 **Result:** Seamless integration driving traffic from main site to e-shop! 🎉

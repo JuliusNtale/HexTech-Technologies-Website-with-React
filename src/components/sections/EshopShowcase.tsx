@@ -65,7 +65,7 @@ export default function EshopShowcase() {
             {categories.map((category, index) => (
               <motion.a
                 key={category.name}
-                href="https://eshop.neuraltale.com"
+                href="https://neurashop.neuraltale.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -93,7 +93,7 @@ export default function EshopShowcase() {
             <p className="text-gray-600 mb-6">
               Powered by <strong className="text-green-600">Neurashop</strong> - NEURALTALE's AI E-commerce Platform
             </p>
-            <a href="https://eshop.neuraltale.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://neurashop.neuraltale.com" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

@@ -53,7 +53,7 @@ const CaseStudiesPage = () => {
       },
       images: ['/images/case-studies/eshop-home.jpg', '/images/case-studies/eshop-products.jpg'],
       featured: true,
-      liveUrl: 'https://eshop.neuraltale.com'
+      liveUrl: 'https://neurashop.neuraltale.com'
     },
     {
       id: 1,
