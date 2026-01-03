@@ -78,17 +78,17 @@ export const organizationSchema = {
   url: "https://neuraltale.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://neuraltale.com/logo.png",
+    url: "https://neuraltale.com/logo-wide.svg",
     width: 600,
-    height: 60,
-    contentUrl: "https://neuraltale.com/logo.png"
+    height: 100,
+    contentUrl: "https://neuraltale.com/logo-wide.svg"
   },
   image: [
     {
       "@type": "ImageObject",
-      url: "https://neuraltale.com/logo.png",
+      url: "https://neuraltale.com/logo-wide.svg",
       width: 600,
-      height: 60
+      height: 100
     },
     {
       "@type": "ImageObject", 
@@ -144,7 +144,7 @@ export const logoSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   url: "https://neuraltale.com",
-  logo: "https://neuraltale.com/logo.png"
+  logo: "https://neuraltale.com/logo-wide.svg"
 }
 
 // Website Schema with logo

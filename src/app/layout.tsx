@@ -117,6 +117,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
+      { url: '/logo.svg', type: 'image/svg+xml' },
       { url: '/logo.png', type: 'image/png', sizes: '32x32' },
       { url: '/logo.png', type: 'image/png', sizes: '16x16' },
     ],
@@ -126,8 +127,8 @@ export const metadata: Metadata = {
     other: [
       {
         rel: 'mask-icon',
-        url: '/logo.png',
-        color: '#1e40af',
+        url: '/logo.svg',
+        color: '#0f2744',
       },
     ],
   },
@@ -194,13 +195,14 @@ export default function RootLayout({
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <link rel="canonical" href="https://neuraltale.com" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-        <link rel="mask-icon" href="/logo.png" color="#1e40af" />
+        <link rel="mask-icon" href="/logo.svg" color="#0f2744" />
         
         {/* Organization Logo for Google Search */}
-        <meta property="og:logo" content="https://neuraltale.com/logo.png" />
-        <meta name="logo" content="https://neuraltale.com/logo.png" />
+        <meta property="og:logo" content="https://neuraltale.com/logo-wide.svg" />
+        <meta name="logo" content="https://neuraltale.com/logo-wide.svg" />
         
         {/* Performance hints */}
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />

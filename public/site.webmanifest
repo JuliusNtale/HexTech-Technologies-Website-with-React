@@ -5,9 +5,15 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "theme_color": "#0f2744",
   "orientation": "portrait-primary",
   "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "/logo.png",
       "sizes": "192x192",
