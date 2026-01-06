@@ -18,10 +18,13 @@ export function StructuredData({ data }: StructuredDataProps) {
         "url": "https://neuraltale.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://neuraltale.com/logo.png",
-          "width": 300,
-          "height": 100,
-          "caption": "NeuralTale Technologies Logo"
+          "@id": "https://neuraltale.com/#logo",
+          "url": "https://neuraltale.com/logo.svg",
+          "contentUrl": "https://neuraltale.com/logo.svg",
+          "width": 611,
+          "height": 611,
+          "caption": "NeuralTale Technologies Logo",
+          "inLanguage": "en-US"
         },
         "image": {
           "@type": "ImageObject",

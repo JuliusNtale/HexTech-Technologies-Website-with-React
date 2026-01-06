@@ -865,13 +865,13 @@ Ubiquiti UniFi Management
         "name": "Neuraltale Technologies",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://Neuraltale.co.tz/logo.png"
+          "url": "https://neuraltale.com/logo.svg"
         }
       },
       "datePublished": "2025-01-08",
       "dateModified": "2025-01-08",
       "image": "https://neuraltale.com/blog/omada-vs-unifi-comparison.jpg",
-      "url": "https://Neuraltale.co.tz/blog/omada-vs-unifi-hotels-tanzania"
+      "url": "https://neuraltale.com/blog/omada-vs-unifi-hotels-tanzania"
     }
   }
 }

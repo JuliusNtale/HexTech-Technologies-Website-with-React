@@ -148,11 +148,11 @@ export const metadata: Metadata = {
         type: 'image/jpeg',
       },
       {
-        url: '/logo.png',
-        width: 600,
-        height: 60,
+        url: '/logo.svg',
+        width: 611,
+        height: 611,
         alt: 'Neuraltale Logo',
-        type: 'image/png',
+        type: 'image/svg+xml',
       },
     ],
   },
@@ -201,10 +201,6 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/logo.svg" />
         <link rel="mask-icon" href="/logo.svg" color="#03213F" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
-        {/* Organization Logo for Google Search */}
-        <meta property="og:logo" content="https://neuraltale.com/logo-wide.svg" />
-        <meta name="logo" content="https://neuraltale.com/logo-wide.svg" />
         
         {/* Performance hints */}
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />

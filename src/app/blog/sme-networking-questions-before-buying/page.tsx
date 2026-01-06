@@ -1078,7 +1078,7 @@ Print this checklist for your vendor meetings:
         "name": "Neuraltale Technologies",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://Neuraltale.co.tz/logo.png"
+          "url": "https://neuraltale.com/logo.svg"
         }
       },
       "datePublished": "2025-01-05",
