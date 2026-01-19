@@ -116,6 +116,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
       { url: '/logo.svg', type: 'image/svg+xml' },
       { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
       { url: '/favicon-16.png', type: 'image/png', sizes: '16x16' },
@@ -146,6 +147,13 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'Neuraltale - IT Equipment Supplier Tanzania',
         type: 'image/jpeg',
+      },
+      {
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'Neuraltale Logo',
+        type: 'image/png',
       },
       {
         url: '/logo.svg',

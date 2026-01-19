@@ -78,17 +78,23 @@ export const organizationSchema = {
   url: "https://neuraltale.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://neuraltale.com/logo-wide.svg",
-    width: 600,
-    height: 100,
-    contentUrl: "https://neuraltale.com/logo-wide.svg"
+    url: "https://neuraltale.com/logo.png",
+    width: 512,
+    height: 512,
+    contentUrl: "https://neuraltale.com/logo.png"
   },
   image: [
     {
       "@type": "ImageObject",
-      url: "https://neuraltale.com/logo-wide.svg",
-      width: 600,
-      height: 100
+      url: "https://neuraltale.com/logo.png",
+      width: 512,
+      height: 512
+    },
+    {
+      "@type": "ImageObject",
+      url: "https://neuraltale.com/logo.svg",
+      width: 611,
+      height: 611
     },
     {
       "@type": "ImageObject", 
@@ -144,7 +150,7 @@ export const logoSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   url: "https://neuraltale.com",
-  logo: "https://neuraltale.com/logo-wide.svg"
+  logo: "https://neuraltale.com/logo.png"
 }
 
 // Website Schema with logo
