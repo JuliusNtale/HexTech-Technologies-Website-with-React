@@ -92,7 +92,7 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05 }}
-                      className="relative text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium cursor-pointer flex items-center space-x-1"
+                      className="relative text-gray-600 hover:text-[#FFC107] transition-colors duration-300 font-medium cursor-pointer flex items-center space-x-1"
                     >
                       <span>{item.title}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
@@ -145,12 +145,12 @@ export default function Navbar() {
                 >
                   <NavComponent
                     {...linkProps}
-                    className="relative text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                    className="relative text-gray-600 hover:text-[#FFC107] transition-colors duration-300 font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.title}
                     <motion.span
-                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600"
+                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FFC107]"
                       whileHover={{ width: '100%' }}
                       transition={{ duration: 0.3 }}
                     />
@@ -165,7 +165,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="hidden md:block px-6 py-2 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold rounded-lg neon-blue transition-all duration-300 hover:shadow-lg"
+              className="hidden md:block px-6 py-2 bg-gradient-to-r from-[#FFC107] to-[#00838F] text-[#002855] font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
             >
               Get Started
             </motion.button>
@@ -175,7 +175,7 @@ export default function Navbar() {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-gray-300 hover:text-neon-blue transition-colors"
+            className="md:hidden text-gray-600 hover:text-[#FFC107] transition-colors"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -208,7 +208,7 @@ export default function Navbar() {
                     >
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.title ? null : item.title)}
-                        className="flex items-center justify-between w-full text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                        className="flex items-center justify-between w-full text-gray-600 hover:text-[#FFC107] transition-colors duration-300 font-medium py-2"
                       >
                         <span>{item.title}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
@@ -228,7 +228,7 @@ export default function Navbar() {
                               <Link
                                 key={dropdownItem.title}
                                 href={dropdownItem.href}
-                                className="block text-gray-500 hover:text-blue-600 transition-colors duration-300 py-2"
+                                className="block text-gray-500 hover:text-[#FFC107] transition-colors duration-300 py-2"
                                 onClick={() => {
                                   setIsMobileMenuOpen(false)
                                   setActiveDropdown(null)
@@ -259,7 +259,7 @@ export default function Navbar() {
                   >
                     <NavComponent
                       {...linkProps}
-                      className="block text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                      className="block text-gray-600 hover:text-[#FFC107] transition-colors duration-300 font-medium py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.title}
@@ -271,7 +271,7 @@ export default function Navbar() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-300"
+                  className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-[#FFC107] to-[#00838F] text-[#002855] font-semibold rounded-lg shadow-lg transition-all duration-300"
                 >
                   Get Started
                 </motion.button>

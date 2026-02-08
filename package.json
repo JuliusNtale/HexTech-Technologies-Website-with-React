@@ -10,25 +10,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit",
-    "postbuild": "node -e \"if (require('fs').existsSync('out')) { require('fs').writeFileSync('out/.nojekyll', ''); console.log('✓ Created .nojekyll for static export'); } else { console.log('⚠ Skipping .nojekyll - not a static export'); }\""
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/is-prop-valid": "^1.4.0",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "autoprefixer": "^10.4.19",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "critters": "^0.0.23",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.400.0",
-    "motion": "^12.23.24",
     "next": "16.0.1",
     "ogl": "^1.0.11",
     "postcss": "^8.4.39",
@@ -45,8 +40,10 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "16.0.1",
     "webpack-bundle-analyzer": "^4.10.2"
   },
   "engines": {

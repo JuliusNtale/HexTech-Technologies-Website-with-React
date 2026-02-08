@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Cloudflare Pages static export configuration
-  output: 'export',
-  trailingSlash: true,
-  distDir: 'out',
-  
-  // Image optimization disabled for static export
+  // Image optimization for Vercel
   images: {
-    unoptimized: true,
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
@@ -31,9 +25,6 @@ const nextConfig = {
   
   // Remove powered by header
   poweredByHeader: false,
-  
-  // Turbopack configuration
-  turbopack: {},
 };
 
 module.exports = nextConfig;

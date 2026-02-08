@@ -11,24 +11,24 @@
 
 :root {
   --background: 0 0% 100%;
-  --foreground: 210 40% 15%;
+  --foreground: 210 100% 17%;
   --card: 0 0% 98%;
-  --card-foreground: 210 40% 15%;
+  --card-foreground: 210 100% 17%;
   --popover: 0 0% 100%;
-  --popover-foreground: 210 40% 15%;
-  --primary: 217.2 91.2% 59.8%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 210 40% 15%;
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 20.2% 45%;
-  --accent: 210 40% 96%;
-  --accent-foreground: 210 40% 15%;
+  --popover-foreground: 210 100% 17%;
+  --primary: 45 100% 51%;
+  --primary-foreground: 210 100% 17%;
+  --secondary: 210 100% 17%;
+  --secondary-foreground: 45 100% 51%;
+  --muted: 39 20% 92%;
+  --muted-foreground: 210 50% 30%;
+  --accent: 187 100% 28%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 50%;
   --destructive-foreground: 0 0% 100%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: 210 20% 88%;
+  --input: 210 20% 88%;
+  --ring: 45 100% 51%;
   --radius: 0.75rem;
 }
 
@@ -61,12 +61,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00D4FF, #8B5FBF);
+  background: linear-gradient(180deg, #FFC107, #00838F);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #8B5FBF, #FF006E);
+  background: linear-gradient(180deg, #00838F, #002855);
 }
 
 /* Glass morphism effect */
@@ -89,31 +89,31 @@ html {
 /* Neon glow effects */
 .neon-blue {
   box-shadow: 
-    0 0 5px #00D4FF,
-    0 0 10px #00D4FF,
-    0 0 15px #00D4FF,
-    0 0 20px #00D4FF;
+    0 0 5px #FFC107,
+    0 0 10px #FFC107,
+    0 0 15px #FFC107,
+    0 0 20px #FFC107;
 }
 
 .neon-purple {
   box-shadow: 
-    0 0 5px #8B5FBF,
-    0 0 10px #8B5FBF,
-    0 0 15px #8B5FBF,
-    0 0 20px #8B5FBF;
+    0 0 5px #00838F,
+    0 0 10px #00838F,
+    0 0 15px #00838F,
+    0 0 20px #00838F;
 }
 
 .neon-pink {
   box-shadow: 
-    0 0 5px #FF006E,
-    0 0 10px #FF006E,
-    0 0 15px #FF006E,
-    0 0 20px #FF006E;
+    0 0 5px #002855,
+    0 0 10px #002855,
+    0 0 15px #002855,
+    0 0 20px #002855;
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(45deg, #00D4FF, #8B5FBF, #FF006E);
+  background: linear-gradient(45deg, #FFC107, #00838F, #002855);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -132,7 +132,7 @@ html {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(45deg, #00D4FF, #8B5FBF, #FF006E, #00F5A0);
+  background: linear-gradient(45deg, #FFC107, #00838F, #002855, #F5E6D3);
   border-radius: inherit;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -189,18 +189,18 @@ html {
 
 .hexagon::before {
   bottom: 100%;
-  border-bottom: 28.87px solid #00D4FF;
+  border-bottom: 28.87px solid #FFC107;
 }
 
 .hexagon::after {
   top: 100%;
-  border-top: 28.87px solid #00D4FF;
+  border-top: 28.87px solid #FFC107;
 }
 
 /* Loading spinner */
 .spinner {
   border: 2px solid transparent;
-  border-top: 2px solid #00D4FF;
+  border-top: 2px solid #FFC107;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
