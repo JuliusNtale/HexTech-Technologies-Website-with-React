@@ -51,10 +51,10 @@ module.exports = {
   				foreground: 'hsl(var(--card-foreground))'
   			},
   			neon: {
-  				blue: '#1A4E89',
-  				purple: '#8B5FBF',
-  				pink: '#FF006E',
-  				green: '#00F5A0'
+  				blue: '#FFC107',
+  				purple: '#00838F',
+  				pink: '#002855',
+  				green: '#F5E6D3'
   			},
   			dark: {
   				bg: '#FFFFFF',
@@ -62,11 +62,11 @@ module.exports = {
   				border: '#E5E7EB'
   			},
   			corporate: {
-  				primary: '#0A2342',
-  				accent: '#1A4E89',
-  				text: '#1F2937',
-  				muted: '#6B7280',
-  				light: '#F8F9FA',
+  				primary: '#002855',
+  				accent: '#FFC107',
+  				text: '#002855',
+  				muted: '#00838F',
+  				light: '#F5E6D3',
   				white: '#FFFFFF'
   			},
   			chart: {
@@ -109,10 +109,10 @@ module.exports = {
   			},
   			'pulse-neon': {
   				'0%, 100%': {
-  					boxShadow: '0 0 5px #00D4FF, 0 0 10px #00D4FF, 0 0 15px #00D4FF'
+  					boxShadow: '0 0 5px #FFC107, 0 0 10px #FFC107, 0 0 15px #FFC107'
   				},
   				'50%': {
-  					boxShadow: '0 0 10px #00D4FF, 0 0 20px #00D4FF, 0 0 30px #00D4FF'
+  					boxShadow: '0 0 10px #FFC107, 0 0 20px #FFC107, 0 0 30px #FFC107'
   				}
   			},
   			'gradient-shift': {
@@ -153,7 +153,7 @@ module.exports = {
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-  			'neon-gradient': 'linear-gradient(45deg, #00D4FF, #8B5FBF, #FF006E)'
+  			'neon-gradient': 'linear-gradient(45deg, #FFC107, #00838F, #002855)'
   		}
   	}
   },
