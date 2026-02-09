@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { 
+import {
   FaDownload,
   FaImage,
   FaFileAlt,
@@ -152,8 +152,8 @@ const Press = () => {
     }
   ]
 
-  const filteredResources = selectedCategory === 'all' 
-    ? mediaResources 
+  const filteredResources = selectedCategory === 'all'
+    ? mediaResources
     : mediaResources.filter(resource => resource.category === selectedCategory)
 
   return (
@@ -167,7 +167,7 @@ const Press = () => {
               Press & Media Kit
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto mb-8">
-              Media resources, company information, and press materials for journalists, 
+              Media resources, company information, and press materials for journalists,
               partners, and media professionals covering Neuraltale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -198,9 +198,9 @@ const Press = () => {
                 About Neuraltale
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 2025, Neuraltale is Tanzania's leading IT equipment supplier 
-                and technology solutions provider. We specialize in enterprise networking, 
-                M-Pesa integration, and custom software development for businesses across 
+                Founded in 2025, Neuraltale is Tanzania's leading IT equipment supplier
+                and technology solutions provider. We specialize in enterprise networking,
+                M-Pesa integration, and custom software development for businesses across
                 SME, hospitality, education, and retail sectors.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -218,24 +218,24 @@ const Press = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img 
-                src="/media/office-main.jpg" 
-                alt="Neuraltale Office" 
+              <img
+                src="/media/office-main.jpg"
+                alt="Neuraltale Office"
                 className="w-full h-40 object-cover rounded-lg"
               />
-              <img 
-                src="/media/team-work.jpg" 
-                alt="Team at Work" 
+              <img
+                src="/media/team-work.jpg"
+                alt="Team at Work"
                 className="w-full h-40 object-cover rounded-lg"
               />
-              <img 
-                src="/media/server-room.jpg" 
-                alt="Server Room" 
+              <img
+                src="/media/server-room.jpg"
+                alt="Server Room"
                 className="w-full h-40 object-cover rounded-lg"
               />
-              <img 
-                src="/media/client-meeting.jpg" 
-                alt="Client Meeting" 
+              <img
+                src="/media/client-meeting.jpg"
+                alt="Client Meeting"
                 className="w-full h-40 object-cover rounded-lg"
               />
             </div>
@@ -259,31 +259,31 @@ const Press = () => {
             <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
               <div className="grid lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-1">
-                  <img 
-                    src="/media/julius-ntale-founder.jpg" 
-                    alt="Julius Ntale, Founder & CEO" 
+                  <img
+                    src="/media/julius-ntale-founder.jpg"
+                    alt="Julius Ntale, Founder & CEO"
                     className="w-full aspect-square object-cover rounded-xl"
                   />
                 </div>
                 <div className="lg:col-span-2">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Julius Peter Ntale</h3>
                   <p className="text-lg text-amber-500 mb-4">Founder & Chief Executive Officer</p>
-                  
+
                   <p className="text-gray-600 mb-4">
-                    Julius is a technology entrepreneur and software engineer with over 8 years of experience 
-                    in the IT industry. He founded Neuraltale in 2025 with a vision to bridge the 
+                    Julius is a technology entrepreneur and software engineer with over 8 years of experience
+                    in the IT industry. He founded Neuraltale in 2025 with a vision to bridge the
                     technology gap for businesses in Tanzania through innovative and affordable solutions.
                   </p>
-                  
+
                   <p className="text-gray-600 mb-6">
-                    Under his leadership, Neuraltale has grown from a startup to Tanzania's leading IT equipment 
-                    supplier, serving over 500 businesses across multiple sectors. Julius holds a degree in 
-                    Computer Science and is passionate about leveraging technology to solve real-world problems.
+                    Under his leadership, Neuraltale has grown from a startup to Tanzania's leading IT equipment
+                    supplier, serving over 500 businesses across multiple sectors. Julius holds a degree in
+                    Software Enginering  and is passionate about leveraging technology to solve real-world problems.
                   </p>
-                  
+
                   <div className="flex space-x-4">
-                    <a 
-                      href="https://linkedin.com/in/juliusntale" 
+                    <a
+                      href="https://linkedin.com/in/juliusntale"
                       className="text-amber-500 hover:text-amber-600"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -292,8 +292,8 @@ const Press = () => {
                     >
                       <FaLinkedin className="w-6 h-6" />
                     </a>
-                    <a 
-                      href="https://twitter.com/juliusntale" 
+                    <a
+                      href="https://twitter.com/juliusntale"
                       className="text-amber-400 hover:text-amber-500"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -302,8 +302,8 @@ const Press = () => {
                     >
                       <FaTwitter className="w-6 h-6" />
                     </a>
-                    <a 
-                      href="mailto:juliusntale@neuraltale.com" 
+                    <a
+                      href="mailto:juliusntale@neuraltale.com"
                       className="text-gray-600 hover:text-gray-700"
                       title="Email Julius Ntale"
                       aria-label="Send email to Julius Ntale"
@@ -336,11 +336,10 @@ const Press = () => {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${
-                  selectedCategory === category.id
+                className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${selectedCategory === category.id
                     ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
-                }`}
+                  }`}
               >
                 {category.name} ({category.count})
               </button>
@@ -352,8 +351,8 @@ const Press = () => {
             {filteredResources.map((resource) => (
               <div key={resource.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="aspect-video bg-gray-100 rounded-t-lg overflow-hidden">
-                  <img 
-                    src={resource.preview} 
+                  <img
+                    src={resource.preview}
                     alt={resource.title}
                     className="w-full h-full object-contain p-4"
                   />
@@ -399,7 +398,7 @@ const Press = () => {
               { name: 'Cream', hex: '#F5E6D3', rgb: 'RGB(245, 230, 211)', bgClass: 'bg-[#F5E6D3]' }
             ].map((color, index) => (
               <div key={index} className="text-center">
-                <div 
+                <div
                   className={`w-full h-24 rounded-lg mb-4 border border-gray-200 ${color.bgClass}`}
                 />
                 <h3 className="font-semibold text-gray-900 mb-1">{color.name}</h3>
@@ -431,10 +430,10 @@ const Press = () => {
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{release.title}</h3>
                     <p className="text-gray-600 mb-3">{release.excerpt}</p>
                     <p className="text-sm text-gray-500">
-                      {new Date(release.date).toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
+                      {new Date(release.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
                       })}
                     </p>
                   </div>
@@ -488,10 +487,10 @@ const Press = () => {
             Media Inquiries
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            For press inquiries, interview requests, or additional information, 
+            For press inquiries, interview requests, or additional information,
             please contact our media relations team.
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <div className="bg-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-4">General Media Inquiries</h3>
@@ -506,7 +505,7 @@ const Press = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gray-800 rounded-lg p-6">
               <h3 className="font-semibold text-white mb-4">CEO Interviews</h3>
               <div className="space-y-3">
@@ -521,7 +520,7 @@ const Press = () => {
               </div>
             </div>
           </div>
-          
+
           <p className="text-gray-400 mt-8">
             Response time: Within 24 hours for urgent requests, 48 hours for general inquiries.
           </p>
