@@ -5,7 +5,7 @@ import { MapPin, Navigation, Clock, Phone } from 'lucide-react'
 
 export default function LocationMap() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,7 +15,7 @@ export default function LocationMap() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent">
+            <span className="text-[#002855]">
               Visit Our Office
             </span>
           </h2>
@@ -35,14 +35,14 @@ export default function LocationMap() {
           >
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <MapPin className="w-6 h-6 text-blue-600 mr-3" />
+                <MapPin className="w-6 h-6 text-amber-500 mr-3" />
                 Office Location
               </h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-lg bg-blue-100">
-                    <MapPin className="w-5 h-5 text-blue-600" />
+                  <div className="p-3 rounded-lg bg-amber-100">
+                    <MapPin className="w-5 h-5 text-amber-500" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
@@ -54,8 +54,8 @@ export default function LocationMap() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-lg bg-green-100">
-                    <Clock className="w-5 h-5 text-green-600" />
+                  <div className="p-3 rounded-lg bg-teal-100">
+                    <Clock className="w-5 h-5 text-teal-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Business Hours</h4>
@@ -68,8 +68,8 @@ export default function LocationMap() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-lg bg-purple-100">
-                    <Phone className="w-5 h-5 text-purple-600" />
+                  <div className="p-3 rounded-lg bg-teal-100">
+                    <Phone className="w-5 h-5 text-teal-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Contact</h4>
@@ -81,8 +81,8 @@ export default function LocationMap() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-lg bg-orange-100">
-                    <Navigation className="w-5 h-5 text-orange-600" />
+                  <div className="p-3 rounded-lg bg-amber-100">
+                    <Navigation className="w-5 h-5 text-amber-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Getting Here</h4>
@@ -100,7 +100,7 @@ export default function LocationMap() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:shadow-lg transition-all duration-300"
+                className="w-full mt-8 bg-amber-500 text-white px-6 py-4 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:shadow-lg transition-all duration-300"
               >
                 <Navigation className="w-5 h-5" />
                 <span>Get Directions</span>
@@ -130,7 +130,7 @@ export default function LocationMap() {
                 />
                 
                 {/* Custom overlay for interactivity */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none rounded-lg" />
+                <div className="absolute inset-0 bg-[#002855]/5 pointer-events-none rounded-lg" />
               </div>
               
               <div className="mt-4 text-center">

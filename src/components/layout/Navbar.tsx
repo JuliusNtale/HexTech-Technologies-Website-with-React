@@ -12,8 +12,8 @@ const navItems: NavItem[] = [
   { title: 'Home', href: '/' },
   { title: 'Eshop', href: 'https://neurashop.neuraltale.com' },
   { title: 'Solutions', href: '/solutions' },
-  { 
-    title: 'Services', 
+  {
+    title: 'Services',
     href: '/services',
     hasDropdown: true,
     dropdownItems: [
@@ -25,17 +25,17 @@ const navItems: NavItem[] = [
     ]
   },
   { title: 'Industries', href: '/industries' },
-  
+
   { title: 'Case Studies', href: '/case-studies' },
   {
-    title: 'Company', 
+    title: 'Company',
     href: '/about',
     hasDropdown: true,
     dropdownItems: [
       { title: 'About Us', href: '/about', description: 'Our story and mission' },
       { title: 'Office Location', href: '/location', description: 'Visit our Dar es Salaam office' },
       { title: 'Careers', href: '/careers', description: 'Join our team' },
-      { title: 'Blog', href: '/blog',description:'Read Most asked Questions' },
+      { title: 'Blog', href: '/blog', description: 'Read Most asked Questions' },
       { title: 'Press & Media', href: '/press', description: 'Media resources and press kit' },
       { title: 'Support', href: '/support', description: 'Get help and resources' }
     ]
@@ -66,15 +66,15 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled 
-          ? 'bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm' 
+        isScrolled
+          ? 'bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm'
           : 'bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Logo size="md" showText={true} />
+          <Logo size="md" showText={true} textClassName="text-amber-500" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -92,12 +92,11 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05 }}
-                      className="relative text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium cursor-pointer flex items-center space-x-1"
+                      className="relative text-black hover:text-amber-500 transition-colors duration-300 font-medium cursor-pointer flex items-center space-x-1"
                     >
                       <span>{item.title}</span>
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
-                        activeDropdown === item.title ? 'rotate-180' : ''
-                      }`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.title ? 'rotate-180' : ''
+                        }`} />
                     </motion.div>
 
                     {/* Dropdown */}
@@ -129,12 +128,12 @@ export default function Navbar() {
                   </div>
                 )
               }
-              
+
               const NavComponent = isInternalLink(item.href) ? Link : 'a'
-              const linkProps = isInternalLink(item.href) 
+              const linkProps = isInternalLink(item.href)
                 ? { href: item.href }
                 : { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
-              
+
               return (
                 <motion.div
                   key={item.title}
@@ -145,12 +144,12 @@ export default function Navbar() {
                 >
                   <NavComponent
                     {...linkProps}
-                    className="relative text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                    className="relative text-black hover:text-amber-500 transition-colors duration-300 font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.title}
                     <motion.span
-                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600"
+                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500"
                       whileHover={{ width: '100%' }}
                       transition={{ duration: 0.3 }}
                     />
@@ -165,7 +164,7 @@ export default function Navbar() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="hidden md:block px-6 py-2 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold rounded-lg neon-blue transition-all duration-300 hover:shadow-lg"
+              className="hidden md:block px-6 py-2 bg-amber-500 text-white font-semibold rounded-lg"
             >
               Get Started
             </motion.button>
@@ -208,14 +207,13 @@ export default function Navbar() {
                     >
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.title ? null : item.title)}
-                        className="flex items-center justify-between w-full text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                        className="flex items-center justify-between w-full text-gray-600 hover:text-amber-500 transition-colors duration-300 font-medium py-2"
                       >
                         <span>{item.title}</span>
-                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${
-                          activeDropdown === item.title ? 'rotate-180' : ''
-                        }`} />
+                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.title ? 'rotate-180' : ''
+                          }`} />
                       </button>
-                      
+
                       <AnimatePresence>
                         {activeDropdown === item.title && (
                           <motion.div
@@ -228,7 +226,7 @@ export default function Navbar() {
                               <Link
                                 key={dropdownItem.title}
                                 href={dropdownItem.href}
-                                className="block text-gray-500 hover:text-blue-600 transition-colors duration-300 py-2"
+                                className="block text-gray-500 hover:text-amber-500 transition-colors duration-300 py-2"
                                 onClick={() => {
                                   setIsMobileMenuOpen(false)
                                   setActiveDropdown(null)
@@ -243,12 +241,12 @@ export default function Navbar() {
                     </motion.div>
                   )
                 }
-                
+
                 const NavComponent = isInternalLink(item.href) ? Link : 'a'
-                const linkProps = isInternalLink(item.href) 
+                const linkProps = isInternalLink(item.href)
                   ? { href: item.href }
                   : { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
-                
+
                 return (
                   <motion.div
                     key={item.title}
@@ -259,7 +257,7 @@ export default function Navbar() {
                   >
                     <NavComponent
                       {...linkProps}
-                      className="block text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                      className="block text-gray-600 hover:text-amber-500 transition-colors duration-300 font-medium py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.title}
@@ -271,7 +269,7 @@ export default function Navbar() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-300"
+                  className="w-full mt-4 px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg shadow-lg transition-all duration-300"
                 >
                   Get Started
                 </motion.button>

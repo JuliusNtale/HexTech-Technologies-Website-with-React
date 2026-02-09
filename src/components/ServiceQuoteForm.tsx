@@ -83,7 +83,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-[#002855]/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -114,8 +114,8 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
             >
               <CheckCircle className="w-6 h-6 text-green-500" />
               <div>
-                <p className="text-green-700 font-semibold">Quote request sent successfully!</p>
-                <p className="text-green-600 text-sm">We'll prepare your quote and get back to you within 24-48 hours.</p>
+                <p className="text-teal-700 font-semibold">Quote request sent successfully!</p>
+                <p className="text-teal-600 text-sm">We'll prepare your quote and get back to you within 24-48 hours.</p>
               </div>
             </motion.div>
           )}
@@ -165,7 +165,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                   placeholder="Your full name"
                 />
               </div>
@@ -179,7 +179,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                   placeholder="your@email.com"
                 />
               </div>
@@ -195,7 +195,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   type="tel"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                   placeholder="+255 XXX XXX XXX"
                 />
               </div>
@@ -208,7 +208,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="company"
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                   placeholder="Your company name"
                 />
               </div>
@@ -223,7 +223,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                 name="service"
                 value={formData.service}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
               >
                 <option value="">Select a service</option>
                 <option value="Networking Solutions">Networking Solutions</option>
@@ -248,7 +248,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                 >
                   <option value="">Select budget range</option>
                   <option value="Under $5,000">Under $5,000</option>
@@ -268,7 +268,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="timeline"
                   value={formData.timeline}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                 >
                   <option value="">Select timeline</option>
                   <option value="ASAP (Within 2 weeks)">ASAP (Within 2 weeks)</option>
@@ -290,7 +290,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="location"
                   value={formData.location}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                   placeholder="City, Country"
                 />
               </div>
@@ -303,7 +303,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                   name="employees"
                   value={formData.employees || ''}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300"
                 >
                   <option value="">Select company size</option>
                   <option value="1">1 (Solo)</option>
@@ -327,7 +327,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
                 value={formData.requirements}
                 onChange={handleInputChange}
                 rows={6}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all duration-300 resize-none"
                 placeholder="Please describe your project requirements, current challenges, goals, and any specific needs..."
               />
             </div>
@@ -338,7 +338,7 @@ export default function ServiceQuoteForm({ isOpen, onClose, selectedService = ''
               disabled={isSubmitting}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-lg rounded-lg shadow-lg relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full px-8 py-4 bg-amber-500 text-white font-bold text-lg rounded-lg shadow-lg relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span className="relative z-10 flex items-center justify-center space-x-2">
                 {isSubmitting ? (

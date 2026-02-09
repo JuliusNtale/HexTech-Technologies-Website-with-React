@@ -193,8 +193,8 @@ const SupportPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-teal-900 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -256,7 +256,7 @@ const SupportPage = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Response:</span>
-                    <span className="font-medium text-green-600">{channel.responseTime}</span>
+                    <span className="font-medium text-teal-600">{channel.responseTime}</span>
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-200">
@@ -289,14 +289,14 @@ const SupportPage = () => {
                 href={resource.link}
                 className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors duration-300 block"
               >
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <resource.icon className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                  <resource.icon className="w-6 h-6 text-amber-500" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{resource.title}</h3>
                 <p className="text-gray-600 mb-3">{resource.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-blue-600">{resource.count}</span>
-                  <FaArrowRight className="w-4 h-4 text-blue-600" />
+                  <span className="text-sm font-medium text-amber-500">{resource.count}</span>
+                  <FaArrowRight className="w-4 h-4 text-amber-500" />
                 </div>
               </Link>
             ))}
@@ -556,7 +556,7 @@ const SupportPage = () => {
               href="https://wa.me/255987654321"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+              className="bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <FaWhatsapp className="w-5 h-5" />
               <span>WhatsApp Emergency</span>

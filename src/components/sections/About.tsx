@@ -24,7 +24,7 @@ export default function About() {
     <section id="about" className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-neon-blue/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-20 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-neon-purple/5 rounded-full blur-3xl" />
       </div>
 
@@ -37,7 +37,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">About Neuraltale</span>
+            <span className="text-[#002855]">About Neuraltale</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Technology should solve problems, not create them. We are the bridge between hardware and software, between vision and reality.
@@ -51,7 +51,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-white rounded-2xl p-8 mb-16 border border-gray-200 shadow-lg"
         >
-          <h3 className="text-2xl font-bold mb-6 gradient-text">Our Story</h3>
+          <h3 className="text-2xl font-bold mb-6 text-[#002855]">Our Story</h3>
           <p className="text-lg text-gray-600 leading-relaxed">
             Neuraltale was born from a simple truth — technology should solve problems, not create them. 
             Founded in 2025, we set out to merge world-class innovation with the real needs of businesses 

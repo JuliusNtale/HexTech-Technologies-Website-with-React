@@ -63,9 +63,9 @@ export default function ContactForm() {
       title: 'Email Us',
       content: 'helpdesk@neuraltale.com',
       description: 'We respond within 2 hours',
-      color: 'from-blue-500 to-cyan-500',
-      bgColor: 'bg-blue-500/10',
-      borderColor: 'border-blue-500/20',
+      color: 'bg-amber-500',
+      bgColor: 'bg-amber-500/10',
+      borderColor: 'border-amber-500/20',
       link: 'mailto:helpdesk@neuraltale.com'
     },
     {
@@ -73,9 +73,9 @@ export default function ContactForm() {
       title: 'Call Us',
       content: '+255 653 520 829',
       description: 'Mon-Fri, 9AM-6PM EAT',
-      color: 'from-green-500 to-emerald-500',
-      bgColor: 'bg-green-500/10',
-      borderColor: 'border-green-500/20',
+      color: 'bg-amber-500',
+      bgColor: 'bg-amber-500/10',
+      borderColor: 'border-amber-500/20',
       link: 'tel:+255653520829'
     },
     {
@@ -83,9 +83,9 @@ export default function ContactForm() {
       title: 'Visit Our Office',
       content: 'Dar es Salaam, Tanzania',
       description: 'East Africa - Schedule a meeting',
-      color: 'from-purple-500 to-pink-500',
-      bgColor: 'bg-purple-500/10',
-      borderColor: 'border-purple-500/20',
+      color: 'bg-amber-500',
+      bgColor: 'bg-amber-500/10',
+      borderColor: 'border-amber-500/20',
       link: '/location'
     }
   ]
@@ -106,7 +106,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <motion.div 
@@ -120,7 +120,7 @@ export default function ContactForm() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-3xl"
+          className="absolute top-20 right-20 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl"
         />
         <motion.div 
           animate={{ 
@@ -133,14 +133,14 @@ export default function ContactForm() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-br from-cyan-400/10 to-pink-400/10 rounded-full blur-3xl"
+          className="absolute bottom-20 left-20 w-96 h-96 bg-teal-400/10 rounded-full blur-3xl"
         />
         
         {/* Floating particles */}
         {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-20"
+            className="absolute w-2 h-2 bg-amber-400 rounded-full opacity-20"
             style={{
               left: `${20 + i * 15}%`,
               top: `${10 + i * 10}%`
@@ -169,7 +169,7 @@ export default function ContactForm() {
         >
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 rounded-full text-blue-700 font-medium mb-6"
+            className="inline-flex items-center space-x-2 bg-amber-100 px-4 py-2 rounded-full text-amber-600 font-medium mb-6"
           >
             <Sparkles className="w-4 h-4" />
             <span>Let's Build Something Amazing Together</span>
@@ -179,7 +179,7 @@ export default function ContactForm() {
             variants={itemVariants}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent">
+            <span className="text-[#002855]">
               Get In Touch
             </span>
           </motion.h2>
@@ -213,7 +213,7 @@ export default function ContactForm() {
             </motion.div>
 
             {/* Enhanced Contact Info Cards */}
-            <div className="space-y-6">
+            <div className="grid gap-6">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon
                 const CardContent = (
@@ -223,21 +223,21 @@ export default function ContactForm() {
                     className={`${info.bgColor} ${info.borderColor} rounded-2xl p-6 border backdrop-blur-sm hover:shadow-xl transition-all duration-500 group cursor-pointer`}
                   >
                     <div className="flex items-start space-x-4">
-                      <div className={`p-4 rounded-xl bg-gradient-to-r ${info.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <div className={`p-4 rounded-xl ${info.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-blue-700 transition-colors">
+                        <h4 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">
                           {info.title}
                         </h4>
-                        <p className="text-blue-600 font-semibold mb-1">
+                        <p className="text-amber-500 font-semibold mb-1">
                           {info.content}
                         </p>
                         <p className="text-gray-500 text-sm">
                           {info.description}
                         </p>
                       </div>
-                      <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all duration-300" />
+                      <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-amber-500 group-hover:translate-x-1 transition-all duration-300" />
                     </div>
                   </motion.div>
                 )
@@ -259,16 +259,16 @@ export default function ContactForm() {
               <h4 className="text-lg font-bold text-gray-900 mb-6">Connect With Us</h4>
               <div className="flex space-x-4">
                 {[
-                  { name: 'LinkedIn', color: 'from-blue-600 to-blue-700', icon: '💼' },
-                  { name: 'Twitter', color: 'from-sky-400 to-sky-600', icon: '🐦' },
-                  { name: 'GitHub', color: 'from-gray-700 to-gray-900', icon: '⚡' },
-                  { name: 'Instagram', color: 'from-pink-500 to-purple-600', icon: '📷' }
+                  { name: 'LinkedIn', color: 'bg-amber-500', icon: '💼' },
+                  { name: 'Twitter', color: 'bg-teal-500', icon: '🐦' },
+                  { name: 'GitHub', color: 'bg-gray-700', icon: '⚡' },
+                  { name: 'Instagram', color: 'bg-amber-500', icon: '📷' }
                 ].map((social, index) => (
                   <motion.button
                     key={social.name}
                     whileHover={{ scale: 1.1, y: -3 }}
                     whileTap={{ scale: 0.9 }}
-                    className={`w-14 h-14 rounded-xl bg-gradient-to-r ${social.color} flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all duration-300`}
+                    className={`w-14 h-14 rounded-xl ${social.color} flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all duration-300`}
                   >
                     <span className="text-lg">{social.icon}</span>
                   </motion.button>
@@ -290,7 +290,7 @@ export default function ContactForm() {
               
               <div className="relative z-10">
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-purple-50 px-4 py-2 rounded-full text-blue-700 font-medium mb-4">
+                  <div className="inline-flex items-center space-x-2 bg-amber-50 px-4 py-2 rounded-full text-amber-600 font-medium mb-4">
                     <MessageSquare className="w-4 h-4" />
                     <span>Send us a message</span>
                   </div>
@@ -366,7 +366,7 @@ export default function ContactForm() {
                       onChange={handleInputChange}
                       className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 bg-gray-50/50 focus:bg-white text-gray-900 placeholder-gray-500 ${
                         focusedField === 'name' 
-                          ? 'border-blue-400 ring-4 ring-blue-100 shadow-lg' 
+                          ? 'border-amber-400 ring-4 ring-amber-100 shadow-lg' 
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                       placeholder="Enter your full name"
@@ -390,7 +390,7 @@ export default function ContactForm() {
                         onChange={handleInputChange}
                         className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 bg-gray-50/50 focus:bg-white text-gray-900 placeholder-gray-500 ${
                           focusedField === 'email' 
-                            ? 'border-blue-400 ring-4 ring-blue-100 shadow-lg' 
+                            ? 'border-amber-400 ring-4 ring-amber-100 shadow-lg' 
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                         placeholder="your@email.com"
@@ -411,7 +411,7 @@ export default function ContactForm() {
                         onChange={handleInputChange}
                         className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 bg-gray-50/50 focus:bg-white text-gray-900 placeholder-gray-500 ${
                           focusedField === 'company' 
-                            ? 'border-blue-400 ring-4 ring-blue-100 shadow-lg' 
+                            ? 'border-amber-400 ring-4 ring-amber-100 shadow-lg' 
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                         placeholder="Your company (optional)"
@@ -434,7 +434,7 @@ export default function ContactForm() {
                       onChange={handleInputChange}
                       className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 bg-gray-50/50 focus:bg-white text-gray-900 placeholder-gray-500 ${
                         focusedField === 'subject' 
-                          ? 'border-blue-400 ring-4 ring-blue-100 shadow-lg' 
+                          ? 'border-amber-400 ring-4 ring-amber-100 shadow-lg' 
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                       placeholder="What can we help you with?"
@@ -457,7 +457,7 @@ export default function ContactForm() {
                       rows={6}
                       className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 bg-gray-50/50 focus:bg-white text-gray-900 placeholder-gray-500 resize-none ${
                         focusedField === 'message' 
-                          ? 'border-blue-400 ring-4 ring-blue-100 shadow-lg' 
+                          ? 'border-amber-400 ring-4 ring-amber-100 shadow-lg' 
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                       placeholder="Tell us about your project, challenges, or questions..."
@@ -470,10 +470,10 @@ export default function ContactForm() {
                     disabled={isSubmitting}
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full px-8 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 text-white font-bold text-lg rounded-xl shadow-2xl relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-8 py-5 bg-amber-500 text-white font-bold text-lg rounded-xl shadow-2xl relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600"
+                      className="absolute inset-0 bg-teal-600"
                       initial={{ x: '100%' }}
                       whileHover={{ x: '0%' }}
                       transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -500,7 +500,7 @@ export default function ContactForm() {
                   </motion.button>
 
                   <p className="text-center text-gray-500 text-sm">
-                    We'll get back to you within <span className="font-semibold text-blue-600">24 hours</span> ⚡
+                    We'll get back to you within <span className="font-semibold text-amber-500">24 hours</span> ⚡
                   </p>
                 </form>
               </div>

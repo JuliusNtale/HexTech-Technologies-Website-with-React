@@ -181,8 +181,8 @@ const Testimonials = () => {
               }}
               className={`px-3 md:px-5 py-2 md:py-3 rounded-lg border-2 transition-all duration-300 text-sm md:text-base ${
                 selectedCategory === category.id
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                  ? 'bg-amber-500 text-white border-amber-500'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
               } ${
                 // Hide some categories on mobile (keep first 3)
                 index > 2 ? 'hidden sm:inline-block' : ''
@@ -198,7 +198,7 @@ const Testimonials = () => {
         <div className="max-w-4xl mx-auto ">
           <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 relative">
             {/* Quote Icon */}
-            <div className="absolute top-6 left-6 text-blue-100">
+            <div className="absolute top-6 left-6 text-amber-100">
               <FaQuoteLeft className="w-12 h-12" />
             </div>
 
@@ -231,14 +231,14 @@ const Testimonials = () => {
 
               {/* Client Info */}
               <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 mb-3">
-                <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-20 h-20 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold text-xl">
                   {getInitials(currentTestimonial.name)}
                 </div>
                 <div className="text-center md:text-left">
                   <h4 className="text-lg font-semibold text-gray-900">
                     {currentTestimonial.name}
                   </h4>
-                  <p className="text-blue-600 font-medium">
+                  <p className="text-amber-500 font-medium">
                     {currentTestimonial.position}
                   </p>
                   <p className="text-gray-600">
@@ -276,7 +276,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                  index === currentIndex ? 'bg-amber-500' : 'bg-amber-200'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
@@ -296,7 +296,7 @@ const Testimonials = () => {
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm mr-4">
+                  <div className="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold text-sm mr-4">
                     {getInitials(testimonial.name)}
                   </div>
                   <div>
@@ -313,7 +313,7 @@ const Testimonials = () => {
                   "{testimonial.content}"
                 </p>
                 
-                <div className="text-sm text-blue-600 font-medium">
+                <div className="text-sm text-amber-500 font-medium">
                   {testimonial.companyType} • {testimonial.location}
                 </div>
               </div>
@@ -333,13 +333,13 @@ const Testimonials = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              className="px-8 py-4 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition-colors duration-300"
             >
               Get Your Free Consultation
             </a>
             <a
               href="/portfolio"
-              className="px-8 py-4 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors duration-300"
+              className="px-8 py-4 border-2 border-amber-500 text-amber-500 font-bold rounded-lg hover:bg-amber-50 transition-colors duration-300"
             >
               View More Case Studies
             </a>

@@ -72,7 +72,7 @@ const StatCard = ({ stat, icon: Icon, index, inView }: {
           {[...Array(3)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-1 h-1 bg-neon-blue rounded-full"
+              className="absolute w-1 h-1 bg-amber-500 rounded-full"
               style={{
                 left: `${20 + i * 30}%`,
                 top: `${30 + i * 20}%`,
@@ -97,7 +97,7 @@ const StatCard = ({ stat, icon: Icon, index, inView }: {
           animate={inView ? { scale: 1, rotate: 0 } : {}}
           transition={{ delay: index * 0.1 + 0.3, type: 'spring', stiffness: 200 }}
           whileHover={{ rotate: 360, scale: 1.2 }}
-          className="w-16 h-16 mx-auto mb-6 p-4 rounded-xl bg-gradient-to-br from-neon-blue to-neon-purple neon-blue relative z-10"
+          className="w-16 h-16 mx-auto mb-6 p-4 rounded-xl bg-amber-500 relative z-10"
         >
           <Icon className="w-full h-full text-white" />
         </motion.div>
@@ -139,13 +139,13 @@ const StatCard = ({ stat, icon: Icon, index, inView }: {
         {/* Glow Effect */}
         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div className="absolute inset-[1px] rounded-2xl bg-dark-bg" />
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-gradient-shift blur-sm" />
+          <div className="absolute inset-0 rounded-2xl bg-amber-500 blur-sm" />
         </div>
       </div>
 
       {/* Floating Ring */}
       <motion.div
-        className="absolute inset-0 rounded-2xl border-2 border-neon-blue/20 pointer-events-none"
+        className="absolute inset-0 rounded-2xl border-2 border-amber-500/20 pointer-events-none"
         animate={{
           scale: [1, 1.05, 1],
           opacity: [0.3, 0.6, 0.3],
@@ -167,18 +167,18 @@ export default function StatsCounter() {
   })
 
   return (
-    <section className="py-24 bg-gray-900 relative overflow-hidden">
+    <section className="py-24 bg-[#002855] relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-blue/3 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/3 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-purple/3 rounded-full blur-3xl" />
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="w-full h-full" style={{
             backgroundImage: `
-              linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(255, 193, 7, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 193, 7, 0.1) 1px, transparent 1px)
             `,
             backgroundSize: '50px 50px'
           }} />
@@ -194,7 +194,7 @@ export default function StatsCounter() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Our Impact in Numbers</span>
+            <span className="text-white">Our Impact in Numbers</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Measurable results that demonstrate our commitment to excellence and innovation
@@ -236,7 +236,7 @@ export default function StatsCounter() {
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-bold text-lg rounded-lg shadow-2xl relative overflow-hidden group"
+                className="px-8 py-4 bg-amber-500 text-white font-bold text-lg rounded-lg shadow-2xl relative overflow-hidden group"
               >
                 <span className="relative z-10">Start Your Journey</span>
                 <motion.div

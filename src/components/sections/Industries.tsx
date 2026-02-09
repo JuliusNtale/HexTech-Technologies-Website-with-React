@@ -160,14 +160,14 @@ const IndustriesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-green-900 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Industries We Serve
             </h1>
-            <p className="text-xl md:text-2xl text-green-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-teal-100 max-w-4xl mx-auto mb-8">
               Specialized technology solutions tailored for SMEs, Hospitality, Education, 
               and Retail sectors across Tanzania.
             </p>
@@ -175,10 +175,10 @@ const IndustriesPage = () => {
               {overallStats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <stat.icon className="w-6 h-6 text-green-300" />
+                    <stat.icon className="w-6 h-6 text-teal-300" />
                   </div>
                   <div className="text-2xl font-bold">{stat.value}</div>
-                  <div className="text-sm text-green-200">{stat.label}</div>
+                  <div className="text-sm text-teal-200">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -206,18 +206,18 @@ const IndustriesPage = () => {
                 onClick={() => setActiveIndustry(index)}
                 className={`p-6 rounded-xl border-2 transition-all duration-300 text-left ${
                   activeIndustry === index
-                    ? 'bg-blue-600 text-white border-blue-600 shadow-lg'
-                    : 'bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:shadow-md'
+                    ? 'bg-amber-500 text-white border-amber-500 shadow-lg'
+                    : 'bg-white text-gray-700 border-gray-200 hover:border-amber-300 hover:shadow-md'
                 }`}
               >
                 <div className="flex items-center mb-4">
                   <industry.icon className={`w-8 h-8 mr-3 ${
-                    activeIndustry === index ? 'text-white' : 'text-blue-600'
+                    activeIndustry === index ? 'text-white' : 'text-amber-500'
                   }`} />
                   <h3 className="font-semibold text-lg">{industry.title.split(' ')[0]}</h3>
                 </div>
                 <p className={`text-sm ${
-                  activeIndustry === index ? 'text-blue-100' : 'text-gray-600'
+                  activeIndustry === index ? 'text-amber-100' : 'text-gray-600'
                 }`}>
                   {industry.description}
                 </p>
@@ -229,10 +229,10 @@ const IndustriesPage = () => {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="p-8 lg:p-12">
               <div className="flex items-center mb-8">
-                <div className="p-4 bg-blue-100 rounded-lg mr-6">
+                <div className="p-4 bg-amber-100 rounded-lg mr-6">
                   {industries[activeIndustry] && (() => {
                     const IconComponent = industries[activeIndustry].icon;
-                    return <IconComponent className="w-10 h-10 text-blue-600" />;
+                    return <IconComponent className="w-10 h-10 text-amber-500" />;
                   })()}
                 </div>
                 <div>
@@ -256,7 +256,7 @@ const IndustriesPage = () => {
 
                   <div className="mb-8">
                     <h4 className="text-xl font-semibold text-gray-900 mb-4">Our Solution</h4>
-                    <p className="text-gray-600 bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                    <p className="text-gray-600 bg-teal-50 p-4 rounded-lg border-l-4 border-teal-400">
                       {industries[activeIndustry]?.solution}
                     </p>
                   </div>
@@ -266,7 +266,7 @@ const IndustriesPage = () => {
                     <div className="space-y-3">
                       {industries[activeIndustry]?.services.map((service, index) => (
                         <div key={index} className="flex items-start space-x-3">
-                          <FaCheck className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <FaCheck className="w-4 h-4 text-teal-500 mt-1 flex-shrink-0" />
                           <span className="text-gray-700">{service}</span>
                         </div>
                       ))}
@@ -280,8 +280,8 @@ const IndustriesPage = () => {
                     <div className="space-y-3">
                       {industries[activeIndustry]?.benefits.map((benefit, index) => (
                         <div key={index} className="flex items-start space-x-3">
-                          <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                            <FaRocket className="w-3 h-3 text-blue-600" />
+                          <div className="w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <FaRocket className="w-3 h-3 text-amber-500" />
                           </div>
                           <span className="text-gray-700">{benefit}</span>
                         </div>
@@ -301,19 +301,19 @@ const IndustriesPage = () => {
 
                   <div className="grid grid-cols-3 gap-4 mb-8">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">
+                      <div className="text-2xl font-bold text-amber-500">
                         {industries[activeIndustry]?.stats.clients}
                       </div>
                       <div className="text-sm text-gray-600">Clients Served</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-green-600">
+                      <div className="text-2xl font-bold text-teal-600">
                         {industries[activeIndustry]?.stats.satisfaction}
                       </div>
                       <div className="text-sm text-gray-600">Satisfaction</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-purple-600">
+                      <div className="text-2xl font-bold text-teal-600">
                         {industries[activeIndustry]?.stats.avgROI}
                       </div>
                       <div className="text-sm text-gray-600">Avg ROI</div>
@@ -323,14 +323,14 @@ const IndustriesPage = () => {
                   <div className="flex flex-col space-y-3">
                     <Link
                       href="/solutions"
-                      className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                      className="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                     >
                       <span>View Solutions</span>
                       <FaArrowRight className="w-4 h-4" />
                     </Link>
                     <Link
                       href="/contact"
-                      className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 text-center"
+                      className="border border-amber-500 text-amber-500 px-6 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-colors duration-300 text-center"
                     >
                       Get Industry-Specific Quote
                     </Link>
@@ -379,7 +379,7 @@ const IndustriesPage = () => {
                 <ul className="space-y-2">
                   {reason.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center space-x-2">
-                      <FaCheck className="w-4 h-4 text-green-500" />
+                      <FaCheck className="w-4 h-4 text-teal-500" />
                       <span className="text-sm text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -391,25 +391,25 @@ const IndustriesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-16 bg-amber-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Industry?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-amber-100 mb-8">
             Join industry leaders who have already modernized their operations with our 
             specialized technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
               Get Industry Consultation
             </Link>
             <Link
               href="/case-studies"
-              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
             >
               View Case Studies
             </Link>

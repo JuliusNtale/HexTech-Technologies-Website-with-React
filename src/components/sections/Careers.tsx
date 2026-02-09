@@ -244,14 +244,14 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-indigo-900 to-purple-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-teal-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Join Our Innovation Team
             </h1>
-            <p className="text-xl md:text-2xl text-indigo-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-amber-50 max-w-4xl mx-auto mb-8">
               Build your career with Tanzania's leading technology solutions company. 
               Help businesses transform and grow through innovative technology.
             </p>
@@ -264,7 +264,7 @@ const CareersPage = () => {
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl font-bold text-white">{stat.value}</div>
-                  <div className="text-sm text-indigo-200">{stat.label}</div>
+                  <div className="text-sm text-gray-300">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -288,8 +288,8 @@ const CareersPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {companyBenefits.map((benefit, index) => (
               <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-6 h-6 text-indigo-600" />
+                <div className="w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center mb-4">
+                  <benefit.icon className="w-6 h-6 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
@@ -320,8 +320,8 @@ const CareersPage = () => {
                 onClick={() => setSelectedDepartment(dept.id)}
                 className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${
                   selectedDepartment === dept.id
-                    ? 'bg-indigo-600 text-white border-indigo-600'
-                    : 'bg-white text-gray-700 border-gray-300 hover:border-indigo-300 hover:text-indigo-600'
+                    ? 'bg-[#002855] text-white border-[#002855]'
+                    : 'bg-white text-gray-700 border-gray-300 hover:border-amber-400 hover:text-amber-500'
                 }`}
               >
                 <span className="font-medium">{dept.name}</span>
@@ -354,7 +354,7 @@ const CareersPage = () => {
                   </div>
                   <button
                     onClick={() => setApplicationForm({...applicationForm, position: position.title})}
-                    className="mt-4 lg:mt-0 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-300 flex items-center space-x-2"
+                    className="mt-4 lg:mt-0 bg-[#002855] text-white px-6 py-2 rounded-lg hover:bg-[#001a3a] transition-colors duration-300 flex items-center space-x-2"
                   >
                     <span>Apply Now</span>
                     <FaArrowRight className="w-4 h-4" />
@@ -369,7 +369,7 @@ const CareersPage = () => {
                     <ul className="text-sm text-gray-600 space-y-1">
                       {position.requirements.slice(0, 3).map((req, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="text-indigo-600 mr-2">•</span>
+                          <span className="text-teal-600 mr-2">•</span>
                           {req}
                         </li>
                       ))}
@@ -380,7 +380,7 @@ const CareersPage = () => {
                     <ul className="text-sm text-gray-600 space-y-1">
                       {position.responsibilities.slice(0, 3).map((resp, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="text-green-600 mr-2">•</span>
+                          <span className="text-teal-600 mr-2">•</span>
                           {resp}
                         </li>
                       ))}
@@ -391,7 +391,7 @@ const CareersPage = () => {
                     <ul className="text-sm text-gray-600 space-y-1">
                       {position.benefits.slice(0, 3).map((benefit, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="text-purple-600 mr-2">•</span>
+                          <span className="text-teal-600 mr-2">•</span>
                           {benefit}
                         </li>
                       ))}
@@ -426,7 +426,7 @@ const CareersPage = () => {
                   <select
                     value={applicationForm.position}
                     onChange={(e) => setApplicationForm({...applicationForm, position: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   >
                     <option value="">Select a position</option>
@@ -445,7 +445,7 @@ const CareersPage = () => {
                     type="text"
                     value={applicationForm.name}
                     onChange={(e) => setApplicationForm({...applicationForm, name: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
                 </div>
@@ -460,7 +460,7 @@ const CareersPage = () => {
                     type="email"
                     value={applicationForm.email}
                     onChange={(e) => setApplicationForm({...applicationForm, email: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
                 </div>
@@ -472,7 +472,7 @@ const CareersPage = () => {
                     type="tel"
                     value={applicationForm.phone}
                     onChange={(e) => setApplicationForm({...applicationForm, phone: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
                 </div>
@@ -485,7 +485,7 @@ const CareersPage = () => {
                 <select
                   value={applicationForm.experience}
                   onChange={(e) => setApplicationForm({...applicationForm, experience: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                   required
                 >
                   <option value="">Select experience level</option>
@@ -505,7 +505,7 @@ const CareersPage = () => {
                   value={applicationForm.coverLetter}
                   onChange={(e) => setApplicationForm({...applicationForm, coverLetter: e.target.value})}
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                   placeholder="Tell us about yourself, your experience, and why you're interested in joining our team..."
                   required
                 />
@@ -514,7 +514,7 @@ const CareersPage = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300 flex items-center space-x-2 mx-auto"
+                  className="bg-[#002855] text-white px-8 py-4 rounded-lg hover:bg-[#001a3a] transition-colors duration-300 flex items-center space-x-2 mx-auto"
                 >
                   <span>Submit Application</span>
                   <FaArrowRight className="w-4 h-4" />
@@ -540,14 +540,14 @@ const CareersPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <div className="flex items-center justify-center space-x-3 bg-gray-50 px-6 py-4 rounded-lg">
-              <FaEnvelope className="w-5 h-5 text-indigo-600" />
+              <FaEnvelope className="w-5 h-5 text-teal-600" />
               <div>
                 <div className="font-semibold text-gray-900">Email HR</div>
                 <div className="text-sm text-gray-600">juliusntale@neuraltale.com</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3 bg-gray-50 px-6 py-4 rounded-lg">
-              <FaPhone className="w-5 h-5 text-indigo-600" />
+              <FaPhone className="w-5 h-5 text-teal-600" />
               <div>
                 <div className="font-semibold text-gray-900">Call HR</div>
                 <div className="text-sm text-gray-600">+25565320829</div>
@@ -555,7 +555,7 @@ const CareersPage = () => {
             </div>
             <Link
               href="/contact"
-              className="flex items-center justify-center space-x-3 bg-indigo-600 text-white px-6 py-4 rounded-lg hover:bg-indigo-700 transition-colors"
+              className="flex items-center justify-center space-x-3 bg-[#002855] text-white px-6 py-4 rounded-lg hover:bg-[#001a3a] transition-colors"
             >
               <FaCalendarAlt className="w-5 h-5" />
               <span>Schedule a Call</span>

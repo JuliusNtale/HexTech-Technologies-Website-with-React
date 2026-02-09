@@ -196,14 +196,14 @@ const CaseStudiesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-purple-900 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Real Results, Real Impact
             </h1>
-            <p className="text-xl md:text-2xl text-purple-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-teal-100 max-w-4xl mx-auto mb-8">
               Discover how businesses across Tanzania have transformed their operations 
               and achieved remarkable results with our technology solutions.
             </p>
@@ -216,7 +216,7 @@ const CaseStudiesPage = () => {
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl font-bold text-white">{stat.value}</div>
-                  <div className="text-sm text-purple-200">{stat.label}</div>
+                  <div className="text-sm text-teal-200">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -241,10 +241,10 @@ const CaseStudiesPage = () => {
               <div key={caseStudy.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="p-8">
                   <div className="flex items-center mb-4">
-                    <div className="p-2 bg-blue-100 rounded-lg mr-3">
+                    <div className="p-2 bg-amber-100 rounded-lg mr-3">
                       {categories.find(cat => cat.id === caseStudy.category)?.icon && (() => {
                         const IconComponent = categories.find(cat => cat.id === caseStudy.category)?.icon;
-                        return IconComponent ? <IconComponent className="w-6 h-6 text-blue-600" /> : null;
+                        return IconComponent ? <IconComponent className="w-6 h-6 text-amber-500" /> : null;
                       })()}
                     </div>
                     <div>
@@ -259,7 +259,7 @@ const CaseStudiesPage = () => {
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     {caseStudy.results.slice(0, 4).map((result, index) => (
                       <div key={index} className="text-center p-3 bg-gray-50 rounded-lg">
-                        <div className="text-2xl font-bold text-blue-600">{result.value}</div>
+                        <div className="text-2xl font-bold text-amber-500">{result.value}</div>
                         <div className="text-xs text-gray-600">{result.metric}</div>
                       </div>
                     ))}
@@ -278,7 +278,7 @@ const CaseStudiesPage = () => {
                     </div>
                     <button
                       onClick={() => setSelectedCase(caseStudy)}
-                      className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold"
+                      className="flex items-center space-x-2 text-amber-500 hover:text-amber-600 font-semibold"
                     >
                       <span>Read Full Story</span>
                       <FaArrowRight className="w-4 h-4" />
@@ -311,8 +311,8 @@ const CaseStudiesPage = () => {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-lg border-2 transition-all duration-300 ${
                   selectedCategory === category.id
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                    ? 'bg-amber-500 text-white border-amber-500'
+                    : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
                 }`}
               >
                 <category.icon className="w-5 h-5" />
@@ -345,7 +345,7 @@ const CaseStudiesPage = () => {
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     {caseStudy.results.slice(0, 2).map((result, index) => (
                       <div key={index} className="text-center p-2 bg-gray-50 rounded-lg">
-                        <div className="text-lg font-bold text-blue-600">{result.value}</div>
+                        <div className="text-lg font-bold text-amber-500">{result.value}</div>
                         <div className="text-xs text-gray-600">{result.metric}</div>
                       </div>
                     ))}
@@ -353,7 +353,7 @@ const CaseStudiesPage = () => {
 
                   <button
                     onClick={() => setSelectedCase(caseStudy)}
-                    className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                    className="w-full bg-amber-500 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300"
                   >
                     View Details
                   </button>
@@ -366,7 +366,7 @@ const CaseStudiesPage = () => {
 
       {/* Modal for Case Study Details */}
       {selectedCase && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#002855] bg-opacity-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-8">
               <div className="flex justify-between items-start mb-6">
@@ -393,7 +393,7 @@ const CaseStudiesPage = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Technologies Used</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedCase.technologies.map((tech: string, index: number) => (
-                      <span key={index} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                      <span key={index} className="px-3 py-1 bg-amber-100 text-[#002855] text-sm rounded-full">
                         {tech}
                       </span>
                     ))}
@@ -405,7 +405,7 @@ const CaseStudiesPage = () => {
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     {selectedCase.results.map((result: any, index: number) => (
                       <div key={index} className="text-center p-4 border border-gray-200 rounded-lg">
-                        <div className="text-2xl font-bold text-blue-600">{result.value}</div>
+                        <div className="text-2xl font-bold text-amber-500">{result.value}</div>
                         <div className="text-sm text-gray-600">{result.metric}</div>
                         <div className="text-xs text-gray-500">{result.period}</div>
                       </div>
@@ -413,7 +413,7 @@ const CaseStudiesPage = () => {
                   </div>
 
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <FaQuoteLeft className="w-6 h-6 text-blue-600 mb-2" />
+                    <FaQuoteLeft className="w-6 h-6 text-amber-500 mb-2" />
                     <p className="text-gray-700 italic mb-3">"{selectedCase.testimonial.quote}"</p>
                     <div className="text-sm">
                       <div className="font-semibold text-gray-900">{selectedCase.testimonial.author}</div>
@@ -429,7 +429,7 @@ const CaseStudiesPage = () => {
                     href={selectedCase.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                    className="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-300 flex items-center justify-center space-x-2"
                   >
                     <FaArrowRight className="w-4 h-4" />
                     <span>Visit Website</span>
@@ -437,12 +437,12 @@ const CaseStudiesPage = () => {
                 )}
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  className="px-6 py-3 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                 >
                   <FaCalendarAlt className="w-4 h-4" />
                   <span>Start Your Project</span>
                 </Link>
-                <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
+                <button className="px-6 py-3 border border-amber-500 text-amber-500 rounded-lg hover:bg-amber-50 transition-colors duration-300 flex items-center justify-center space-x-2">
                   <FaDownload className="w-4 h-4" />
                   <span>Download Case Study</span>
                 </button>
@@ -453,25 +453,25 @@ const CaseStudiesPage = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-blue-600">
+      <section className="py-16 bg-teal-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Become Our Next Success Story?
           </h2>
-          <p className="text-xl text-purple-100 mb-8">
+          <p className="text-xl text-teal-100 mb-8">
             Join the businesses that have transformed their operations and achieved 
             remarkable growth with our technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
               Start Your Transformation
             </Link>
             <Link
               href="/solutions"
-              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
             >
               Explore Solutions
             </Link>

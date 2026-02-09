@@ -120,8 +120,8 @@ const CookieConsent = () => {
       <div className="fixed bottom-4 right-4 max-w-sm bg-white rounded-xl shadow-lg border border-gray-200 p-4 z-50 animate-in slide-in-from-bottom-2 duration-300">
         {/* Warning for disabled cookies - Compact */}
         {!cookiesEnabled && (
-          <div className="mb-3 p-2 bg-orange-50 border border-orange-200 rounded-lg">
-            <p className="text-orange-700 text-xs flex items-center gap-1">
+          <div className="mb-3 p-2 bg-amber-50 border border-amber-200 rounded-lg">
+            <p className="text-amber-700 text-xs flex items-center gap-1">
               <AlertTriangle size={14} />
               Cookies disabled in browser
             </p>
@@ -132,8 +132,8 @@ const CookieConsent = () => {
           {/* Header */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                <Cookie className="text-blue-600" size={16} />
+              <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+                <Cookie className="text-amber-500" size={16} />
               </div>
               <h3 className="font-medium text-gray-900 text-sm">
                 Cookie Settings
@@ -159,7 +159,7 @@ const CookieConsent = () => {
           <div className="space-y-2">
             <button
               onClick={acceptAll}
-              className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-3 rounded-lg text-sm font-medium hover:from-blue-600 hover:to-blue-700 transition-all duration-200 transform hover:scale-[1.02]"
+              className="w-full bg-corporate-primary text-white py-2 px-3 rounded-lg text-sm font-medium hover:bg-corporate-accent transition-all duration-200 transform hover:scale-[1.02]"
             >
               ✨ Accept All
             </button>
@@ -184,13 +184,13 @@ const CookieConsent = () => {
 
       {/* Detailed Settings Modal - More Friendly */}
       {showDetails && (
-        <div className="fixed inset-0 bg-black bg-opacity-30 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 bg-[#002855] bg-opacity-30 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-md w-full max-h-[85vh] overflow-y-auto shadow-2xl">
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Cookie className="text-blue-600" size={20} />
+                  <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                    <Cookie className="text-amber-500" size={20} />
                   </div>
                   <h2 className="text-xl font-semibold text-gray-900">Cookie Preferences</h2>
                 </div>
@@ -209,27 +209,27 @@ const CookieConsent = () => {
 
               <div className="space-y-4">
                 {/* Essential Cookies - More Friendly */}
-                <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                <div className="bg-teal-50 border border-teal-200 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <Shield className="text-green-600" size={18} />
-                      <h3 className="font-medium text-green-800">Essential Cookies</h3>
+                      <Shield className="text-teal-600" size={18} />
+                      <h3 className="font-medium text-teal-800">Essential Cookies</h3>
                     </div>
-                    <div className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">
+                    <div className="bg-teal-100 text-teal-700 text-xs px-2 py-1 rounded-full font-medium">
                       Required
                     </div>
                   </div>
-                  <p className="text-sm text-green-700">
+                  <p className="text-sm text-teal-700">
                     Keep the website working smoothly - like remembering your preferences and keeping things secure! ✨
                   </p>
                 </div>
 
                 {/* Analytics Cookies - More Friendly */}
-                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <BarChart3 className="text-blue-600" size={18} />
-                      <h3 className="font-medium text-blue-800">Analytics Cookies</h3>
+                      <BarChart3 className="text-amber-500" size={18} />
+                      <h3 className="font-medium text-[#002855]">Analytics Cookies</h3>
                     </div>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
@@ -240,20 +240,20 @@ const CookieConsent = () => {
                         aria-label="Enable analytics cookies"
                         title="Toggle analytics cookies"
                       />
-                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500"></div>
+                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-amber-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-amber-500"></div>
                     </label>
                   </div>
-                  <p className="text-sm text-blue-700">
+                  <p className="text-sm text-amber-600">
                     Help us understand what you like so we can make the website better for everyone! 📊
                   </p>
                 </div>
 
                 {/* Marketing Cookies - More Friendly */}
-                <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
+                <div className="bg-teal-50 border border-teal-200 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <Target className="text-purple-600" size={18} />
-                      <h3 className="font-medium text-purple-800">Marketing Cookies</h3>
+                      <Target className="text-teal-600" size={18} />
+                      <h3 className="font-medium text-teal-800">Marketing Cookies</h3>
                     </div>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
@@ -264,20 +264,20 @@ const CookieConsent = () => {
                         aria-label="Enable marketing cookies"
                         title="Toggle marketing cookies"
                       />
-                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-purple-500"></div>
+                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-teal-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-teal-500"></div>
                     </label>
                   </div>
-                  <p className="text-sm text-purple-700">
+                  <p className="text-sm text-teal-700">
                     Show you relevant content and services that might interest you! 🎯
                   </p>
                 </div>
 
                 {/* Functional Cookies - More Friendly */}
-                <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
-                      <Cookie className="text-orange-600" size={18} />
-                      <h3 className="font-medium text-orange-800">Functional Cookies</h3>
+                      <Cookie className="text-amber-600" size={18} />
+                      <h3 className="font-medium text-amber-800">Functional Cookies</h3>
                     </div>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
@@ -288,10 +288,10 @@ const CookieConsent = () => {
                         aria-label="Enable functional cookies"
                         title="Toggle functional cookies"
                       />
-                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-orange-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-orange-500"></div>
+                      <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-amber-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:shadow-sm after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-amber-500"></div>
                     </label>
                   </div>
-                  <p className="text-sm text-orange-700">
+                  <p className="text-sm text-amber-700">
                     Remember your choices and make features work better for you! ⚙️
                   </p>
                 </div>
@@ -301,7 +301,7 @@ const CookieConsent = () => {
               <div className="flex gap-3 mt-6">
                 <button
                   onClick={handleCustomConsent}
-                  className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-4 rounded-xl font-medium hover:from-blue-600 hover:to-blue-700 transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
+                  className="flex-1 bg-corporate-primary text-white py-3 px-4 rounded-xl font-medium hover:bg-corporate-accent transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
                 >
                   Save My Choices ✨
                 </button>

@@ -120,14 +120,14 @@ const BlogList = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-teal-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Technology Insights & Guides
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-amber-100 max-w-4xl mx-auto mb-8">
               Expert guides on network setup, M-Pesa integration, and technology solutions 
               for businesses in Tanzania.
             </p>
@@ -139,10 +139,10 @@ const BlogList = () => {
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <stat.icon className="w-6 h-6 text-blue-300" />
+                    <stat.icon className="w-6 h-6 text-amber-300" />
                   </div>
                   <div className="text-2xl font-bold">{stat.value}</div>
-                  <div className="text-sm text-blue-200">{stat.label}</div>
+                  <div className="text-sm text-amber-200">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -173,7 +173,7 @@ const BlogList = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Featured
                     </span>
                   </div>
@@ -198,7 +198,7 @@ const BlogList = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 hover:text-amber-500 transition-colors">
                     <Link href={`/blog/${post.slug}`}>
                       {post.title}
                     </Link>
@@ -218,7 +218,7 @@ const BlogList = () => {
                     </div>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold"
+                      className="flex items-center space-x-2 text-amber-500 hover:text-amber-600 font-semibold"
                     >
                       <span>Read More</span>
                       <FaArrowRight className="w-4 h-4" />
@@ -253,7 +253,7 @@ const BlogList = () => {
                   placeholder="Search articles..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -265,8 +265,8 @@ const BlogList = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`px-4 py-2 rounded-lg border transition-all duration-300 ${
                     selectedCategory === category.id
-                      ? 'bg-blue-600 text-white border-blue-600'
-                      : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                      ? 'bg-amber-500 text-white border-amber-500'
+                      : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
                   }`}
                 >
                   {category.name} ({category.count})
@@ -301,7 +301,7 @@ const BlogList = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors line-clamp-2">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 hover:text-amber-500 transition-colors line-clamp-2">
                     <Link href={`/blog/${post.slug}`}>
                       {post.title}
                     </Link>
@@ -318,7 +318,7 @@ const BlogList = () => {
                     </div>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                      className="text-amber-500 hover:text-amber-600 text-sm font-medium"
                     >
                       Read More →
                     </Link>
@@ -341,25 +341,25 @@ const BlogList = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-teal-600">
+      <section className="py-16 bg-amber-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Need Help Implementing These Solutions?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-amber-100 mb-8">
             Our technical team can help you implement any of the solutions covered 
             in our blog posts. Get expert assistance today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
               Get Technical Support
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
             >
               View Our Services
             </Link>

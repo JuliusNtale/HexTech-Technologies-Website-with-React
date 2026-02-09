@@ -7,7 +7,7 @@ import { organizationSchema, localBusinessSchema, serviceSchemas, logoSchema, we
 // Critical above-the-fold component - load immediately with high priority
 const Hero = dynamic(() => import('@/components/sections/Hero'), {
   ssr: true,
-  loading: () => <div className="min-h-screen bg-black" />,
+  loading: () => <div className="min-h-screen bg-[#002855]" />,
 })
 
 // Below-the-fold components - keep SSR for static generation
@@ -36,7 +36,7 @@ const EshopShowcase = dynamic(() => import('@/components/sections/EshopShowcase'
 })
 
 const AIProducts = dynamic(() => import('@/components/sections/AIProducts'), {
-  loading: () => <div className="min-h-[400px] bg-gray-900" />,
+  loading: () => <div className="min-h-[400px] bg-[#002855]" />,
 })
 
 const LocationMap = dynamic(() => import('@/components/sections/LocationMap'), {

@@ -33,9 +33,9 @@ const blogPost = {
 
 # Complete Guide to Domain Types in Tanzania: Which Domain Extension Should You Choose?
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-<p class="text-lg font-semibold text-blue-900 mb-2">Quick Answer for Busy Business Owners:</p>
-<p class="text-blue-800">For most Tanzanian businesses, we recommend <strong>starting with .com</strong> for international reach and <strong>adding .co.tz</strong> for local credibility. E-commerce businesses should prioritize .com, while NGOs should consider .org.</p>
+<div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
+<p class="text-lg font-semibold text-[#002855] mb-2">Quick Answer for Busy Business Owners:</p>
+<p class="text-[#002855]">For most Tanzanian businesses, we recommend <strong>starting with .com</strong> for international reach and <strong>adding .co.tz</strong> for local credibility. E-commerce businesses should prioritize .com, while NGOs should consider .org.</p>
 </div>
 
 ---
@@ -43,18 +43,18 @@ const blogPost = {
 ## 🎯 What You'll Learn in This Guide
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
-<div class="bg-green-50 p-6 rounded-lg border border-green-200">
-<h3 class="text-green-800 font-semibold mb-3">✅ Practical Solutions</h3>
-<ul class="text-green-700 space-y-2">
+<div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+<h3 class="text-teal-800 font-semibold mb-3">✅ Practical Solutions</h3>
+<ul class="text-teal-700 space-y-2">
 <li>• Which domain type fits your business goals</li>
 <li>• Real cost comparisons in TSh</li>
 <li>• How to register domains in Tanzania</li>
 <li>• SEO impact of different extensions</li>
 </ul>
 </div>
-<div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-<h3 class="text-orange-800 font-semibold mb-3">❓ Common Problems Solved</h3>
-<ul class="text-orange-700 space-y-2">
+<div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+<h3 class="text-amber-800 font-semibold mb-3">❓ Common Problems Solved</h3>
+<ul class="text-amber-700 space-y-2">
 <li>• "My preferred .com name is taken"</li>
 <li>• "Should I choose .com or .co.tz?"</li>
 <li>• "Which is better for Google ranking?"</li>
@@ -72,15 +72,15 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 <div class="bg-gray-50 p-6 rounded-lg my-6">
 <div class="grid md:grid-cols-3 gap-4 text-center">
 <div class="p-4 bg-white rounded border">
-<code class="text-blue-600 font-bold text-lg">neuraltale.com</code>
+<code class="text-amber-500 font-bold text-lg">neuraltale.com</code>
 <p class="text-gray-600 mt-2">.com = Commercial</p>
 </div>
 <div class="p-4 bg-white rounded border">
-<code class="text-green-600 font-bold text-lg">business.co.tz</code>
+<code class="text-teal-600 font-bold text-lg">business.co.tz</code>
 <p class="text-gray-600 mt-2">.co.tz = Tanzania Commercial</p>
 </div>
 <div class="p-4 bg-white rounded border">
-<code class="text-purple-600 font-bold text-lg">charity.org</code>
+<code class="text-teal-600 font-bold text-lg">charity.org</code>
 <p class="text-gray-600 mt-2">.org = Organization</p>
 </div>
 </div>
@@ -89,25 +89,25 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 ### Why Your Domain Choice Matters 🎯
 
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-8">
-<div class="text-center p-4 bg-blue-50 rounded-lg">
+<div class="text-center p-4 bg-amber-50 rounded-lg">
 <div class="text-3xl mb-2">🏆</div>
-<h4 class="font-semibold text-blue-900">Brand Credibility</h4>
-<p class="text-blue-700 text-sm">Builds trust with customers</p>
+<h4 class="font-semibold text-[#002855]">Brand Credibility</h4>
+<p class="text-amber-600 text-sm">Builds trust with customers</p>
 </div>
-<div class="text-center p-4 bg-green-50 rounded-lg">
+<div class="text-center p-4 bg-teal-50 rounded-lg">
 <div class="text-3xl mb-2">📈</div>
-<h4 class="font-semibold text-green-900">SEO Performance</h4>
-<p class="text-green-700 text-sm">Affects search rankings</p>
+<h4 class="font-semibold text-teal-900">SEO Performance</h4>
+<p class="text-teal-700 text-sm">Affects search rankings</p>
 </div>
-<div class="text-center p-4 bg-orange-50 rounded-lg">
+<div class="text-center p-4 bg-amber-50 rounded-lg">
 <div class="text-3xl mb-2">🌍</div>
-<h4 class="font-semibold text-orange-900">Geographic Targeting</h4>
-<p class="text-orange-700 text-sm">Local vs global reach</p>
+<h4 class="font-semibold text-amber-900">Geographic Targeting</h4>
+<p class="text-amber-700 text-sm">Local vs global reach</p>
 </div>
-<div class="text-center p-4 bg-purple-50 rounded-lg">
+<div class="text-center p-4 bg-teal-50 rounded-lg">
 <div class="text-3xl mb-2">💰</div>
-<h4 class="font-semibold text-purple-900">Cost Impact</h4>
-<p class="text-purple-700 text-sm">Price differences matter</p>
+<h4 class="font-semibold text-[#002855]">Cost Impact</h4>
+<p class="text-teal-700 text-sm">Price differences matter</p>
 </div>
 </div>
 
@@ -122,32 +122,32 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 <p class="text-red-700">"I searched for mycompany.com and it's already registered by someone else. Now what? Should I just pick a completely different name?"</p>
 </div>
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-3">✅ Smart Solutions:</h4>
-<div class="space-y-4 text-green-700">
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-3">✅ Smart Solutions:</h4>
+<div class="space-y-4 text-teal-700">
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">1</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">1</span>
 <div>
 <p class="font-semibold">Add Business Descriptors</p>
 <p>Examples: <code>yourcompanytz.com</code>, <code>yourcompanytech.com</code>, <code>yourcompanyltd.com</code></p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">2</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">2</span>
 <div>
 <p class="font-semibold">Use .co.tz Instead</p>
 <p>Often available when .com isn't: <code>yourcompany.co.tz</code></p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">3</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">3</span>
 <div>
 <p class="font-semibold">Try Creative Variations</p>
 <p>Examples: <code>theyourcompany.com</code>, <code>getyourcompany.com</code></p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">4</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">4</span>
 <div>
 <p class="font-semibold">Consider New Extensions</p>
 <p>Examples: <code>yourcompany.tech</code>, <code>yourcompany.business</code>, <code>yourcompany.store</code></p>
@@ -162,23 +162,23 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 
 ### ❓ "Should I Choose .com or .co.tz for My Tanzanian Business?"
 
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg my-6">
-<h4 class="text-blue-800 font-semibold mb-3">🎯 Best Strategy for Most Businesses:</h4>
-<div class="space-y-3 text-blue-700">
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg my-6">
+<h4 class="text-[#002855] font-semibold mb-3">🎯 Best Strategy for Most Businesses:</h4>
+<div class="space-y-3 text-amber-600">
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
+<span class="bg-amber-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
 <p><strong>Register BOTH</strong> if budget allows (recommended approach)</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
+<span class="bg-amber-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
 <p><strong>Primary website:</strong> Use .com for main website</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
+<span class="bg-amber-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
 <p><strong>Redirect .co.tz:</strong> Point to your .com website</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
+<span class="bg-amber-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">✓</span>
 <p><strong>Local marketing:</strong> Use .co.tz in Tanzania-focused advertising</p>
 </div>
 </div>
@@ -211,8 +211,8 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 <h4 class="text-gray-800 font-semibold mb-4">📊 The SEO Truth (Based on Real Data):</h4>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="bg-white p-4 rounded border">
-<h5 class="font-semibold text-green-700 mb-2">✅ .co.tz Advantages</h5>
-<ul class="text-green-600 space-y-1 text-sm">
+<h5 class="font-semibold text-teal-700 mb-2">✅ .co.tz Advantages</h5>
+<ul class="text-teal-600 space-y-1 text-sm">
 <li>• Slight boost for Tanzania-specific searches</li>
 <li>• Higher trust factor with local customers</li>
 <li>• Better for "near me" searches</li>
@@ -220,8 +220,8 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 </ul>
 </div>
 <div class="bg-white p-4 rounded border">
-<h5 class="font-semibold text-blue-700 mb-2">✅ .com Advantages</h5>
-<ul class="text-blue-600 space-y-1 text-sm">
+<h5 class="font-semibold text-amber-600 mb-2">✅ .com Advantages</h5>
+<ul class="text-amber-500 space-y-1 text-sm">
 <li>• Better for international search visibility</li>
 <li>• Higher overall domain authority</li>
 <li>• More backlinks and mentions typically</li>
@@ -233,26 +233,26 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 
 ### ❓ "How Much Do Different Domains Actually Cost?"
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-4">💰 2025 Tanzania Domain Pricing (Annual):</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">💰 2025 Tanzania Domain Pricing (Annual):</h4>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 <div class="bg-white p-4 rounded border text-center">
-<div class="text-2xl font-bold text-blue-600">.com</div>
+<div class="text-2xl font-bold text-amber-500">.com</div>
 <div class="text-sm text-gray-600">$12-15 USD</div>
 <div class="font-semibold text-gray-800">TSh 30,000-38,000</div>
-<div class="text-xs text-green-600 mt-2">✓ Cheapest</div>
+<div class="text-xs text-teal-600 mt-2">✓ Cheapest</div>
 </div>
 <div class="bg-white p-4 rounded border text-center">
-<div class="text-2xl font-bold text-green-600">.co.tz</div>
+<div class="text-2xl font-bold text-teal-600">.co.tz</div>
 <div class="text-sm text-gray-600">$25-35 USD</div>
 <div class="font-semibold text-gray-800">TSh 62,000-87,000</div>
-<div class="text-xs text-orange-600 mt-2">• More expensive</div>
+<div class="text-xs text-amber-600 mt-2">• More expensive</div>
 </div>
 <div class="bg-white p-4 rounded border text-center">
-<div class="text-2xl font-bold text-purple-600">.org</div>
+<div class="text-2xl font-bold text-teal-600">.org</div>
 <div class="text-sm text-gray-600">$13-16 USD</div>
 <div class="font-semibold text-gray-800">TSh 33,000-40,000</div>
-<div class="text-xs text-blue-600 mt-2">✓ Good value</div>
+<div class="text-xs text-amber-500 mt-2">✓ Good value</div>
 </div>
 <div class="bg-white p-4 rounded border text-center">
 <div class="text-2xl font-bold text-red-600">.tz</div>
@@ -284,28 +284,28 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 <td class="border border-gray-300 p-3 text-center">Any business</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐⭐</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐⭐</td>
-<td class="border border-gray-300 p-3 text-center text-green-600">TSh 30,000</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">TSh 30,000</td>
 </tr>
 <tr class="bg-gray-50">
 <td class="border border-gray-300 p-3 font-semibold">.co.tz</td>
 <td class="border border-gray-300 p-3 text-center">Local business</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐⭐</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐</td>
-<td class="border border-gray-300 p-3 text-center text-orange-600">TSh 75,000</td>
+<td class="border border-gray-300 p-3 text-center text-amber-600">TSh 75,000</td>
 </tr>
 <tr>
 <td class="border border-gray-300 p-3 font-semibold">.org</td>
 <td class="border border-gray-300 p-3 text-center">NGOs</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐⭐</td>
-<td class="border border-gray-300 p-3 text-center text-green-600">TSh 35,000</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">TSh 35,000</td>
 </tr>
 <tr class="bg-gray-50">
 <td class="border border-gray-300 p-3 font-semibold">.net</td>
 <td class="border border-gray-300 p-3 text-center">Tech companies</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐</td>
 <td class="border border-gray-300 p-3 text-center">⭐⭐⭐</td>
-<td class="border border-gray-300 p-3 text-center text-blue-600">TSh 40,000</td>
+<td class="border border-gray-300 p-3 text-center text-amber-500">TSh 40,000</td>
 </tr>
 </tbody>
 </table>
@@ -317,32 +317,32 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
 
-<div class="border border-blue-200 bg-blue-50 p-6 rounded-lg">
+<div class="border border-amber-200 bg-amber-50 p-6 rounded-lg">
 <div class="text-2xl mb-3">🏨</div>
-<h3 class="font-bold text-blue-900 mb-2">Hotels & Tourism</h3>
-<p class="text-blue-800 font-semibold">Recommended: .com + .co.tz</p>
-<p class="text-blue-700 text-sm mt-2">International tourists search .com, locals trust .co.tz</p>
+<h3 class="font-bold text-[#002855] mb-2">Hotels & Tourism</h3>
+<p class="text-[#002855] font-semibold">Recommended: .com + .co.tz</p>
+<p class="text-amber-600 text-sm mt-2">International tourists search .com, locals trust .co.tz</p>
 </div>
 
-<div class="border border-green-200 bg-green-50 p-6 rounded-lg">
+<div class="border border-teal-200 bg-teal-50 p-6 rounded-lg">
 <div class="text-2xl mb-3">🏪</div>
-<h3 class="font-bold text-green-900 mb-2">Local Retail Shops</h3>
-<p class="text-green-800 font-semibold">Recommended: .co.tz</p>
-<p class="text-green-700 text-sm mt-2">Builds local trust, customers are primarily Tanzanian</p>
+<h3 class="font-bold text-teal-900 mb-2">Local Retail Shops</h3>
+<p class="text-teal-800 font-semibold">Recommended: .co.tz</p>
+<p class="text-teal-700 text-sm mt-2">Builds local trust, customers are primarily Tanzanian</p>
 </div>
 
-<div class="border border-purple-200 bg-purple-50 p-6 rounded-lg">
+<div class="border border-teal-200 bg-teal-50 p-6 rounded-lg">
 <div class="text-2xl mb-3">💼</div>
-<h3 class="font-bold text-purple-900 mb-2">Professional Services</h3>
-<p class="text-purple-800 font-semibold">Recommended: .co.tz + .com</p>
-<p class="text-purple-700 text-sm mt-2">Local clients prefer local domains for trust</p>
+<h3 class="font-bold text-[#002855] mb-2">Professional Services</h3>
+<p class="text-teal-800 font-semibold">Recommended: .co.tz + .com</p>
+<p class="text-teal-700 text-sm mt-2">Local clients prefer local domains for trust</p>
 </div>
 
-<div class="border border-orange-200 bg-orange-50 p-6 rounded-lg">
+<div class="border border-amber-200 bg-amber-50 p-6 rounded-lg">
 <div class="text-2xl mb-3">🛒</div>
-<h3 class="font-bold text-orange-900 mb-2">E-commerce</h3>
-<p class="text-orange-800 font-semibold">Recommended: .com + .co.tz</p>
-<p class="text-orange-700 text-sm mt-2">Global reach, payment gateway compatibility</p>
+<h3 class="font-bold text-amber-900 mb-2">E-commerce</h3>
+<p class="text-amber-800 font-semibold">Recommended: .com + .co.tz</p>
+<p class="text-amber-700 text-sm mt-2">Global reach, payment gateway compatibility</p>
 </div>
 
 <div class="border border-red-200 bg-red-50 p-6 rounded-lg">
@@ -368,11 +368,11 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 ### Where to Register Your Domains
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
-<div class="border border-blue-200 bg-blue-50 p-6 rounded-lg">
-<h4 class="font-bold text-blue-900 mb-3">🇹🇿 For .co.tz Domains</h4>
-<div class="space-y-2 text-blue-800">
+<div class="border border-amber-200 bg-amber-50 p-6 rounded-lg">
+<h4 class="font-bold text-[#002855] mb-3">🇹🇿 For .co.tz Domains</h4>
+<div class="space-y-2 text-[#002855]">
 <p><strong>TCRA Accredited Registrars:</strong></p>
-<ul class="space-y-1 text-blue-700 ml-4">
+<ul class="space-y-1 text-amber-600 ml-4">
 <li>• Afrihost Tanzania</li>
 <li>• Web4Africa</li>
 <li>• Tanzania Online</li>
@@ -380,11 +380,11 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 </ul>
 </div>
 </div>
-<div class="border border-green-200 bg-green-50 p-6 rounded-lg">
-<h4 class="font-bold text-green-900 mb-3">🌍 For .com/.org/.net</h4>
-<div class="space-y-2 text-green-800">
+<div class="border border-teal-200 bg-teal-50 p-6 rounded-lg">
+<h4 class="font-bold text-teal-900 mb-3">🌍 For .com/.org/.net</h4>
+<div class="space-y-2 text-teal-800">
 <p><strong>International Registrars:</strong></p>
-<ul class="space-y-1 text-green-700 ml-4">
+<ul class="space-y-1 text-teal-700 ml-4">
 <li>• Namecheap (best price)</li>
 <li>• Cloudflare (best features)</li>
 <li>• GoDaddy (most popular)</li>
@@ -418,9 +418,9 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 </div>
 </div>
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="font-bold text-green-900 mb-3">⚡ .com Registration (Much Easier):</h4>
-<div class="grid md:grid-cols-2 gap-4 text-green-800">
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="font-bold text-teal-900 mb-3">⚡ .com Registration (Much Easier):</h4>
+<div class="grid md:grid-cols-2 gap-4 text-teal-800">
 <div>
 <p class="font-semibold mb-2">Requirements:</p>
 <ul class="space-y-1">
@@ -444,38 +444,38 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 
 ## 💡 Money-Saving Tips
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="font-bold text-green-900 mb-4">💰 How to Save Money on Domain Registration:</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="font-bold text-teal-900 mb-4">💰 How to Save Money on Domain Registration:</h4>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="space-y-3">
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">1</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">1</span>
 <div>
 <p class="font-semibold">Register for Multiple Years</p>
-<p class="text-green-700 text-sm">3-year registration often 15-20% cheaper per year</p>
+<p class="text-teal-700 text-sm">3-year registration often 15-20% cheaper per year</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">2</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">2</span>
 <div>
 <p class="font-semibold">Compare Registrars</p>
-<p class="text-green-700 text-sm">Prices can vary by 30-50% between providers</p>
+<p class="text-teal-700 text-sm">Prices can vary by 30-50% between providers</p>
 </div>
 </div>
 </div>
 <div class="space-y-3">
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">3</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">3</span>
 <div>
 <p class="font-semibold">Avoid Premium Add-ons</p>
-<p class="text-green-700 text-sm">Privacy protection, SSL certificates often overpriced</p>
+<p class="text-teal-700 text-sm">Privacy protection, SSL certificates often overpriced</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">4</span>
+<span class="bg-teal-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-1">4</span>
 <div>
 <p class="font-semibold">Use Promo Codes</p>
-<p class="text-green-700 text-sm">First-year discounts can save 50-70%</p>
+<p class="text-teal-700 text-sm">First-year discounts can save 50-70%</p>
 </div>
 </div>
 </div>
@@ -519,21 +519,21 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 
 ## 🚀 Ready to Choose Your Domain?
 
-<div class="bg-blue-600 text-white p-8 rounded-lg my-8 text-center">
+<div class="bg-amber-500 text-white p-8 rounded-lg my-8 text-center">
 <h3 class="text-2xl font-bold mb-4">Get Expert Help Choosing Your Perfect Domain</h3>
-<p class="text-blue-100 mb-6">Not sure which domain is right for your business? NEURALTALE can help you make the best decision and handle the entire registration process.</p>
+<p class="text-amber-100 mb-6">Not sure which domain is right for your business? NEURALTALE can help you make the best decision and handle the entire registration process.</p>
 <div class="grid md:grid-cols-3 gap-4 text-left">
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Domain Strategy</h4>
-<p class="text-blue-100 text-sm">We'll analyze your business goals and recommend the perfect domain strategy</p>
+<p class="text-amber-100 text-sm">We'll analyze your business goals and recommend the perfect domain strategy</p>
 </div>
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Registration Service</h4>
-<p class="text-blue-100 text-sm">We handle all the paperwork and technical setup so you don't have to</p>
+<p class="text-amber-100 text-sm">We handle all the paperwork and technical setup so you don't have to</p>
 </div>
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Complete Setup</h4>
-<p class="text-blue-100 text-sm">Domain, website, email, and SEO optimization - all included</p>
+<p class="text-amber-100 text-sm">Domain, website, email, and SEO optimization - all included</p>
 </div>
 </div>
 </div>
@@ -546,23 +546,23 @@ A domain extension (also called Top-Level Domain or TLD) is the part that comes 
 <h4 class="font-bold text-gray-900 mb-4">🎯 Your Action Plan:</h4>
 <div class="space-y-3">
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
 <p><strong>Brainstorm</strong> 3-5 domain name options for your business</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
 <p><strong>Check availability</strong> for your preferred extensions (.com, .co.tz)</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
 <p><strong>Register immediately</strong> if available (good domains go fast!)</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
 <p><strong>Set up your website</strong> or redirect to existing site</p>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">5</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">5</span>
 <p><strong>Configure email</strong> using your new domain for professional communication</p>
 </div>
 </div>

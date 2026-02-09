@@ -112,27 +112,27 @@ const SolutionsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Technology Solutions for Every Industry
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-amber-100 max-w-4xl mx-auto mb-8">
               Tailored technology solutions designed to transform businesses across SMEs, 
               Hospitality, Education, and Retail sectors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
               >
                 Get Free Consultation
               </Link>
               <Link
                 href="#industries"
-                className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+                className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
               >
                 Explore Solutions
               </Link>
@@ -162,8 +162,8 @@ const SolutionsPage = () => {
                 onClick={() => setSelectedIndustry(industry.id)}
                 className={`flex items-center space-x-3 px-6 py-4 rounded-xl border-2 transition-all duration-300 ${
                   selectedIndustry === industry.id
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                    ? 'bg-amber-500 text-white border-amber-500'
+                    : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
                 }`}
               >
                 <industry.icon className="w-6 h-6" />
@@ -178,8 +178,8 @@ const SolutionsPage = () => {
               <div className="grid lg:grid-cols-2 gap-12">
                 <div>
                   <div className="flex items-center mb-6">
-                    <div className="p-3 bg-blue-100 rounded-lg mr-4">
-                      <selectedIndustryData.icon className="w-8 h-8 text-blue-600" />
+                    <div className="p-3 bg-amber-100 rounded-lg mr-4">
+                      <selectedIndustryData.icon className="w-8 h-8 text-amber-500" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900">{selectedIndustryData.title}</h3>
@@ -192,7 +192,7 @@ const SolutionsPage = () => {
                     <div className="space-y-3">
                       {selectedIndustryData.solutions.map((solution, index) => (
                         <div key={index} className="flex items-center space-x-3">
-                          <FaCheck className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <FaCheck className="w-4 h-4 text-teal-500 flex-shrink-0" />
                           <span className="text-gray-700">{solution}</span>
                         </div>
                       ))}
@@ -202,14 +202,14 @@ const SolutionsPage = () => {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                       href="/services"
-                      className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                      className="flex-1 bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                     >
                       <span>View Services</span>
                       <FaArrowRight className="w-4 h-4" />
                     </Link>
                     <Link
                       href="/contact"
-                      className="flex-1 border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
+                      className="flex-1 border border-amber-500 text-amber-500 px-6 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-colors duration-300"
                     >
                       Get Quote
                     </Link>
@@ -221,8 +221,8 @@ const SolutionsPage = () => {
                   <div className="space-y-4 mb-8">
                     {selectedIndustryData.benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start space-x-3">
-                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                          <FaCheck className="w-3 h-3 text-green-600" />
+                        <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                          <FaCheck className="w-3 h-3 text-teal-600" />
                         </div>
                         <span className="text-gray-700">{benefit}</span>
                       </div>
@@ -237,14 +237,14 @@ const SolutionsPage = () => {
                     <div className="flex flex-col space-y-3">
                       <Link
                         href="/contact"
-                        className="flex items-center justify-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        className="flex items-center justify-center space-x-2 bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors"
                       >
                         <FaCalendarAlt className="w-4 h-4" />
                         <span>Schedule Consultation</span>
                       </Link>
                       <Link
                         href="#"
-                        className="flex items-center justify-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors"
+                        className="flex items-center justify-center space-x-2 text-amber-500 hover:text-amber-600 transition-colors"
                       >
                         <FaDownload className="w-4 h-4" />
                         <span>Download Company Profile</span>
@@ -299,8 +299,8 @@ const SolutionsPage = () => {
               }
             ].map((tech, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <tech.icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <tech.icon className="w-8 h-8 text-amber-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{tech.title}</h3>
                 <p className="text-gray-600 mb-4">{tech.description}</p>
@@ -318,25 +318,25 @@ const SolutionsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-amber-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Transform Your Business with Technology
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-amber-100 mb-8">
             Join hundreds of businesses across Tanzania that have modernized their operations 
             with NEURALTALE's technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
               Start Your Project
             </Link>
             <Link
               href="/case-studies"
-              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
             >
               View Success Stories
             </Link>

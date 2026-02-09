@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   ArrowUp,
   Github,
   Twitter,
@@ -68,74 +68,63 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative bg-gray-900 border-t border-gray-700 overflow-hidden text-white">
+    <footer ref={ref} className="relative bg-[#002855] border-t border-gray-700 overflow-hidden text-white">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hex-pattern opacity-5" />
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-neon-blue/3 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/3 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-purple/3 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10">
         {/* Newsletter Section */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-neon-blue/10 to-neon-purple/10 py-16"
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Stay Updated with <span className="gradient-text">NEURALTALE</span>
-              </h3>
-              <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-                Get the latest insights on technology trends, industry news, and NEURALTALE updates delivered to your inbox.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
-                <motion.input
-                  whileFocus={{ scale: 1.02 }}
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-6 py-3 rounded-lg bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 transition-all duration-300"
-                />
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
-                >
-                  Subscribe
-                </motion.button>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* Main Footer Content */}
         <div className="py-16">
+
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
               {/* Brand Section */}
+
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 }}
                 className="lg:col-span-2"
               >
-                <div className="mb-6">
-                  <Logo size="lg" showText={true} className="text-white" />
+
+                {/* Newsletter Section */}
+
+                <div className="max-w-7xl mx-auto">
+                  <div>
+                    <h3 className="text-1xl md:text-2xl font-bold text-white ">
+                      Stay Updated with <span className="text-amber-500">NEURALTALE</span>
+                    </h3>
+                    <p className="text-gray-300 text-sm mb-4 mt-3 max-w-2xl mx-auto">
+                      Get the latest insights on technology trends, industry news, and NEURALTALE updates delivered to your inbox.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-2">
+                      <motion.input
+                        whileFocus={{ scale: 1.02 }}
+                        type="email"
+                        placeholder="Enter your email"
+                        className="flex-1 px-2 py-2 rounded-lg bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 transition-all duration-300"
+                      />
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-3 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+                      >
+                        Subscribe
+                      </motion.button>
+                    </div>
+                  </div>
                 </div>
-                
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Pioneering the future of technology with innovative solutions in AI, 
-                  cloud computing, cybersecurity, and beyond. Transform your business 
-                  with cutting-edge technology.
-                </p>
 
                 {/* Contact Info */}
-                <div className="space-y-3">
+                <div className="space-y-3 mt-7">
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Mail className="w-5 h-5 text-neon-blue" />
                     <a href="mailto:helpdesk@neuraltale.com" className="hover:text-neon-blue transition-colors">helpdesk@neuraltale.com</a>
@@ -259,7 +248,7 @@ export default function Footer() {
             const position = positions[i] || { left: 50, top: 50 }
             const duration = 10 + (i * 0.5) // Deterministic duration based on index
             const delay = i * 0.25 // Deterministic delay based on index
-            
+
             return (
               <motion.div
                 key={i}
@@ -281,7 +270,7 @@ export default function Footer() {
                   delay: delay,
                 }}
               >
-                <div className="w-1 h-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full" />
+                <div className="w-1 h-1 bg-amber-500 rounded-full" />
               </motion.div>
             )
           })}

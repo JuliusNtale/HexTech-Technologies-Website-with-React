@@ -14,10 +14,10 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#03213F] via-[#0A3A5C] to-[#03213F] text-white py-20">
+      <section className="bg-[#002855] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-amber-100">
             Last Updated: January 11, 2026
           </p>
         </div>
@@ -37,9 +37,9 @@ export default function TermsPage() {
               <p className="text-gray-700 mb-4">
                 By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Services.
               </p>
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 my-6">
-                <p className="text-blue-900 font-semibold">Company Information:</p>
-                <p className="text-blue-800 text-sm mt-2">
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 my-6">
+                <p className="text-[#002855] font-semibold">Company Information:</p>
+                <p className="text-[#002855] text-sm mt-2">
                   NeuralTale Technologies<br />
                   Msimbazi Street, Dar es Salaam, Tanzania<br />
                   Email: helpdesk@neuraltale.com<br />
@@ -304,7 +304,7 @@ export default function TermsPage() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">13. Data Protection and Privacy</h2>
               <p className="text-gray-700 mb-4">
-                Your use of our Services is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a> to understand our data collection and protection practices.
+                Your use of our Services is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="/privacy" className="text-amber-500 hover:text-[#002855] underline">Privacy Policy</a> to understand our data collection and protection practices.
               </p>
               <p className="text-gray-700 mb-4">
                 We comply with Tanzania Data Protection Act and implement appropriate technical and organizational measures to protect your personal data.
@@ -498,19 +498,19 @@ export default function TermsPage() {
                 <h3 className="font-semibold text-gray-900 mb-3">NeuralTale Technologies</h3>
                 <div className="space-y-2 text-gray-700">
                   <p><strong>Address:</strong> Msimbazi Street, Dar es Salaam, Tanzania</p>
-                  <p><strong>Email:</strong> <a href="mailto:helpdesk@neuraltale.com" className="text-blue-600 hover:text-blue-800">helpdesk@neuraltale.com</a></p>
-                  <p><strong>Technical Support:</strong> <a href="mailto:juliusntale@neuraltale.com" className="text-blue-600 hover:text-blue-800">juliusntale@neuraltale.com</a></p>
-                  <p><strong>Phone:</strong> <a href="tel:+255653520829" className="text-blue-600 hover:text-blue-800">+255 653 520 829</a></p>
-                  <p><strong>Alternative Phone:</strong> <a href="tel:+255746520819" className="text-blue-600 hover:text-blue-800">+255 746 520 819</a></p>
-                  <p><strong>Website:</strong> <a href="https://neuraltale.com" className="text-blue-600 hover:text-blue-800">www.neuraltale.com</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:helpdesk@neuraltale.com" className="text-amber-500 hover:text-[#002855]">helpdesk@neuraltale.com</a></p>
+                  <p><strong>Technical Support:</strong> <a href="mailto:juliusntale@neuraltale.com" className="text-amber-500 hover:text-[#002855]">juliusntale@neuraltale.com</a></p>
+                  <p><strong>Phone:</strong> <a href="tel:+255653520829" className="text-amber-500 hover:text-[#002855]">+255 653 520 829</a></p>
+                  <p><strong>Alternative Phone:</strong> <a href="tel:+255746520819" className="text-amber-500 hover:text-[#002855]">+255 746 520 819</a></p>
+                  <p><strong>Website:</strong> <a href="https://neuraltale.com" className="text-amber-500 hover:text-[#002855]">www.neuraltale.com</a></p>
                 </div>
               </div>
             </div>
 
             {/* Acknowledgment */}
-            <div className="mb-12 bg-blue-50 border-l-4 border-blue-600 p-6">
-              <h2 className="text-2xl font-bold text-blue-900 mb-4">Acknowledgment</h2>
-              <p className="text-blue-800">
+            <div className="mb-12 bg-amber-50 border-l-4 border-amber-500 p-6">
+              <h2 className="text-2xl font-bold text-[#002855] mb-4">Acknowledgment</h2>
+              <p className="text-[#002855]">
                 BY USING OUR SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. IF YOU DO NOT AGREE TO THESE TERMS, YOU MUST NOT USE OUR SERVICES.
               </p>
             </div>
@@ -519,9 +519,9 @@ export default function TermsPage() {
             <div className="text-center text-sm text-gray-500 mt-12 pt-8 border-t border-gray-200">
               <p>These Terms of Service are effective as of January 11, 2026</p>
               <p className="mt-2">
-                <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a>
+                <a href="/privacy" className="text-amber-500 hover:text-[#002855] underline">Privacy Policy</a>
                 {' | '}
-                <a href="/contact" className="text-blue-600 hover:text-blue-800 underline">Contact Us</a>
+                <a href="/contact" className="text-amber-500 hover:text-[#002855] underline">Contact Us</a>
               </p>
             </div>
 

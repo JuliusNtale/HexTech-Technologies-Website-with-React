@@ -46,7 +46,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Types of Cookies We Use</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold text-green-600 mb-2">🔧 Essential Cookies</h3>
+                <h3 className="font-semibold text-teal-600 mb-2">🔧 Essential Cookies</h3>
                 <p className="text-sm text-gray-600">
                   Required for the website to function properly. These cannot be disabled.
                 </p>
@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
               </div>
               
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold text-blue-600 mb-2">📈 Analytics Cookies</h3>
+                <h3 className="font-semibold text-amber-500 mb-2">📈 Analytics Cookies</h3>
                 <p className="text-sm text-gray-600">
                   Help us understand website usage and improve our services.
                 </p>
@@ -70,14 +70,14 @@ export default function PrivacyPolicy() {
               </div>
               
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold text-purple-600 mb-2">🎯 Marketing Cookies</h3>
+                <h3 className="font-semibold text-teal-600 mb-2">🎯 Marketing Cookies</h3>
                 <p className="text-sm text-gray-600">
                   Currently not used on our website.
                 </p>
               </div>
               
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold text-orange-600 mb-2">⚙️ Functional Cookies</h3>
+                <h3 className="font-semibold text-amber-600 mb-2">⚙️ Functional Cookies</h3>
                 <p className="text-sm text-gray-600">
                   Remember your preferences for a better experience.
                 </p>
@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Your Rights</h2>
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
               <p className="text-gray-700 mb-3">
                 <strong>You have the right to:</strong>
               </p>
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Contact Us</h2>
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
               <p className="text-gray-700 mb-2">
                 If you have questions about this Privacy Policy or our data practices:
               </p>

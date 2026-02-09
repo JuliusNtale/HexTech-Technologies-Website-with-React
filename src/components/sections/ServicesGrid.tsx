@@ -26,7 +26,7 @@ const services: Service[] = [
     description: 'Networking devices, IoT technology, computers, and accessories from trusted global partners.',
     icon: 'Network',
     features: ['Networking Devices', 'IoT Technology', 'Computer Hardware', 'Tech Accessories'],
-    color: 'blue'
+    color: 'amber'
   },
   {
     id: '2',
@@ -34,7 +34,7 @@ const services: Service[] = [
     description: 'Enterprise solutions, mobile apps, automation tools, and AI-powered systems tailored to your needs.',
     icon: 'Brain',
     features: ['Enterprise Solutions', 'Mobile Apps', 'Automation Tools', 'AI Systems'],
-    color: 'blue'
+    color: 'teal'
   },
   {
     id: '3',
@@ -42,7 +42,7 @@ const services: Service[] = [
     description: 'Setup, integration, cybersecurity implementation, and ongoing technical support.',
     icon: 'Shield',
     features: ['System Setup', 'Integration', 'Cybersecurity', 'Ongoing Support'],
-    color: 'blue'
+    color: 'amber'
   },
   {
     id: '4',
@@ -50,7 +50,7 @@ const services: Service[] = [
     description: 'Physical security solutions including CCTV surveillance, access control, automated gates, and perimeter security.',
     icon: 'Shield',
     features: ['CCTV Systems', 'Access Control', 'Automated Gates', 'Perimeter Security'],
-    color: 'blue'
+    color: 'teal'
   },
   {
     id: '5',
@@ -58,7 +58,7 @@ const services: Service[] = [
     description: 'Strategic technology planning and digital transformation guidance for your business.',
     icon: 'Cpu',
     features: ['Strategy Planning', 'Digital Transformation', 'Technology Assessment', 'Implementation'],
-    color: 'blue'
+    color: 'amber'
   },
   {
     id: '6',
@@ -66,7 +66,7 @@ const services: Service[] = [
     description: 'Seamless integration of hardware and software solutions for optimal performance.',
     icon: 'Database',
     features: ['Hardware Integration', 'Software Integration', 'Performance Optimization', 'Testing'],
-    color: 'blue'
+    color: 'teal'
   },
   {
     id: '7',
@@ -74,7 +74,7 @@ const services: Service[] = [
     description: 'Comprehensive maintenance services and 24/7 technical support for all your systems.',
     icon: 'Bot',
     features: ['24/7 Support', 'Preventive Maintenance', 'Remote Monitoring', 'Emergency Response'],
-    color: 'blue'
+    color: 'amber'
   }
 ]
 
@@ -89,86 +89,49 @@ const iconMap = {
   Bot
 }
 
-const colorClasses = {
-  professional: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
+const colorClasses: Record<Service['color'], {
+  gradient: string; glow: string; border: string; text: string;
+  bgGradient: string; hover: string; iconGradient: string; shadow: string;
+}> = {
+  amber: {
+    gradient: 'bg-slate-50',
+    glow: 'shadow-lg hover:shadow-amber-200/30',
     border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
+    text: 'text-amber-600',
+    bgGradient: 'bg-slate-50',
+    hover: 'hover:bg-amber-50',
+    iconGradient: 'bg-amber-500',
+    shadow: 'rgba(255,193,7,0.15)'
   },
-  blue: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
+  teal: {
+    gradient: 'bg-slate-50',
+    glow: 'shadow-lg hover:shadow-teal-200/30',
     border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
+    text: 'text-teal-600',
+    bgGradient: 'bg-slate-50',
+    hover: 'hover:bg-teal-50',
+    iconGradient: 'bg-teal-500',
+    shadow: 'rgba(0,131,143,0.15)'
   },
-  purple: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
+  cream: {
+    gradient: 'bg-slate-50',
+    glow: 'shadow-lg hover:shadow-amber-200/30',
     border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
+    text: 'text-amber-600',
+    bgGradient: 'bg-slate-50',
+    hover: 'hover:bg-amber-50',
+    iconGradient: 'bg-amber-500',
+    shadow: 'rgba(255,193,7,0.15)'
   },
-  pink: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
+  navy: {
+    gradient: 'bg-slate-50',
+    glow: 'shadow-lg hover:shadow-teal-200/30',
     border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
-  },
-  green: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
-    border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
-  },
-  yellow: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
-    border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
-  },
-  indigo: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
-    border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
-  },
-  red: {
-    gradient: 'from-slate-50 to-slate-100',
-    glow: 'shadow-lg hover:shadow-blue-200/30',
-    border: 'border-slate-200/60',
-    text: 'text-orange-600',
-    bgGradient: 'from-slate-50 via-white to-slate-50',
-    hover: 'hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50',
-    iconGradient: 'from-blue-600 to-blue-700',
-    shadow: 'rgba(59,130,246,0.15)'
+    text: 'text-teal-600',
+    bgGradient: 'bg-slate-50',
+    hover: 'hover:bg-teal-50',
+    iconGradient: 'bg-teal-500',
+    shadow: 'rgba(0,131,143,0.15)'
   }
 }
 
@@ -216,7 +179,7 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
           )}
         >
           {/* Animated Particle Background */}
-          <div className={`relative h-full overflow-hidden bg-gradient-to-b ${colors.bgGradient}`}>
+          <div className={`relative h-full overflow-hidden ${colors.bgGradient}`}>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[250px] h-[180px] flex items-center justify-center">
                 {/* Animated particles */}
@@ -228,7 +191,7 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
                       "rounded-[140px]",
                       "animate-[scale_3s_linear_infinite]",
                       "opacity-0",
-                      "shadow-[0_0_60px_rgba(59,130,246,0.6)]",
+                      "shadow-[0_0_60px_rgba(255,193,7,0.6)]",
                       "group-hover:animate-[scale_2s_linear_infinite]"
                     )}
                     style={{
@@ -257,10 +220,10 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
                 <div
                   className={cn(
                     "absolute inset-[-8px] rounded-lg transition-opacity duration-300",
-                    "bg-gradient-to-br from-slate-500/20 via-slate-500/10 to-transparent"
+                    "bg-slate-500/20"
                   )}
                 />
-                <Repeat2 className="relative z-10 w-5 h-5 text-orange-600 transition-transform duration-300 group-hover/icon:scale-110 group-hover/icon:-rotate-12" />
+                <Repeat2 className="relative z-10 w-5 h-5 text-amber-600 transition-transform duration-300 group-hover/icon:scale-110 group-hover/icon:-rotate-12" />
               </div>
             </div>
           </div>
@@ -272,7 +235,7 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
             "absolute inset-0 w-full h-full",
             "[backface-visibility:hidden] [transform:rotateY(180deg)]",
             "p-6 rounded-2xl",
-            `bg-gradient-to-b ${colors.bgGradient}`,
+            colors.bgGradient,
             `border ${colors.border}`,
             colors.glow,
             "flex flex-col",
@@ -300,7 +263,7 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
                   animate={isFlipped ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   transition={{ delay: (featureIndex * 0.1) + 0.2 }}
                 >
-                  <ArrowRight className="w-3 h-3 text-orange-600" />
+                  <ArrowRight className="w-3 h-3 text-amber-600" />
                   <span>{feature}</span>
                 </motion.div>
               ))}
@@ -316,23 +279,23 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
                   "flex items-center justify-between",
                   "p-4 -m-4 rounded-xl",
                   "transition-all duration-300",
-                  "bg-gradient-to-r from-slate-100 via-slate-100 to-slate-100",
-                  "hover:from-blue-50/80 hover:via-blue-50/40 hover:to-slate-50",
+                  "bg-slate-100",
+                  "hover:bg-amber-50",
                   "hover:scale-[1.02] hover:cursor-pointer"
                 )}
               >
-                <span className="text-sm font-semibold text-slate-900 transition-colors duration-300 group-hover/start:text-orange-600">
+                <span className="text-sm font-semibold text-slate-900 transition-colors duration-300 group-hover/start:text-amber-600">
                   Learn More
                 </span>
                 <div className="relative group/icon">
                   <div
                     className={cn(
                       "absolute inset-[-6px] rounded-lg transition-all duration-300",
-                      "bg-gradient-to-br from-orange-600/20 via-orange-600/10 to-transparent",
+                      "bg-amber-600/20",
                       "opacity-0 group-hover/start:opacity-100 scale-90 group-hover/start:scale-100"
                     )}
                   />
-                  <ArrowRight className="relative z-10 w-4 h-4 text-orange-600 transition-all duration-300 group-hover/start:translate-x-0.5 group-hover/start:scale-110" />
+                  <ArrowRight className="relative z-10 w-4 h-4 text-amber-600 transition-all duration-300 group-hover/start:translate-x-0.5 group-hover/start:scale-110" />
                 </div>
               </div>
             </Link>
@@ -346,17 +309,17 @@ function ServiceCardFlip({ service, index, inView }: { service: Service; index: 
           0% {
             transform: scale(2);
             opacity: 0;
-            box-shadow: 0px 0px 60px rgba(59, 130, 246, 0.6);
+            box-shadow: 0px 0px 60px rgba(255, 193, 7, 0.6);
           }
           50% {
             transform: translate(0px, -5px) scale(1);
             opacity: 1;
-            box-shadow: 0px 8px 25px rgba(59, 130, 246, 0.6);
+            box-shadow: 0px 8px 25px rgba(255, 193, 7, 0.6);
           }
           100% {
             transform: translate(0px, 5px) scale(0.1);
             opacity: 0;
-            box-shadow: 0px 10px 25px rgba(59, 130, 246, 0);
+            box-shadow: 0px 10px 25px rgba(255, 193, 7, 0);
           }
         }
       `}</style>
@@ -381,7 +344,7 @@ export default function ServicesGrid() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Our Services</span>
+            <span className="text-[#002855]">Our Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cutting-edge technology solutions designed to propel your business into the future
@@ -410,14 +373,14 @@ export default function ServicesGrid() {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-orange-500 text-white font-bold text-lg rounded-lg shadow-2xl relative overflow-hidden group"
+              className="px-8 py-4 bg-amber-500 text-white font-bold text-lg rounded-lg shadow-2xl relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center space-x-2">
                 <span>View All Services & Packages</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600"
+                className="absolute inset-0 bg-teal-600"
                 initial={{ x: '100%' }}
                 whileHover={{ x: '0%' }}
                 transition={{ duration: 0.3 }}

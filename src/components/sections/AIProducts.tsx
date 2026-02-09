@@ -36,7 +36,7 @@ export default function AIProducts() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
+    <section className="py-20 bg-[#002855] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -54,7 +54,7 @@ export default function AIProducts() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-semibold mb-4 border border-purple-500/30">
+          <span className="inline-block px-4 py-2 bg-teal-500/20 text-teal-300 rounded-full text-sm font-semibold mb-4 border border-teal-500/30">
             🤖 AI-Powered Solutions
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -76,24 +76,24 @@ export default function AIProducts() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group"
             >
-              <div className={`bg-gradient-to-br ${
+              <div className={`${
                 product.color === 'blue' 
-                  ? 'from-blue-900/40 to-blue-800/40 border-blue-500/30' 
-                  : 'from-green-900/40 to-emerald-800/40 border-green-500/30'
+                  ? 'bg-[#002855]/40 border-amber-500/30' 
+                  : 'bg-teal-900/40 border-teal-500/30'
               } border rounded-2xl p-8 md:p-10 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]`}>
                 {/* Product Icon & Name */}
                 <div className="flex items-center space-x-4 mb-6">
                   <div className={`${
-                    product.color === 'blue' ? 'bg-blue-500/20' : 'bg-green-500/20'
+                    product.color === 'blue' ? 'bg-amber-500/20' : 'bg-teal-500/20'
                   } p-4 rounded-xl`}>
                     <product.icon className={`w-8 h-8 ${
-                      product.color === 'blue' ? 'text-blue-400' : 'text-green-400'
+                      product.color === 'blue' ? 'text-amber-400' : 'text-teal-400'
                     }`} />
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold text-white">{product.name}</h3>
                     <p className={`text-sm ${
-                      product.color === 'blue' ? 'text-blue-300' : 'text-green-300'
+                      product.color === 'blue' ? 'text-amber-300' : 'text-teal-300'
                     }`}>{product.tagline}</p>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export default function AIProducts() {
                   {product.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center space-x-3">
                       <feature.icon className={`w-5 h-5 ${
-                        product.color === 'blue' ? 'text-blue-400' : 'text-green-400'
+                        product.color === 'blue' ? 'text-amber-400' : 'text-teal-400'
                       }`} />
                       <span className="text-gray-300">{feature.text}</span>
                     </div>
@@ -126,8 +126,8 @@ export default function AIProducts() {
                     whileTap={{ scale: 0.95 }}
                     className={`w-full ${
                       product.color === 'blue'
-                        ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600'
-                        : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700'
+                        ? 'bg-amber-500 hover:bg-amber-600'
+                        : 'bg-teal-600 hover:bg-teal-700'
                     } text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl`}
                   >
                     {product.cta} →
@@ -144,7 +144,7 @@ export default function AIProducts() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center bg-gradient-to-r from-purple-900/40 to-blue-900/40 border border-purple-500/30 rounded-2xl p-8 backdrop-blur-sm"
+          className="text-center bg-teal-900/40 border border-teal-500/30 rounded-2xl p-8 backdrop-blur-sm"
         >
           <h3 className="text-2xl font-bold text-white mb-4">
             Powered by NEURALTALE AI Technology

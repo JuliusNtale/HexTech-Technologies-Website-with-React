@@ -159,8 +159,8 @@ const Press = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[#002855]/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -173,14 +173,14 @@ const Press = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/media/neuraltale-complete-media-kit.zip"
-                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center space-x-2"
+                className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center space-x-2"
               >
                 <FaDownload className="w-5 h-5" />
                 <span>Download Complete Media Kit</span>
               </a>
               <Link
                 href="#contact"
-                className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300"
+                className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-amber-500 transition-colors duration-300"
               >
                 Media Inquiries
               </Link>
@@ -211,7 +211,7 @@ const Press = () => {
                   { label: 'Projects Completed', value: '1,000+' }
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
+                    <div className="text-2xl font-bold text-amber-500">{stat.value}</div>
                     <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
                 ))}
@@ -267,7 +267,7 @@ const Press = () => {
                 </div>
                 <div className="lg:col-span-2">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Julius Peter Ntale</h3>
-                  <p className="text-lg text-blue-600 mb-4">Founder & Chief Executive Officer</p>
+                  <p className="text-lg text-amber-500 mb-4">Founder & Chief Executive Officer</p>
                   
                   <p className="text-gray-600 mb-4">
                     Julius is a technology entrepreneur and software engineer with over 8 years of experience 
@@ -284,7 +284,7 @@ const Press = () => {
                   <div className="flex space-x-4">
                     <a 
                       href="https://linkedin.com/in/juliusntale" 
-                      className="text-blue-600 hover:text-blue-700"
+                      className="text-amber-500 hover:text-amber-600"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Julius Ntale on LinkedIn"
@@ -294,7 +294,7 @@ const Press = () => {
                     </a>
                     <a 
                       href="https://twitter.com/juliusntale" 
-                      className="text-blue-400 hover:text-blue-500"
+                      className="text-amber-400 hover:text-amber-500"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Julius Ntale on Twitter"
@@ -338,8 +338,8 @@ const Press = () => {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${
                   selectedCategory === category.id
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                    ? 'bg-amber-500 text-white border-amber-500'
+                    : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
                 }`}
               >
                 {category.name} ({category.count})
@@ -367,7 +367,7 @@ const Press = () => {
                   </div>
                   <a
                     href={resource.downloadUrl}
-                    className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                    className="w-full bg-amber-500 text-white py-2 px-4 rounded-lg hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                   >
                     <FaDownload className="w-4 h-4" />
                     <span>Download</span>
@@ -393,10 +393,10 @@ const Press = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: 'Primary Blue', hex: '#1E40AF', rgb: 'RGB(30, 64, 175)', bgClass: 'bg-blue-700' },
-              { name: 'Secondary Blue', hex: '#3B82F6', rgb: 'RGB(59, 130, 246)', bgClass: 'bg-blue-500' },
-              { name: 'Accent Teal', hex: '#0D9488', rgb: 'RGB(13, 148, 136)', bgClass: 'bg-teal-600' },
-              { name: 'Dark Gray', hex: '#374151', rgb: 'RGB(55, 65, 81)', bgClass: 'bg-gray-600' }
+              { name: 'Golden Yellow', hex: '#FFC107', rgb: 'RGB(255, 193, 7)', bgClass: 'bg-amber-500' },
+              { name: 'Navy Blue', hex: '#002855', rgb: 'RGB(0, 40, 85)', bgClass: 'bg-[#002855]' },
+              { name: 'Teal', hex: '#00838F', rgb: 'RGB(0, 131, 143)', bgClass: 'bg-teal-600' },
+              { name: 'Cream', hex: '#F5E6D3', rgb: 'RGB(245, 230, 211)', bgClass: 'bg-[#F5E6D3]' }
             ].map((color, index) => (
               <div key={index} className="text-center">
                 <div 
@@ -441,7 +441,7 @@ const Press = () => {
                   <div className="mt-4 md:mt-0 md:ml-6">
                     <a
                       href={release.downloadUrl}
-                      className="inline-flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                      className="inline-flex items-center space-x-2 bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300"
                     >
                       <FaDownload className="w-4 h-4" />
                       <span>Download PDF</span>
@@ -474,7 +474,7 @@ const Press = () => {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{award.title}</h3>
                 <p className="text-gray-600 mb-1">{award.organization}</p>
-                <p className="text-blue-600 font-medium">{award.year}</p>
+                <p className="text-amber-500 font-medium">{award.year}</p>
               </div>
             ))}
           </div>
@@ -482,7 +482,7 @@ const Press = () => {
       </section>
 
       {/* Media Contact */}
-      <section id="contact" className="py-16 bg-gray-900 text-white">
+      <section id="contact" className="py-16 bg-[#002855] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Media Inquiries
@@ -497,11 +497,11 @@ const Press = () => {
               <h3 className="font-semibold text-white mb-4">General Media Inquiries</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <FaEnvelope className="w-5 h-5 text-blue-400" />
+                  <FaEnvelope className="w-5 h-5 text-amber-400" />
                   <span>helpdesk@neuraltale.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaPhone className="w-5 h-5 text-blue-400" />
+                  <FaPhone className="w-5 h-5 text-amber-400" />
                   <span>+255 653 520 829</span>
                 </div>
               </div>
@@ -511,11 +511,11 @@ const Press = () => {
               <h3 className="font-semibold text-white mb-4">CEO Interviews</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <FaEnvelope className="w-5 h-5 text-blue-400" />
+                  <FaEnvelope className="w-5 h-5 text-amber-400" />
                   <span>juliusntale@neuraltale.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaLinkedin className="w-5 h-5 text-blue-400" />
+                  <FaLinkedin className="w-5 h-5 text-amber-400" />
                   <span>linkedin.com/in/juliusntale</span>
                 </div>
               </div>

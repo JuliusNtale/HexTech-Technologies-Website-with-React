@@ -4,7 +4,7 @@ export interface Service {
   description: string
   icon: string
   features: string[]
-  color: 'blue' | 'purple' | 'pink' | 'green'
+  color: 'amber' | 'teal' | 'cream' | 'navy'
 }
 
 export interface Testimonial {

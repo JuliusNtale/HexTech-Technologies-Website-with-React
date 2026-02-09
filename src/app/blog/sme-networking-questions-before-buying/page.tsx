@@ -13,9 +13,9 @@ const blogPost = {
 
 # What SMEs Should Ask Before Buying Networking Gear: Essential Questions Guide
 
-<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-8">
-<p class="text-lg font-semibold text-orange-900 mb-2">🚀 For Busy Business Owners:</p>
-<p class="text-orange-800">This guide prevents costly networking mistakes by asking the right questions <strong>before</strong> you buy. Based on 200+ SME deployments across Tanzania, we'll save you time and money.</p>
+<div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
+<p class="text-lg font-semibold text-amber-900 mb-2">🚀 For Busy Business Owners:</p>
+<p class="text-amber-800">This guide prevents costly networking mistakes by asking the right questions <strong>before</strong> you buy. Based on 200+ SME deployments across Tanzania, we'll save you time and money.</p>
 </div>
 
 ---
@@ -32,9 +32,9 @@ const blogPost = {
 <li>• Missing compatibility with accounting/ERP systems</li>
 </ul>
 </div>
-<div class="bg-green-50 p-6 rounded-lg border border-green-200">
-<h3 class="text-green-800 font-semibold mb-3">✅ What You'll Achieve</h3>
-<ul class="text-green-700 space-y-2">
+<div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+<h3 class="text-teal-800 font-semibold mb-3">✅ What You'll Achieve</h3>
+<ul class="text-teal-700 space-y-2">
 <li>• Right-sized solution for your actual needs</li>
 <li>• 3-5 year future-proof investment</li>
 <li>• Avoid expensive "oops" moments</li>
@@ -70,8 +70,8 @@ const blogPost = {
 
 ### 1️⃣ Business Requirements Analysis
 
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg my-6">
-<h4 class="text-blue-800 font-semibold mb-4">🔢 "How many devices will connect to our network?"</h4>
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg my-6">
+<h4 class="text-[#002855] font-semibold mb-4">🔢 "How many devices will connect to our network?"</h4>
 
 <div class="bg-yellow-100 border border-yellow-300 p-4 rounded mb-4">
 <p class="text-yellow-800 font-semibold">⚠️ Why This Matters:</p>
@@ -79,20 +79,20 @@ const blogPost = {
 </div>
 
 <div class="space-y-4">
-<h5 class="font-semibold text-blue-700 mb-2">📱 Complete Device Inventory Checklist:</h5>
+<h5 class="font-semibold text-amber-600 mb-2">📱 Complete Device Inventory Checklist:</h5>
 <div class="grid md:grid-cols-2 gap-4">
-<div class="bg-white p-4 rounded border border-blue-200">
-<h6 class="font-semibold text-blue-800 mb-2">Obvious Devices:</h6>
-<ul class="text-blue-700 space-y-1 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-[#002855] mb-2">Obvious Devices:</h6>
+<ul class="text-amber-600 space-y-1 text-sm">
 <li>• Desktop computers and laptops</li>
 <li>• Employee smartphones and tablets</li>
 <li>• Printers and scanners</li>
 <li>• Security cameras</li>
 </ul>
 </div>
-<div class="bg-white p-4 rounded border border-blue-200">
-<h6 class="font-semibold text-blue-800 mb-2">Often Forgotten:</h6>
-<ul class="text-blue-700 space-y-1 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-[#002855] mb-2">Often Forgotten:</h6>
+<ul class="text-amber-600 space-y-1 text-sm">
 <li>• Point-of-sale systems</li>
 <li>• Smart TVs and projectors</li>
 <li>• Visitor/guest devices</li>
@@ -101,9 +101,9 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-blue-100 p-4 rounded mt-4">
-<h6 class="font-semibold text-blue-800 mb-2">💡 Pro Calculation Formula:</h6>
-<div class="space-y-2 text-blue-700 text-sm">
+<div class="bg-amber-100 p-4 rounded mt-4">
+<h6 class="font-semibold text-[#002855] mb-2">💡 Pro Calculation Formula:</h6>
+<div class="space-y-2 text-amber-600 text-sm">
 <p><strong>Current devices + Growth factor (30-50%) = Planning number</strong></p>
 <p><strong>Example:</strong> 20-person office = 20 computers + 25 phones + 3 printers + 8 cameras = 56 devices</p>
 <p><strong>With growth:</strong> 56 × 1.4 = 78 devices to plan for</p>
@@ -112,11 +112,11 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-4">📡 "What's our internet bandwidth requirement?"</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">📡 "What's our internet bandwidth requirement?"</h4>
 
 <div class="space-y-4">
-<h5 class="font-semibold text-green-700 mb-2">🧮 Bandwidth Calculator by Activity:</h5>
+<h5 class="font-semibold text-teal-700 mb-2">🧮 Bandwidth Calculator by Activity:</h5>
 <div class="overflow-x-auto">
 <table class="w-full border-collapse border border-gray-300">
 <thead>
@@ -156,9 +156,9 @@ const blogPost = {
 </table>
 </div>
 
-<div class="bg-green-100 p-4 rounded mt-4">
-<h6 class="font-semibold text-green-800 mb-2">🇹🇿 Tanzania-Specific Considerations:</h6>
-<ul class="text-green-700 space-y-1 text-sm">
+<div class="bg-teal-100 p-4 rounded mt-4">
+<h6 class="font-semibold text-teal-800 mb-2">🇹🇿 Tanzania-Specific Considerations:</h6>
+<ul class="text-teal-700 space-y-1 text-sm">
 <li>• <strong>Peak hour congestion:</strong> ISPs often slow down 2-6pm, plan for 20% extra</li>
 <li>• <strong>Power outages:</strong> Include failover internet (mobile hotspot budget)</li>
 <li>• <strong>Cost budgeting:</strong> Plan 15-25% of IT budget for internet connectivity</li>
@@ -172,8 +172,8 @@ const blogPost = {
 
 ### 2️⃣ Budget Planning Questions
 
-<div class="bg-purple-50 border border-purple-200 p-6 rounded-lg my-6">
-<h4 class="text-purple-800 font-semibold mb-4">💰 "What's our total cost of ownership (TCO)?"</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">💰 "What's our total cost of ownership (TCO)?"</h4>
 
 <div class="bg-red-100 border border-red-300 p-4 rounded mb-4">
 <p class="text-red-800 font-semibold">🚨 Critical Mistake:</p>
@@ -181,21 +181,21 @@ const blogPost = {
 </div>
 
 <div class="space-y-4">
-<h5 class="font-semibold text-purple-700 mb-4">📊 True Cost Breakdown (3-Year Analysis):</h5>
+<h5 class="font-semibold text-teal-700 mb-4">📊 True Cost Breakdown (3-Year Analysis):</h5>
 
 <div class="grid md:grid-cols-2 gap-6">
-<div class="bg-white p-4 rounded border border-purple-200">
-<h6 class="font-semibold text-purple-800 mb-2">💵 Direct Costs:</h6>
-<ul class="text-purple-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-teal-200">
+<h6 class="font-semibold text-teal-800 mb-2">💵 Direct Costs:</h6>
+<ul class="text-teal-700 space-y-2 text-sm">
 <li>• <strong>Hardware:</strong> 60-70% of total budget</li>
 <li>• <strong>Installation & Setup:</strong> 10-15% of hardware cost</li>
 <li>• <strong>Cabling & Infrastructure:</strong> 5-10% of hardware cost</li>
 <li>• <strong>UPS & Power Protection:</strong> 8-12% of hardware cost</li>
 </ul>
 </div>
-<div class="bg-white p-4 rounded border border-purple-200">
-<h6 class="font-semibold text-purple-800 mb-2">🔄 Ongoing Costs (Annual):</h6>
-<ul class="text-purple-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-teal-200">
+<h6 class="font-semibold text-teal-800 mb-2">🔄 Ongoing Costs (Annual):</h6>
+<ul class="text-teal-700 space-y-2 text-sm">
 <li>• <strong>Maintenance & Support:</strong> 15-20% of hardware cost</li>
 <li>• <strong>Power Consumption:</strong> Often overlooked!</li>
 <li>• <strong>Staff Training:</strong> 5-10% first year</li>
@@ -204,9 +204,9 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-purple-100 p-4 rounded mt-4">
-<h6 class="font-semibold text-purple-800 mb-2">📈 Real TCO Example (50-Person SME):</h6>
-<div class="space-y-2 text-purple-700 text-sm">
+<div class="bg-teal-100 p-4 rounded mt-4">
+<h6 class="font-semibold text-teal-800 mb-2">📈 Real TCO Example (50-Person SME):</h6>
+<div class="space-y-2 text-teal-700 text-sm">
 <p>• <strong>Year 0:</strong> Hardware $8,000 + Installation $1,200 + Training $800 = <strong>$10,000</strong></p>
 <p>• <strong>Year 1:</strong> Maintenance $1,600 + Power $480 = <strong>$2,080</strong></p>
 <p>• <strong>Year 2:</strong> Maintenance $1,600 + Power $480 + Minor upgrades $500 = <strong>$2,580</strong></p>
@@ -216,41 +216,41 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-orange-50 border border-orange-200 p-6 rounded-lg my-6">
-<h4 class="text-orange-800 font-semibold mb-4">🏦 "Should we buy outright or lease/rent?"</h4>
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg my-6">
+<h4 class="text-amber-800 font-semibold mb-4">🏦 "Should we buy outright or lease/rent?"</h4>
 
 <div class="grid md:grid-cols-2 gap-6">
-<div class="bg-white p-4 rounded border border-orange-200">
-<h6 class="font-semibold text-orange-800 mb-2">💰 Buy Outright If:</h6>
-<ul class="text-orange-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-amber-800 mb-2">💰 Buy Outright If:</h6>
+<ul class="text-amber-700 space-y-2 text-sm">
 <li>✅ You have upfront capital available</li>
 <li>✅ Planning to stay in location 3+ years</li>
 <li>✅ Want full ownership and control</li>
 <li>✅ Have IT staff for maintenance</li>
 <li>✅ Stable, predictable business</li>
 </ul>
-<div class="mt-3 p-2 bg-orange-100 rounded">
-<p class="text-orange-800 text-sm font-semibold">💡 Best for: Established SMEs with stable cash flow</p>
+<div class="mt-3 p-2 bg-amber-100 rounded">
+<p class="text-amber-800 text-sm font-semibold">💡 Best for: Established SMEs with stable cash flow</p>
 </div>
 </div>
 
-<div class="bg-white p-4 rounded border border-orange-200">
-<h6 class="font-semibold text-orange-800 mb-2">📅 Lease/Rent If:</h6>
-<ul class="text-orange-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-amber-800 mb-2">📅 Lease/Rent If:</h6>
+<ul class="text-amber-700 space-y-2 text-sm">
 <li>✅ Cash flow is tight</li>
 <li>✅ Uncertain about future growth</li>
 <li>✅ Want maintenance included</li>
 <li>✅ Rapid technology changes expected</li>
 <li>✅ Tax benefits from lease payments</li>
 </ul>
-<div class="mt-3 p-2 bg-orange-100 rounded">
-<p class="text-orange-800 text-sm font-semibold">💡 Best for: Growing SMEs or seasonal businesses</p>
+<div class="mt-3 p-2 bg-amber-100 rounded">
+<p class="text-amber-800 text-sm font-semibold">💡 Best for: Growing SMEs or seasonal businesses</p>
 </div>
 </div>
 </div>
 
-<div class="bg-blue-50 p-4 rounded mt-4">
-<p class="text-blue-800 text-sm"><strong>🏢 NEURALTALE Leasing Option:</strong> We offer 12-36 month leasing with maintenance included - popular with growing SMEs who want predictable monthly costs.</p>
+<div class="bg-amber-50 p-4 rounded mt-4">
+<p class="text-[#002855] text-sm"><strong>🏢 NEURALTALE Leasing Option:</strong> We offer 12-36 month leasing with maintenance included - popular with growing SMEs who want predictable monthly costs.</p>
 </div>
 </div>
 
@@ -354,25 +354,25 @@ const blogPost = {
 
 ### 4️⃣ Performance & Scalability Questions
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-4">📈 "How will this system handle our growth?"</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">📈 "How will this system handle our growth?"</h4>
 
 <div class="space-y-4">
-<h5 class="font-semibold text-green-700 mb-4">🚀 Growth Planning Framework:</h5>
+<h5 class="font-semibold text-teal-700 mb-4">🚀 Growth Planning Framework:</h5>
 
 <div class="grid md:grid-cols-2 gap-6">
-<div class="bg-white p-4 rounded border border-green-200">
-<h6 class="font-semibold text-green-800 mb-2">📊 Capacity Planning:</h6>
-<ul class="text-green-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-teal-200">
+<h6 class="font-semibold text-teal-800 mb-2">📊 Capacity Planning:</h6>
+<ul class="text-teal-700 space-y-2 text-sm">
 <li>• <strong>User growth:</strong> Plan for 50-100% increase over 3 years</li>
 <li>• <strong>Data growth:</strong> Data usage typically doubles annually</li>
 <li>• <strong>Application growth:</strong> New software adds network load</li>
 <li>• <strong>Location expansion:</strong> Multiple offices/branches</li>
 </ul>
 </div>
-<div class="bg-white p-4 rounded border border-green-200">
-<h6 class="font-semibold text-green-800 mb-2">🔧 Expandability Features:</h6>
-<ul class="text-green-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-teal-200">
+<h6 class="font-semibold text-teal-800 mb-2">🔧 Expandability Features:</h6>
+<ul class="text-teal-700 space-y-2 text-sm">
 <li>• <strong>Modular design:</strong> Add components without replacement</li>
 <li>• <strong>Port density:</strong> Room for more connections</li>
 <li>• <strong>Management scalability:</strong> Centralized control</li>
@@ -381,9 +381,9 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-green-100 p-4 rounded mt-4">
-<h6 class="font-semibold text-green-800 mb-2">❓ Questions to Ask:</h6>
-<ul class="text-green-700 space-y-1 text-sm">
+<div class="bg-teal-100 p-4 rounded mt-4">
+<h6 class="font-semibold text-teal-800 mb-2">❓ Questions to Ask:</h6>
+<ul class="text-teal-700 space-y-1 text-sm">
 <li>• "What's the maximum number of users this system can handle?"</li>
 <li>• "How easy is it to add new switches or access points?"</li>
 <li>• "Can we manage multiple locations from one interface?"</li>
@@ -397,8 +397,8 @@ const blogPost = {
 
 ### 5️⃣ Support & Maintenance Questions
 
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg my-6">
-<h4 class="text-blue-800 font-semibold mb-4">🛠️ "What support is available locally in Tanzania?"</h4>
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg my-6">
+<h4 class="text-[#002855] font-semibold mb-4">🛠️ "What support is available locally in Tanzania?"</h4>
 
 <div class="bg-red-100 border border-red-300 p-4 rounded mb-4">
 <p class="text-red-800 font-semibold">🚨 Critical for Tanzania:</p>
@@ -406,21 +406,21 @@ const blogPost = {
 </div>
 
 <div class="space-y-4">
-<h5 class="font-semibold text-blue-700 mb-4">🏢 Local Support Evaluation:</h5>
+<h5 class="font-semibold text-amber-600 mb-4">🏢 Local Support Evaluation:</h5>
 
 <div class="grid md:grid-cols-2 gap-6">
-<div class="bg-white p-4 rounded border border-blue-200">
-<h6 class="font-semibold text-blue-800 mb-2">✅ Must-Have Support:</h6>
-<ul class="text-blue-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-[#002855] mb-2">✅ Must-Have Support:</h6>
+<ul class="text-amber-600 space-y-2 text-sm">
 <li>• <strong>Local distributor:</strong> Tanzania-based parts inventory</li>
 <li>• <strong>Technical support:</strong> Swahili and English</li>
 <li>• <strong>Response time:</strong> Same-day for critical issues</li>
 <li>• <strong>On-site service:</strong> Technician can visit your office</li>
 </ul>
 </div>
-<div class="bg-white p-4 rounded border border-blue-200">
-<h6 class="font-semibold text-blue-800 mb-2">❓ Questions to Ask:</h6>
-<ul class="text-blue-700 space-y-2 text-sm">
+<div class="bg-white p-4 rounded border border-amber-200">
+<h6 class="font-semibold text-[#002855] mb-2">❓ Questions to Ask:</h6>
+<ul class="text-amber-600 space-y-2 text-sm">
 <li>• "Do you have local technicians in Dar es Salaam?"</li>
 <li>• "What's your typical response time?"</li>
 <li>• "Do you stock replacement parts locally?"</li>
@@ -429,9 +429,9 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-blue-100 p-4 rounded mt-4">
-<h6 class="font-semibold text-blue-800 mb-2">🌟 NEURALTALE Advantage:</h6>
-<p class="text-blue-700 text-sm">We provide same-day response in Dar, Mwanza, Arusha, and Zanzibar with local parts inventory and technicians who speak English, Swahili, and understand Tanzanian business needs.</p>
+<div class="bg-amber-100 p-4 rounded mt-4">
+<h6 class="font-semibold text-[#002855] mb-2">🌟 NEURALTALE Advantage:</h6>
+<p class="text-amber-600 text-sm">We provide same-day response in Dar, Mwanza, Arusha, and Zanzibar with local parts inventory and technicians who speak English, Swahili, and understand Tanzanian business needs.</p>
 </div>
 </div>
 </div>
@@ -501,53 +501,53 @@ const blogPost = {
 
 ## ✅ The Perfect Vendor Checklist
 
-<div class="bg-green-50 border border-green-200 p-8 rounded-lg my-8">
-<h4 class="text-green-800 font-bold text-xl mb-6">🏆 What Great Vendors Do</h4>
+<div class="bg-teal-50 border border-teal-200 p-8 rounded-lg my-8">
+<h4 class="text-teal-800 font-bold text-xl mb-6">🏆 What Great Vendors Do</h4>
 
 <div class="grid md:grid-cols-2 gap-6">
 <div class="space-y-4">
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Asks Detailed Questions First</p>
-<p class="text-green-700 text-sm">Wants to understand your business before recommending anything</p>
+<p class="font-semibold text-teal-800">Asks Detailed Questions First</p>
+<p class="text-teal-700 text-sm">Wants to understand your business before recommending anything</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Provides Multiple Options</p>
-<p class="text-green-700 text-sm">Shows good/better/best scenarios with clear explanations</p>
+<p class="font-semibold text-teal-800">Provides Multiple Options</p>
+<p class="text-teal-700 text-sm">Shows good/better/best scenarios with clear explanations</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Explains Total Cost of Ownership</p>
-<p class="text-green-700 text-sm">Transparent about ongoing costs, not just hardware price</p>
+<p class="font-semibold text-teal-800">Explains Total Cost of Ownership</p>
+<p class="text-teal-700 text-sm">Transparent about ongoing costs, not just hardware price</p>
 </div>
 </div>
 </div>
 <div class="space-y-4">
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Offers Site Assessment</p>
-<p class="text-green-700 text-sm">Wants to see your actual environment before final recommendations</p>
+<p class="font-semibold text-teal-800">Offers Site Assessment</p>
+<p class="text-teal-700 text-sm">Wants to see your actual environment before final recommendations</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Has Local Success Stories</p>
-<p class="text-green-700 text-sm">Can show similar Tanzania deployments and provide references</p>
+<p class="font-semibold text-teal-800">Has Local Success Stories</p>
+<p class="text-teal-700 text-sm">Can show similar Tanzania deployments and provide references</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
-<span class="text-green-600 text-2xl">✅</span>
+<span class="text-teal-600 text-2xl">✅</span>
 <div>
-<p class="font-semibold text-green-800">Plans for Growth</p>
-<p class="text-green-700 text-sm">Designs system that can expand with your business</p>
+<p class="font-semibold text-teal-800">Plans for Growth</p>
+<p class="text-teal-700 text-sm">Designs system that can expand with your business</p>
 </div>
 </div>
 </div>
@@ -605,21 +605,21 @@ const blogPost = {
 
 <div class="space-y-8 my-8">
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg">
-<h4 class="text-green-800 font-bold mb-4">✅ Manufacturing Company - Arusha</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg">
+<h4 class="text-teal-800 font-bold mb-4">✅ Manufacturing Company - Arusha</h4>
 <div class="grid md:grid-cols-2 gap-4">
 <div>
-<p class="text-green-700 text-sm mb-2"><strong>Challenge:</strong> 45-person factory with legacy machinery needing network integration</p>
-<p class="text-green-700 text-sm mb-2"><strong>Smart Questions Asked:</strong></p>
-<ul class="text-green-600 text-sm space-y-1">
+<p class="text-teal-700 text-sm mb-2"><strong>Challenge:</strong> 45-person factory with legacy machinery needing network integration</p>
+<p class="text-teal-700 text-sm mb-2"><strong>Smart Questions Asked:</strong></p>
+<ul class="text-teal-600 text-sm space-y-1">
 <li>• "How do we integrate with our 20-year-old production systems?"</li>
 <li>• "What happens during daily 2-hour power outages?"</li>
 <li>• "Can the system handle dusty factory environment?"</li>
 </ul>
 </div>
 <div>
-<p class="text-green-700 text-sm mb-2"><strong>Result:</strong></p>
-<ul class="text-green-600 text-sm space-y-1">
+<p class="text-teal-700 text-sm mb-2"><strong>Result:</strong></p>
+<ul class="text-teal-600 text-sm space-y-1">
 <li>• Custom solution with industrial-grade equipment</li>
 <li>• Integrated UPS system for seamless operation</li>
 <li>• 99.7% uptime over 2 years</li>
@@ -629,21 +629,21 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
-<h4 class="text-blue-800 font-bold mb-4">✅ Logistics Company - Dar es Salaam</h4>
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg">
+<h4 class="text-[#002855] font-bold mb-4">✅ Logistics Company - Dar es Salaam</h4>
 <div class="grid md:grid-cols-2 gap-4">
 <div>
-<p class="text-blue-700 text-sm mb-2"><strong>Challenge:</strong> Multi-location business needing centralized management</p>
-<p class="text-blue-700 text-sm mb-2"><strong>Smart Questions Asked:</strong></p>
-<ul class="text-blue-600 text-sm space-y-1">
+<p class="text-amber-600 text-sm mb-2"><strong>Challenge:</strong> Multi-location business needing centralized management</p>
+<p class="text-amber-600 text-sm mb-2"><strong>Smart Questions Asked:</strong></p>
+<ul class="text-amber-500 text-sm space-y-1">
 <li>• "How do we manage 5 locations from head office?"</li>
 <li>• "What's the failover plan if main office goes down?"</li>
 <li>• "Can we prioritize GPS tracking data over other traffic?"</li>
 </ul>
 </div>
 <div>
-<p class="text-blue-700 text-sm mb-2"><strong>Result:</strong></p>
-<ul class="text-blue-600 text-sm space-y-1">
+<p class="text-amber-600 text-sm mb-2"><strong>Result:</strong></p>
+<ul class="text-amber-500 text-sm space-y-1">
 <li>• Cloud-managed system with central control</li>
 <li>• Redundant internet connections</li>
 <li>• 25% improvement in delivery tracking</li>
@@ -653,21 +653,21 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-orange-50 border border-orange-200 p-6 rounded-lg">
-<h4 class="text-orange-800 font-bold mb-4">❌ What Happens When You Don't Ask</h4>
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg">
+<h4 class="text-amber-800 font-bold mb-4">❌ What Happens When You Don't Ask</h4>
 <div class="grid md:grid-cols-2 gap-4">
 <div>
-<p class="text-orange-700 text-sm mb-2"><strong>Retail Chain - Mwanza:</strong></p>
-<p class="text-orange-700 text-sm mb-2"><strong>Mistakes Made:</strong></p>
-<ul class="text-orange-600 text-sm space-y-1">
+<p class="text-amber-700 text-sm mb-2"><strong>Retail Chain - Mwanza:</strong></p>
+<p class="text-amber-700 text-sm mb-2"><strong>Mistakes Made:</strong></p>
+<ul class="text-amber-600 text-sm space-y-1">
 <li>• Bought cheapest option without asking key questions</li>
 <li>• Didn't consider POS system integration</li>
 <li>• No local support planning</li>
 </ul>
 </div>
 <div>
-<p class="text-orange-700 text-sm mb-2"><strong>Painful Result:</strong></p>
-<ul class="text-orange-600 text-sm space-y-1">
+<p class="text-amber-700 text-sm mb-2"><strong>Painful Result:</strong></p>
+<ul class="text-amber-600 text-sm space-y-1">
 <li>• System failed during Black Friday sales</li>
 <li>• 2-week downtime waiting for international support</li>
 <li>• Lost TSh 15M in sales</li>
@@ -683,21 +683,21 @@ const blogPost = {
 
 ## 🚀 Ready to Make an Informed Decision?
 
-<div class="bg-blue-600 text-white p-8 rounded-lg my-8 text-center">
+<div class="bg-amber-500 text-white p-8 rounded-lg my-8 text-center">
 <h3 class="text-2xl font-bold mb-4">Get Expert Guidance for Your SME</h3>
-<p class="text-blue-100 mb-6">Don't navigate networking decisions alone. NEURALTALE provides free consultations to help SMEs ask the right questions and choose the perfect solution.</p>
+<p class="text-amber-100 mb-6">Don't navigate networking decisions alone. NEURALTALE provides free consultations to help SMEs ask the right questions and choose the perfect solution.</p>
 <div class="grid md:grid-cols-3 gap-4 text-left">
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Free Assessment</h4>
-<p class="text-blue-100 text-sm">We'll evaluate your needs using this exact framework</p>
+<p class="text-amber-100 text-sm">We'll evaluate your needs using this exact framework</p>
 </div>
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Vendor-Neutral Advice</h4>
-<p class="text-blue-100 text-sm">We recommend the best solution for YOUR business, not ours</p>
+<p class="text-amber-100 text-sm">We recommend the best solution for YOUR business, not ours</p>
 </div>
-<div class="bg-blue-700 p-4 rounded">
+<div class="bg-amber-600 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Local Expertise</h4>
-<p class="text-blue-100 text-sm">Deep understanding of Tanzania business environment</p>
+<p class="text-amber-100 text-sm">Deep understanding of Tanzania business environment</p>
 </div>
 </div>
 </div>
@@ -743,37 +743,37 @@ const blogPost = {
 <h4 class="font-bold text-gray-900 text-xl mb-6">🎯 Your Action Plan:</h4>
 <div class="space-y-4">
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
 <div>
 <p><strong>Complete the pre-purchase checklist</strong> above before contacting vendors</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
 <div>
 <p><strong>Get 3+ quotes</strong> using the questions framework from this guide</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
 <div>
 <p><strong>Request site visits</strong> from serious vendors (red flag if they won't visit)</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
 <div>
 <p><strong>Check references</strong> with similar Tanzania SMEs</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">5</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">5</span>
 <div>
 <p><strong>Compare total 3-year cost</strong>, not just hardware prices</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">6</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">6</span>
 <div>
 <p><strong>Make decision based on business value</strong>, not just price</p>
 </div>
@@ -781,8 +781,8 @@ const blogPost = {
 </div>
 </div>
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-8">
-<p class="text-green-800"><strong>💡 Final Tip:</strong> The questions in this guide have saved our SME clients millions of shillings in avoided mistakes. Use them confidently - you're the customer, and you deserve clear answers!</p>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-8">
+<p class="text-teal-800"><strong>💡 Final Tip:</strong> The questions in this guide have saved our SME clients millions of shillings in avoided mistakes. Use them confidently - you're the customer, and you deserve clear answers!</p>
 </div>
 
 ---

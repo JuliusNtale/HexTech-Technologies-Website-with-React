@@ -13,9 +13,9 @@ const blogPost = {
 
 # Omada vs UniFi for Hotels in Tanzania: Complete Comparison Guide
 
-<div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-<p class="text-lg font-semibold text-blue-900 mb-2">🏨 Quick Decision Guide for Hotel Managers:</p>
-<p class="text-blue-800"><strong>TP-Link Omada:</strong> Best for budget-conscious hotels seeking reliable Wi-Fi with local support. <strong>Ubiquiti UniFi:</strong> Ideal for luxury resorts wanting premium features and advanced analytics.</p>
+<div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
+<p class="text-lg font-semibold text-[#002855] mb-2">🏨 Quick Decision Guide for Hotel Managers:</p>
+<p class="text-[#002855]"><strong>TP-Link Omada:</strong> Best for budget-conscious hotels seeking reliable Wi-Fi with local support. <strong>Ubiquiti UniFi:</strong> Ideal for luxury resorts wanting premium features and advanced analytics.</p>
 </div>
 
 ---
@@ -23,18 +23,18 @@ const blogPost = {
 ## 🎯 What You'll Learn
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
-<div class="bg-green-50 p-6 rounded-lg border border-green-200">
-<h3 class="text-green-800 font-semibold mb-3">✅ Practical Insights</h3>
-<ul class="text-green-700 space-y-2">
+<div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+<h3 class="text-teal-800 font-semibold mb-3">✅ Practical Insights</h3>
+<ul class="text-teal-700 space-y-2">
 <li>• Real-world cost comparisons in Tanzania</li>
 <li>• Performance data from actual hotel deployments</li>
 <li>• Local availability and support differences</li>
 <li>• Guest satisfaction metrics</li>
 </ul>
 </div>
-<div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-<h3 class="text-orange-800 font-semibold mb-3">🏆 Decision Framework</h3>
-<ul class="text-orange-700 space-y-2">
+<div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+<h3 class="text-amber-800 font-semibold mb-3">🏆 Decision Framework</h3>
+<ul class="text-amber-700 space-y-2">
 <li>• Hotel size and guest capacity considerations</li>
 <li>• Budget optimization strategies</li>
 <li>• Feature comparison matrix</li>
@@ -50,37 +50,37 @@ const blogPost = {
 After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, and Arusha, here's our data-driven assessment:
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg">
 <div class="flex items-center mb-4">
 <img src="/images/omada-logo.png" alt="TP-Link Omada" class="w-12 h-12 mr-3" />
-<h3 class="text-blue-800 font-bold text-xl">TP-Link Omada</h3>
+<h3 class="text-[#002855] font-bold text-xl">TP-Link Omada</h3>
 </div>
-<div class="space-y-2 text-blue-700">
+<div class="space-y-2 text-amber-600">
 <p>✅ <strong>Better value for money</strong> - 40% lower total cost</p>
 <p>✅ <strong>Excellent local support</strong> - Same-day response</p>
 <p>✅ <strong>Easy management</strong> - Staff training in 2 hours</p>
 <p>✅ <strong>Reliable performance</strong> - 99.2% uptime average</p>
 </div>
-<div class="mt-4 p-3 bg-blue-100 rounded">
-<p class="text-blue-800 font-semibold">Best For:</p>
-<p class="text-blue-700 text-sm">Budget-conscious hotels, guesthouses, 3-star properties</p>
+<div class="mt-4 p-3 bg-amber-100 rounded">
+<p class="text-[#002855] font-semibold">Best For:</p>
+<p class="text-amber-600 text-sm">Budget-conscious hotels, guesthouses, 3-star properties</p>
 </div>
 </div>
 
-<div class="bg-purple-50 border border-purple-200 p-6 rounded-lg">
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg">
 <div class="flex items-center mb-4">
 <img src="/images/unifi-logo.png" alt="Ubiquiti UniFi" class="w-12 h-12 mr-3" />
-<h3 class="text-purple-800 font-bold text-xl">Ubiquiti UniFi</h3>
+<h3 class="text-teal-800 font-bold text-xl">Ubiquiti UniFi</h3>
 </div>
-<div class="space-y-2 text-purple-700">
+<div class="space-y-2 text-teal-700">
 <p>✅ <strong>Superior features</strong> - Advanced analytics & control</p>
 <p>✅ <strong>Premium performance</strong> - 15% faster speeds</p>
 <p>✅ <strong>Excellent scalability</strong> - Easy expansion</p>
 <p>✅ <strong>Brand prestige</strong> - Recognized by guests</p>
 </div>
-<div class="mt-4 p-3 bg-purple-100 rounded">
-<p class="text-purple-800 font-semibold">Best For:</p>
-<p class="text-purple-700 text-sm">Luxury resorts, 4-5 star hotels, tech-savvy properties</p>
+<div class="mt-4 p-3 bg-teal-100 rounded">
+<p class="text-teal-800 font-semibold">Best For:</p>
+<p class="text-teal-700 text-sm">Luxury resorts, 4-5 star hotels, tech-savvy properties</p>
 </div>
 </div>
 </div>
@@ -98,9 +98,9 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <div class="border border-gray-200 p-6 rounded-lg">
 <h4 class="font-bold text-gray-900 mb-4">🏨 Scenario 1: 50-Room Business Hotel</h4>
 <div class="space-y-4">
-<div class="bg-blue-50 p-4 rounded">
-<h5 class="font-semibold text-blue-800 mb-2">TP-Link Omada Solution</h5>
-<ul class="text-blue-700 text-sm space-y-1">
+<div class="bg-amber-50 p-4 rounded">
+<h5 class="font-semibold text-[#002855] mb-2">TP-Link Omada Solution</h5>
+<ul class="text-amber-600 text-sm space-y-1">
 <li>• OC300 Controller: $280</li>
 <li>• 12x EAP660 HD Access Points: $1,680</li>
 <li>• 2x TL-SG3428X Switches: $800</li>
@@ -108,9 +108,9 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <li>• <strong>Total: $3,960 (TSh 9.9M)</strong></li>
 </ul>
 </div>
-<div class="bg-purple-50 p-4 rounded mt-4">
-<h5 class="font-semibold text-purple-800 mb-2">Ubiquiti UniFi Solution</h5>
-<ul class="text-purple-700 text-sm space-y-1">
+<div class="bg-teal-50 p-4 rounded mt-4">
+<h5 class="font-semibold text-teal-800 mb-2">Ubiquiti UniFi Solution</h5>
+<ul class="text-teal-700 text-sm space-y-1">
 <li>• Dream Machine Pro: $520</li>
 <li>• 12x U6 Enterprise APs: $2,880</li>
 <li>• 2x USW-Pro-24 Switches: $1,200</li>
@@ -118,8 +118,8 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <li>• <strong>Total: $6,000 (TSh 15M)</strong></li>
 </ul>
 </div>
-<div class="bg-green-100 p-4 rounded mt-4">
-<p class="text-green-800 font-semibold">💰 Savings with Omada: $2,040 (34% less expensive)</p>
+<div class="bg-teal-100 p-4 rounded mt-4">
+<p class="text-teal-800 font-semibold">💰 Savings with Omada: $2,040 (34% less expensive)</p>
 </div>
 </div>
 </div>
@@ -127,9 +127,9 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <div class="border border-gray-200 p-6 rounded-lg">
 <h4 class="font-bold text-gray-900 mb-4">🏖️ Scenario 2: 120-Room Beach Resort</h4>
 <div class="space-y-4">
-<div class="bg-blue-50 p-4 rounded">
-<h5 class="font-semibold text-blue-800 mb-2">TP-Link Omada Solution</h5>
-<ul class="text-blue-700 text-sm space-y-1">
+<div class="bg-amber-50 p-4 rounded">
+<h5 class="font-semibold text-[#002855] mb-2">TP-Link Omada Solution</h5>
+<ul class="text-amber-600 text-sm space-y-1">
 <li>• OC300 Controller: $280</li>
 <li>• 25x EAP660 HD Access Points: $3,500</li>
 <li>• 4x TL-SG3428X Switches: $1,600</li>
@@ -138,9 +138,9 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <li>• <strong>Total: $8,980 (TSh 22.5M)</strong></li>
 </ul>
 </div>
-<div class="bg-purple-50 p-4 rounded mt-4">
-<h5 class="font-semibold text-purple-800 mb-2">Ubiquiti UniFi Solution</h5>
-<ul class="text-purple-700 text-sm space-y-1">
+<div class="bg-teal-50 p-4 rounded mt-4">
+<h5 class="font-semibold text-teal-800 mb-2">Ubiquiti UniFi Solution</h5>
+<ul class="text-teal-700 text-sm space-y-1">
 <li>• Dream Machine Special Edition: $899</li>
 <li>• 25x U6 Enterprise APs: $6,000</li>
 <li>• 4x USW-Pro-24 Switches: $2,400</li>
@@ -149,8 +149,8 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <li>• <strong>Total: $13,999 (TSh 35M)</strong></li>
 </ul>
 </div>
-<div class="bg-green-100 p-4 rounded mt-4">
-<p class="text-green-800 font-semibold">💰 Savings with Omada: $5,019 (36% less expensive)</p>
+<div class="bg-teal-100 p-4 rounded mt-4">
+<p class="text-teal-800 font-semibold">💰 Savings with Omada: $5,019 (36% less expensive)</p>
 </div>
 </div>
 </div>
@@ -205,37 +205,37 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 <td class="border border-gray-300 p-3 font-semibold">Maximum Speed (Wi-Fi 6)</td>
 <td class="border border-gray-300 p-3 text-center">3000 Mbps</td>
 <td class="border border-gray-300 p-3 text-center">5400 Mbps</td>
-<td class="border border-gray-300 p-3 text-center text-purple-600">✅ UniFi</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">✅ UniFi</td>
 </tr>
 <tr class="bg-gray-50">
 <td class="border border-gray-300 p-3 font-semibold">Real-world Guest Speed</td>
 <td class="border border-gray-300 p-3 text-center">45-65 Mbps</td>
 <td class="border border-gray-300 p-3 text-center">55-80 Mbps</td>
-<td class="border border-gray-300 p-3 text-center text-purple-600">✅ UniFi</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">✅ UniFi</td>
 </tr>
 <tr>
 <td class="border border-gray-300 p-3 font-semibold">Coverage Range</td>
 <td class="border border-gray-300 p-3 text-center">50m radius</td>
 <td class="border border-gray-300 p-3 text-center">45m radius</td>
-<td class="border border-gray-300 p-3 text-center text-blue-600">✅ Omada</td>
+<td class="border border-gray-300 p-3 text-center text-amber-500">✅ Omada</td>
 </tr>
 <tr class="bg-gray-50">
 <td class="border border-gray-300 p-3 font-semibold">Concrete Wall Penetration</td>
 <td class="border border-gray-300 p-3 text-center">Excellent</td>
 <td class="border border-gray-300 p-3 text-center">Good</td>
-<td class="border border-gray-300 p-3 text-center text-blue-600">✅ Omada</td>
+<td class="border border-gray-300 p-3 text-center text-amber-500">✅ Omada</td>
 </tr>
 <tr>
 <td class="border border-gray-300 p-3 font-semibold">Simultaneous Users per AP</td>
 <td class="border border-gray-300 p-3 text-center">200+</td>
 <td class="border border-gray-300 p-3 text-center">250+</td>
-<td class="border border-gray-300 p-3 text-center text-purple-600">✅ UniFi</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">✅ UniFi</td>
 </tr>
 <tr class="bg-gray-50">
 <td class="border border-gray-300 p-3 font-semibold">System Uptime</td>
 <td class="border border-gray-300 p-3 text-center">99.2%</td>
 <td class="border border-gray-300 p-3 text-center">99.5%</td>
-<td class="border border-gray-300 p-3 text-center text-purple-600">✅ UniFi</td>
+<td class="border border-gray-300 p-3 text-center text-teal-600">✅ UniFi</td>
 </tr>
 </tbody>
 </table>
@@ -245,46 +245,46 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 ### Guest Satisfaction Metrics
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
-<div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-<h4 class="text-blue-800 font-semibold mb-4">📊 TP-Link Omada Hotels</h4>
+<div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+<h4 class="text-[#002855] font-semibold mb-4">📊 TP-Link Omada Hotels</h4>
 <div class="space-y-3">
 <div class="flex justify-between items-center">
-<span class="text-blue-700">Guest Wi-Fi Satisfaction</span>
-<span class="text-blue-900 font-bold">92%</span>
+<span class="text-amber-600">Guest Wi-Fi Satisfaction</span>
+<span class="text-[#002855] font-bold">92%</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-blue-700">Connection Success Rate</span>
-<span class="text-blue-900 font-bold">96%</span>
+<span class="text-amber-600">Connection Success Rate</span>
+<span class="text-[#002855] font-bold">96%</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-blue-700">Average Connection Time</span>
-<span class="text-blue-900 font-bold">8 seconds</span>
+<span class="text-amber-600">Average Connection Time</span>
+<span class="text-[#002855] font-bold">8 seconds</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-blue-700">Tech Support Requests</span>
-<span class="text-blue-900 font-bold">2.1/month</span>
+<span class="text-amber-600">Tech Support Requests</span>
+<span class="text-[#002855] font-bold">2.1/month</span>
 </div>
 </div>
 </div>
 
-<div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-<h4 class="text-purple-800 font-semibold mb-4">📊 Ubiquiti UniFi Hotels</h4>
+<div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+<h4 class="text-teal-800 font-semibold mb-4">📊 Ubiquiti UniFi Hotels</h4>
 <div class="space-y-3">
 <div class="flex justify-between items-center">
-<span class="text-purple-700">Guest Wi-Fi Satisfaction</span>
-<span class="text-purple-900 font-bold">96%</span>
+<span class="text-teal-700">Guest Wi-Fi Satisfaction</span>
+<span class="text-teal-900 font-bold">96%</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-purple-700">Connection Success Rate</span>
-<span class="text-purple-900 font-bold">98%</span>
+<span class="text-teal-700">Connection Success Rate</span>
+<span class="text-teal-900 font-bold">98%</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-purple-700">Average Connection Time</span>
-<span class="text-purple-900 font-bold">5 seconds</span>
+<span class="text-teal-700">Average Connection Time</span>
+<span class="text-teal-900 font-bold">5 seconds</span>
 </div>
 <div class="flex justify-between items-center">
-<span class="text-purple-700">Tech Support Requests</span>
-<span class="text-purple-900 font-bold">1.3/month</span>
+<span class="text-teal-700">Tech Support Requests</span>
+<span class="text-teal-900 font-bold">1.3/month</span>
 </div>
 </div>
 </div>
@@ -294,21 +294,21 @@ After deploying both systems across **50+ hotels** in Dar es Salaam, Zanzibar, a
 
 ## 🔧 Management & Features Comparison
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-4">⚡ Setup & Management Ease:</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">⚡ Setup & Management Ease:</h4>
 </div>
 
 <div class="grid lg:grid-cols-2 gap-8 my-8">
 
-<div class="bg-white border border-blue-200 p-6 rounded-lg">
-<h4 class="text-blue-800 font-bold mb-4 flex items-center">
-<span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 text-sm">📱</span>
+<div class="bg-white border border-amber-200 p-6 rounded-lg">
+<h4 class="text-[#002855] font-bold mb-4 flex items-center">
+<span class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center mr-3 text-sm">📱</span>
 TP-Link Omada Management
 </h4>
 <div class="space-y-4">
-<div class="bg-blue-50 p-4 rounded">
-<h5 class="font-semibold text-blue-700 mb-2">✅ Advantages:</h5>
-<ul class="text-blue-600 text-sm space-y-1">
+<div class="bg-amber-50 p-4 rounded">
+<h5 class="font-semibold text-amber-600 mb-2">✅ Advantages:</h5>
+<ul class="text-amber-500 text-sm space-y-1">
 <li>• Mobile app setup in 15 minutes</li>
 <li>• Familiar web interface for most IT staff</li>
 <li>• Excellent Swahili language support</li>
@@ -316,9 +316,9 @@ TP-Link Omada Management
 <li>• Basic but sufficient analytics</li>
 </ul>
 </div>
-<div class="bg-blue-100 p-4 rounded">
-<h5 class="font-semibold text-blue-700 mb-2">Setup Time Breakdown:</h5>
-<ul class="text-blue-600 text-sm space-y-1">
+<div class="bg-amber-100 p-4 rounded">
+<h5 class="font-semibold text-amber-600 mb-2">Setup Time Breakdown:</h5>
+<ul class="text-amber-500 text-sm space-y-1">
 <li>• Initial controller setup: 30 minutes</li>
 <li>• AP discovery & adoption: 2 hours</li>
 <li>• Guest portal configuration: 1 hour</li>
@@ -329,15 +329,15 @@ TP-Link Omada Management
 </div>
 </div>
 
-<div class="bg-white border border-purple-200 p-6 rounded-lg">
-<h4 class="text-purple-800 font-bold mb-4 flex items-center">
-<span class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 text-sm">🛠️</span>
+<div class="bg-white border border-teal-200 p-6 rounded-lg">
+<h4 class="text-teal-800 font-bold mb-4 flex items-center">
+<span class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3 text-sm">🛠️</span>
 Ubiquiti UniFi Management
 </h4>
 <div class="space-y-4">
-<div class="bg-purple-50 p-4 rounded">
-<h5 class="font-semibold text-purple-700 mb-2">✅ Advantages:</h5>
-<ul class="text-purple-600 text-sm space-y-1">
+<div class="bg-teal-50 p-4 rounded">
+<h5 class="font-semibold text-teal-700 mb-2">✅ Advantages:</h5>
+<ul class="text-teal-600 text-sm space-y-1">
 <li>• Advanced captive portal with branding</li>
 <li>• Detailed analytics and reporting</li>
 <li>• Facebook Wi-Fi integration</li>
@@ -345,9 +345,9 @@ Ubiquiti UniFi Management
 <li>• Professional mobile app</li>
 </ul>
 </div>
-<div class="bg-purple-100 p-4 rounded">
-<h5 class="font-semibold text-purple-700 mb-2">Setup Time Breakdown:</h5>
-<ul class="text-purple-600 text-sm space-y-1">
+<div class="bg-teal-100 p-4 rounded">
+<h5 class="font-semibold text-teal-700 mb-2">Setup Time Breakdown:</h5>
+<ul class="text-teal-600 text-sm space-y-1">
 <li>• Initial controller setup: 1 hour</li>
 <li>• AP adoption & configuration: 3 hours</li>
 <li>• Advanced portal setup: 2 hours</li>
@@ -423,35 +423,35 @@ Ubiquiti UniFi Management
 
 <div class="grid lg:grid-cols-2 gap-8 my-8">
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg">
-<h4 class="text-green-800 font-bold mb-4">✅ TP-Link Omada in Tanzania</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg">
+<h4 class="text-teal-800 font-bold mb-4">✅ TP-Link Omada in Tanzania</h4>
 <div class="space-y-3">
 <div class="flex items-center space-x-3">
-<span class="text-green-600 text-xl">🏪</span>
+<span class="text-teal-600 text-xl">🏪</span>
 <div>
-<p class="font-semibold text-green-700">Local Availability</p>
-<p class="text-green-600 text-sm">Available through NEURALTALE and 8+ local distributors</p>
+<p class="font-semibold text-teal-700">Local Availability</p>
+<p class="text-teal-600 text-sm">Available through NEURALTALE and 8+ local distributors</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="text-green-600 text-xl">📞</span>
+<span class="text-teal-600 text-xl">📞</span>
 <div>
-<p class="font-semibold text-green-700">Technical Support</p>
-<p class="text-green-600 text-sm">Same-day response in Swahili and English</p>
+<p class="font-semibold text-teal-700">Technical Support</p>
+<p class="text-teal-600 text-sm">Same-day response in Swahili and English</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="text-green-600 text-xl">🚚</span>
+<span class="text-teal-600 text-xl">🚚</span>
 <div>
-<p class="font-semibold text-green-700">Replacement Parts</p>
-<p class="text-green-600 text-sm">2-3 days delivery from local stock</p>
+<p class="font-semibold text-teal-700">Replacement Parts</p>
+<p class="text-teal-600 text-sm">2-3 days delivery from local stock</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="text-green-600 text-xl">💰</span>
+<span class="text-teal-600 text-xl">💰</span>
 <div>
-<p class="font-semibold text-green-700">Warranty Claims</p>
-<p class="text-green-600 text-sm">Local RMA process, no international shipping</p>
+<p class="font-semibold text-teal-700">Warranty Claims</p>
+<p class="text-teal-600 text-sm">Local RMA process, no international shipping</p>
 </div>
 </div>
 </div>
@@ -499,16 +499,16 @@ Ubiquiti UniFi Management
 
 <div class="grid lg:grid-cols-3 gap-6 my-8">
 
-<div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+<div class="bg-amber-50 border border-amber-200 p-6 rounded-lg">
 <div class="text-center mb-4">
 <div class="text-3xl mb-2">🏨</div>
-<h4 class="font-bold text-blue-900">Budget Hotels & Guesthouses</h4>
-<p class="text-blue-700 text-sm">(20-50 rooms)</p>
+<h4 class="font-bold text-[#002855]">Budget Hotels & Guesthouses</h4>
+<p class="text-amber-600 text-sm">(20-50 rooms)</p>
 </div>
-<div class="bg-blue-100 p-4 rounded mb-4">
-<p class="text-blue-900 font-semibold text-center">Recommended: TP-Link Omada</p>
+<div class="bg-amber-100 p-4 rounded mb-4">
+<p class="text-[#002855] font-semibold text-center">Recommended: TP-Link Omada</p>
 </div>
-<ul class="text-blue-700 text-sm space-y-2">
+<ul class="text-amber-600 text-sm space-y-2">
 <li>✅ Perfect cost-to-performance ratio</li>
 <li>✅ Easy for staff to manage</li>
 <li>✅ Reliable guest experience</li>
@@ -517,16 +517,16 @@ Ubiquiti UniFi Management
 </ul>
 </div>
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg">
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg">
 <div class="text-center mb-4">
 <div class="text-3xl mb-2">🏢</div>
-<h4 class="font-bold text-green-900">Business Hotels</h4>
-<p class="text-green-700 text-sm">(50-120 rooms)</p>
+<h4 class="font-bold text-teal-900">Business Hotels</h4>
+<p class="text-teal-700 text-sm">(50-120 rooms)</p>
 </div>
-<div class="bg-green-100 p-4 rounded mb-4">
-<p class="text-green-900 font-semibold text-center">Either System Works</p>
+<div class="bg-teal-100 p-4 rounded mb-4">
+<p class="text-teal-900 font-semibold text-center">Either System Works</p>
 </div>
-<ul class="text-green-700 text-sm space-y-2">
+<ul class="text-teal-700 text-sm space-y-2">
 <li>🤔 Choice depends on budget and IT expertise</li>
 <li>• Omada: Better value, easier maintenance</li>
 <li>• UniFi: Better features, guest analytics</li>
@@ -534,16 +534,16 @@ Ubiquiti UniFi Management
 </ul>
 </div>
 
-<div class="bg-purple-50 border border-purple-200 p-6 rounded-lg">
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg">
 <div class="text-center mb-4">
 <div class="text-3xl mb-2">🏖️</div>
-<h4 class="font-bold text-purple-900">Luxury Resorts</h4>
-<p class="text-purple-700 text-sm">(120+ rooms)</p>
+<h4 class="font-bold text-teal-900">Luxury Resorts</h4>
+<p class="text-teal-700 text-sm">(120+ rooms)</p>
 </div>
-<div class="bg-purple-100 p-4 rounded mb-4">
-<p class="text-purple-900 font-semibold text-center">Recommended: UniFi</p>
+<div class="bg-teal-100 p-4 rounded mb-4">
+<p class="text-teal-900 font-semibold text-center">Recommended: UniFi</p>
 </div>
-<ul class="text-purple-700 text-sm space-y-2">
+<ul class="text-teal-700 text-sm space-y-2">
 <li>✅ Guest expectations demand premium features</li>
 <li>✅ Advanced analytics for business intelligence</li>
 <li>✅ Seamless roaming across large properties</li>
@@ -563,41 +563,41 @@ Ubiquiti UniFi Management
 
 <div class="space-y-6">
 <div class="flex items-start space-x-4">
-<span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">1</span>
+<span class="bg-amber-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">1</span>
 <div class="flex-1">
 <p class="font-semibold text-gray-900 mb-2">What's your budget per room?</p>
 <div class="grid md:grid-cols-2 gap-4">
-<div class="p-3 bg-blue-50 rounded border border-blue-200">
-<p class="text-blue-800 font-semibold">Under $80 per room</p>
-<p class="text-blue-600 text-sm">→ Choose Omada</p>
+<div class="p-3 bg-amber-50 rounded border border-amber-200">
+<p class="text-[#002855] font-semibold">Under $80 per room</p>
+<p class="text-amber-500 text-sm">→ Choose Omada</p>
 </div>
-<div class="p-3 bg-purple-50 rounded border border-purple-200">
-<p class="text-purple-800 font-semibold">$100+ per room</p>
-<p class="text-purple-600 text-sm">→ Consider UniFi</p>
+<div class="p-3 bg-teal-50 rounded border border-teal-200">
+<p class="text-teal-800 font-semibold">$100+ per room</p>
+<p class="text-teal-600 text-sm">→ Consider UniFi</p>
 </div>
 </div>
 </div>
 </div>
 
 <div class="flex items-start space-x-4">
-<span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">2</span>
+<span class="bg-amber-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">2</span>
 <div class="flex-1">
 <p class="font-semibold text-gray-900 mb-2">How important is local support?</p>
 <div class="grid md:grid-cols-2 gap-4">
-<div class="p-3 bg-green-50 rounded border border-green-200">
-<p class="text-green-800 font-semibold">Critical (remote location/limited IT staff)</p>
-<p class="text-green-600 text-sm">→ Strongly favor Omada</p>
+<div class="p-3 bg-teal-50 rounded border border-teal-200">
+<p class="text-teal-800 font-semibold">Critical (remote location/limited IT staff)</p>
+<p class="text-teal-600 text-sm">→ Strongly favor Omada</p>
 </div>
-<div class="p-3 bg-orange-50 rounded border border-orange-200">
-<p class="text-orange-800 font-semibold">We have IT expertise</p>
-<p class="text-orange-600 text-sm">→ Both options viable</p>
+<div class="p-3 bg-amber-50 rounded border border-amber-200">
+<p class="text-amber-800 font-semibold">We have IT expertise</p>
+<p class="text-amber-600 text-sm">→ Both options viable</p>
 </div>
 </div>
 </div>
 </div>
 
 <div class="flex items-start space-x-4">
-<span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">3</span>
+<span class="bg-amber-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">3</span>
 <div class="flex-1">
 <p class="font-semibold text-gray-900 mb-2">What's your guest demographic?</p>
 <div class="grid md:grid-cols-2 gap-4">
@@ -605,18 +605,18 @@ Ubiquiti UniFi Management
 <p class="text-yellow-800 font-semibold">Local business travelers, budget tourists</p>
 <p class="text-yellow-600 text-sm">→ Omada provides excellent value</p>
 </div>
-<div class="p-3 bg-purple-50 rounded border border-purple-200">
-<p class="text-purple-800 font-semibold">International luxury travelers</p>
-<p class="text-purple-600 text-sm">→ UniFi meets higher expectations</p>
+<div class="p-3 bg-teal-50 rounded border border-teal-200">
+<p class="text-teal-800 font-semibold">International luxury travelers</p>
+<p class="text-teal-600 text-sm">→ UniFi meets higher expectations</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 
-<div class="mt-8 p-6 bg-blue-600 text-white rounded-lg text-center">
+<div class="mt-8 p-6 bg-amber-500 text-white rounded-lg text-center">
 <p class="text-lg font-semibold mb-2">🤔 Still Not Sure?</p>
-<p class="text-blue-100">Contact NEURALTALE for a free site assessment and personalized recommendation</p>
+<p class="text-amber-100">Contact NEURALTALE for a free site assessment and personalized recommendation</p>
 </div>
 </div>
 
@@ -624,68 +624,68 @@ Ubiquiti UniFi Management
 
 ## 🔧 Implementation Timeline
 
-<div class="bg-green-50 border border-green-200 p-6 rounded-lg my-6">
-<h4 class="text-green-800 font-semibold mb-4">📅 Typical Project Timeline:</h4>
+<div class="bg-teal-50 border border-teal-200 p-6 rounded-lg my-6">
+<h4 class="text-teal-800 font-semibold mb-4">📅 Typical Project Timeline:</h4>
 </div>
 
 <div class="grid lg:grid-cols-2 gap-8 my-8">
 
-<div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-<h4 class="text-blue-800 font-bold mb-4">🚀 TP-Link Omada Timeline</h4>
+<div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+<h4 class="text-[#002855] font-bold mb-4">🚀 TP-Link Omada Timeline</h4>
 <div class="space-y-3">
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
 <div>
-<p class="font-semibold text-blue-700">Week 1: Planning & Ordering</p>
-<p class="text-blue-600 text-sm">Site survey, equipment specification, procurement</p>
+<p class="font-semibold text-amber-600">Week 1: Planning & Ordering</p>
+<p class="text-amber-500 text-sm">Site survey, equipment specification, procurement</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
 <div>
-<p class="font-semibold text-blue-700">Week 2: Installation</p>
-<p class="text-blue-600 text-sm">Cable running, AP mounting, switch configuration</p>
+<p class="font-semibold text-amber-600">Week 2: Installation</p>
+<p class="text-amber-500 text-sm">Cable running, AP mounting, switch configuration</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+<span class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
 <div>
-<p class="font-semibold text-blue-700">Week 3: Configuration & Testing</p>
-<p class="text-blue-600 text-sm">System setup, guest portal, staff training</p>
+<p class="font-semibold text-amber-600">Week 3: Configuration & Testing</p>
+<p class="text-amber-500 text-sm">System setup, guest portal, staff training</p>
 </div>
 </div>
-<div class="bg-blue-100 p-3 rounded mt-4">
-<p class="text-blue-800 font-semibold">Total: 3 weeks, minimal downtime</p>
+<div class="bg-amber-100 p-3 rounded mt-4">
+<p class="text-[#002855] font-semibold">Total: 3 weeks, minimal downtime</p>
 </div>
 </div>
 </div>
 
-<div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-<h4 class="text-purple-800 font-bold mb-4">🚀 Ubiquiti UniFi Timeline</h4>
+<div class="bg-teal-50 p-6 rounded-lg border border-teal-200">
+<h4 class="text-teal-800 font-bold mb-4">🚀 Ubiquiti UniFi Timeline</h4>
 <div class="space-y-3">
 <div class="flex items-center space-x-3">
-<span class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+<span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
 <div>
-<p class="font-semibold text-purple-700">Week 1-2: Planning & Import</p>
-<p class="text-purple-600 text-sm">Site survey, ordering, customs clearance</p>
+<p class="font-semibold text-teal-700">Week 1-2: Planning & Import</p>
+<p class="text-teal-600 text-sm">Site survey, ordering, customs clearance</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+<span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
 <div>
-<p class="font-semibold text-purple-700">Week 3: Installation</p>
-<p class="text-purple-600 text-sm">Infrastructure setup, specialized installation</p>
+<p class="font-semibold text-teal-700">Week 3: Installation</p>
+<p class="text-teal-600 text-sm">Infrastructure setup, specialized installation</p>
 </div>
 </div>
 <div class="flex items-center space-x-3">
-<span class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+<span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
 <div>
-<p class="font-semibold text-purple-700">Week 4-5: Advanced Configuration</p>
-<p class="text-purple-600 text-sm">Complex setup, portal customization, training</p>
+<p class="font-semibold text-teal-700">Week 4-5: Advanced Configuration</p>
+<p class="text-teal-600 text-sm">Complex setup, portal customization, training</p>
 </div>
 </div>
-<div class="bg-purple-100 p-3 rounded mt-4">
-<p class="text-purple-800 font-semibold">Total: 5-6 weeks, longer lead time</p>
+<div class="bg-teal-100 p-3 rounded mt-4">
+<p class="text-teal-800 font-semibold">Total: 5-6 weeks, longer lead time</p>
 </div>
 </div>
 </div>
@@ -730,37 +730,37 @@ Ubiquiti UniFi Management
 
 ## 🏆 Final Recommendation
 
-<div class="bg-blue-600 text-white p-8 rounded-lg my-8">
+<div class="bg-amber-500 text-white p-8 rounded-lg my-8">
 <div class="text-center mb-6">
 <h3 class="text-2xl font-bold mb-4">🎯 Our Expert Recommendation</h3>
-<p class="text-blue-100 text-lg">Based on 50+ hotel deployments across Tanzania</p>
+<p class="text-amber-100 text-lg">Based on 50+ hotel deployments across Tanzania</p>
 </div>
 
 <div class="grid md:grid-cols-2 gap-6">
-<div class="bg-blue-700 p-6 rounded-lg">
+<div class="bg-amber-600 p-6 rounded-lg">
 <h4 class="font-bold mb-3 text-center">✅ Choose TP-Link Omada If:</h4>
-<ul class="text-blue-100 space-y-2 text-sm">
+<ul class="text-amber-100 space-y-2 text-sm">
 <li>• Budget is primary concern (most hotels)</li>
 <li>• You want reliable local support</li>
 <li>• IT expertise is limited</li>
 <li>• Quick deployment is important</li>
 <li>• Guest expectations are standard (not luxury)</li>
 </ul>
-<div class="mt-4 p-3 bg-blue-800 rounded text-center">
+<div class="mt-4 p-3 bg-[#002855] rounded text-center">
 <p class="font-semibold">👍 Recommended for 80% of Tanzanian hotels</p>
 </div>
 </div>
 
-<div class="bg-blue-700 p-6 rounded-lg">
+<div class="bg-amber-600 p-6 rounded-lg">
 <h4 class="font-bold mb-3 text-center">⭐ Choose Ubiquiti UniFi If:</h4>
-<ul class="text-blue-100 space-y-2 text-sm">
+<ul class="text-amber-100 space-y-2 text-sm">
 <li>• Premium brand positioning is crucial</li>
 <li>• You have dedicated IT staff</li>
 <li>• Advanced analytics are valuable</li>
 <li>• Guest demographics expect luxury</li>
 <li>• Long-term investment horizon (5+ years)</li>
 </ul>
-<div class="mt-4 p-3 bg-blue-800 rounded text-center">
+<div class="mt-4 p-3 bg-[#002855] rounded text-center">
 <p class="font-semibold">🌟 Best for luxury resorts and 4-5 star hotels</p>
 </div>
 </div>
@@ -804,21 +804,21 @@ Ubiquiti UniFi Management
 
 ## 🚀 Ready to Upgrade Your Hotel Wi-Fi?
 
-<div class="bg-green-600 text-white p-8 rounded-lg my-8 text-center">
+<div class="bg-teal-600 text-white p-8 rounded-lg my-8 text-center">
 <h3 class="text-2xl font-bold mb-4">Get Professional Installation & Support</h3>
-<p class="text-green-100 mb-6">NEURALTALE has deployed both Omada and UniFi systems across Tanzania. We'll help you choose the right solution and ensure flawless implementation.</p>
+<p class="text-teal-100 mb-6">NEURALTALE has deployed both Omada and UniFi systems across Tanzania. We'll help you choose the right solution and ensure flawless implementation.</p>
 <div class="grid md:grid-cols-3 gap-4 text-left">
-<div class="bg-green-700 p-4 rounded">
+<div class="bg-teal-700 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Expert Consultation</h4>
-<p class="text-green-100 text-sm">Free site assessment and personalized recommendation</p>
+<p class="text-teal-100 text-sm">Free site assessment and personalized recommendation</p>
 </div>
-<div class="bg-green-700 p-4 rounded">
+<div class="bg-teal-700 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Professional Installation</h4>
-<p class="text-green-100 text-sm">Certified technicians, quality guarantee, minimal downtime</p>
+<p class="text-teal-100 text-sm">Certified technicians, quality guarantee, minimal downtime</p>
 </div>
-<div class="bg-green-700 p-4 rounded">
+<div class="bg-teal-700 p-4 rounded">
 <h4 class="font-semibold mb-2">✅ Ongoing Support</h4>
-<p class="text-green-100 text-sm">24/7 monitoring, maintenance, and guest support</p>
+<p class="text-teal-100 text-sm">24/7 monitoring, maintenance, and guest support</p>
 </div>
 </div>
 </div>

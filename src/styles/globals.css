@@ -10,25 +10,25 @@
 [data-size="48"] { width: 48px; height: 48px; }
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 210 40% 15%;
-  --card: 0 0% 98%;
-  --card-foreground: 210 40% 15%;
+  --background: 34 33% 98%;
+  --foreground: 212 100% 17%;
+  --card: 34 40% 95%;
+  --card-foreground: 212 100% 17%;
   --popover: 0 0% 100%;
-  --popover-foreground: 210 40% 15%;
-  --primary: 217.2 91.2% 59.8%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 210 40% 15%;
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 20.2% 45%;
-  --accent: 210 40% 96%;
-  --accent-foreground: 210 40% 15%;
+  --popover-foreground: 212 100% 17%;
+  --primary: 45 100% 51%;
+  --primary-foreground: 212 100% 17%;
+  --secondary: 212 100% 17%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 34 30% 93%;
+  --muted-foreground: 212 30% 40%;
+  --accent: 185 100% 28%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 50%;
   --destructive-foreground: 0 0% 100%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: 34 25% 85%;
+  --input: 34 25% 85%;
+  --ring: 45 100% 51%;
   --radius: 0.75rem;
 }
 
@@ -57,16 +57,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #002855;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00D4FF, #8B5FBF);
+  background: #FFC107;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #8B5FBF, #FF006E);
+  background: #00838F;
 }
 
 /* Glass morphism effect */
@@ -80,46 +80,40 @@ html {
 
 /* Neumorphism effect */
 .neumorphic {
-  background: #111111;
+  background: #002855;
   box-shadow: 
-    8px 8px 16px #0a0a0a,
-    -8px -8px 16px #181818;
+    8px 8px 16px #001a3a,
+    -8px -8px 16px #003670;
 }
 
 /* Neon glow effects */
 .neon-blue {
   box-shadow: 
-    0 0 5px #00D4FF,
-    0 0 10px #00D4FF,
-    0 0 15px #00D4FF,
-    0 0 20px #00D4FF;
+    0 0 5px #FFC107,
+    0 0 10px #FFC107,
+    0 0 15px #FFC107,
+    0 0 20px #FFC107;
 }
 
 .neon-purple {
   box-shadow: 
-    0 0 5px #8B5FBF,
-    0 0 10px #8B5FBF,
-    0 0 15px #8B5FBF,
-    0 0 20px #8B5FBF;
+    0 0 5px #00838F,
+    0 0 10px #00838F,
+    0 0 15px #00838F,
+    0 0 20px #00838F;
 }
 
 .neon-pink {
   box-shadow: 
-    0 0 5px #FF006E,
-    0 0 10px #FF006E,
-    0 0 15px #FF006E,
-    0 0 20px #FF006E;
+    0 0 5px #F5E6D3,
+    0 0 10px #F5E6D3,
+    0 0 15px #F5E6D3,
+    0 0 20px #F5E6D3;
 }
 
-/* Gradient text */
+/* Flat text utility (formerly gradient-text) */
 .gradient-text {
-  background: linear-gradient(45deg, #00D4FF, #8B5FBF, #FF006E);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-shift 3s ease-in-out infinite;
-  will-change: background-position;
+  color: #002855;
 }
 
 /* Animated border */
@@ -132,13 +126,13 @@ html {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(45deg, #00D4FF, #8B5FBF, #FF006E, #00F5A0);
+  background: #00838F;
   border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: subtract;
-  animation: gradient-shift 3s ease-in-out infinite;
-  will-change: background-position;
+  mask: none;
+  -webkit-mask-composite: initial;
+  mask-composite: initial;
+  animation: none;
+  will-change: auto;
 }
 
 /* Particle background */
@@ -153,8 +147,8 @@ html {
 
 /* Code editor styles */
 .code-editor {
-  background: #0D1117;
-  border: 1px solid #21262D;
+  background: #001a3a;
+  border: 1px solid #003670;
   border-radius: 8px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -189,18 +183,18 @@ html {
 
 .hexagon::before {
   bottom: 100%;
-  border-bottom: 28.87px solid #00D4FF;
+  border-bottom: 28.87px solid #FFC107;
 }
 
 .hexagon::after {
   top: 100%;
-  border-top: 28.87px solid #00D4FF;
+  border-top: 28.87px solid #FFC107;
 }
 
 /* Loading spinner */
 .spinner {
   border: 2px solid transparent;
-  border-top: 2px solid #00D4FF;
+  border-top: 2px solid #FFC107;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

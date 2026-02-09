@@ -55,14 +55,14 @@ const BlogPost = ({ post }: BlogPostProps) => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/blog"
-            className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-6"
+            className="inline-flex items-center space-x-2 text-amber-500 hover:text-amber-600 mb-6"
           >
             <FaArrowLeft className="w-4 h-4" />
             <span>Back to Blog</span>
           </Link>
           
           <div className="mb-6">
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+            <span className="bg-amber-100 text-[#002855] px-3 py-1 rounded-full text-sm font-medium">
               {post.category}
             </span>
           </div>
@@ -97,7 +97,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
+                className="text-gray-400 hover:text-amber-400 transition-colors"
                 title={`Share "${post.title}" on Twitter`}
                 aria-label={`Share this article "${post.title}" on Twitter`}
               >
@@ -107,7 +107,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-600 transition-colors"
+                className="text-gray-400 hover:text-amber-500 transition-colors"
                 title={`Share "${post.title}" on Facebook`}
                 aria-label={`Share this article "${post.title}" on Facebook`}
               >
@@ -117,7 +117,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-700 transition-colors"
+                className="text-gray-400 hover:text-amber-600 transition-colors"
                 title={`Share "${post.title}" on LinkedIn`}
                 aria-label={`Share this article "${post.title}" on LinkedIn`}
               >
@@ -127,7 +127,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
                 href={`https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-600 transition-colors"
+                className="text-gray-400 hover:text-teal-600 transition-colors"
                 title={`Share "${post.title}" on WhatsApp`}
                 aria-label={`Share this article "${post.title}" on WhatsApp`}
               >
@@ -154,7 +154,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
         <div className="prose prose-lg max-w-none">
           <div 
             dangerouslySetInnerHTML={{ __html: post.content }}
-            className="prose prose-lg prose-blue max-w-none
+            className="prose prose-lg prose-stone max-w-none
               prose-headings:text-gray-900 prose-headings:font-bold
               prose-h1:text-3xl prose-h1:mb-8 prose-h1:mt-0
               prose-h2:text-2xl prose-h2:mb-6 prose-h2:mt-8 prose-h2:border-b prose-h2:border-gray-200 prose-h2:pb-2
@@ -164,9 +164,9 @@ const BlogPost = ({ post }: BlogPostProps) => {
               prose-li:text-gray-700 prose-li:my-2
               prose-strong:text-gray-900 prose-strong:font-semibold
               prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
-              prose-pre:bg-gray-900 prose-pre:text-white prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
-              prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700
-              prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:pl-4 prose-blockquote:italic"
+              prose-pre:bg-[#002855] prose-pre:text-white prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
+              prose-a:text-amber-500 prose-a:no-underline hover:prose-a:text-amber-600
+              prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:pl-4 prose-blockquote:italic"
           />
         </div>
       </article>
@@ -203,13 +203,13 @@ const BlogPost = ({ post }: BlogPostProps) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              className="px-8 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors duration-300"
             >
               Get Expert Help
             </Link>
             <Link
               href="/services"
-              className="px-8 py-3 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-300"
+              className="px-8 py-3 border border-amber-500 text-amber-500 font-semibold rounded-lg hover:bg-amber-50 transition-colors duration-300"
             >
               View Our Services
             </Link>
@@ -224,7 +224,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/omada-vs-unifi-hotels-tanzania" className="group">
               <article className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
-                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
+                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-amber-500">
                   Omada vs UniFi for Hotels in Tanzania
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -234,7 +234,7 @@ const BlogPost = ({ post }: BlogPostProps) => {
             </Link>
             <Link href="/blog/sme-networking-equipment-buying-guide" className="group">
               <article className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
-                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
+                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-amber-500">
                   What SMEs Should Ask Before Buying Networking Gear
                 </h3>
                 <p className="text-gray-600 text-sm">

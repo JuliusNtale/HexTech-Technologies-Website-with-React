@@ -16,7 +16,7 @@ export const universalTemplate = `
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
-      background-color: #f8fafc;
+      background-color: #FEFCF9;
     }
     .container { 
       background: white;
@@ -26,18 +26,18 @@ export const universalTemplate = `
     }
     .header { 
       text-align: center;
-      border-bottom: 3px solid #3b82f6;
+      border-bottom: 3px solid #FFC107;
       padding-bottom: 20px;
       margin-bottom: 30px;
     }
     .logo { 
       font-size: 24px;
       font-weight: bold;
-      color: #1e40af;
+      color: #002855;
       margin-bottom: 10px;
     }
     .form-type { 
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      background: #00838F;
       color: white;
       padding: 8px 16px;
       border-radius: 20px;
@@ -51,30 +51,30 @@ export const universalTemplate = `
     .section { 
       margin: 25px 0;
       padding: 20px;
-      background: #f1f5f9;
+      background: #FBF6F0;
       border-radius: 8px;
-      border-left: 4px solid #3b82f6;
+      border-left: 4px solid #FFC107;
     }
     .field { 
       margin: 12px 0;
     }
     .field-label { 
       font-weight: 600;
-      color: #1e40af;
+      color: #002855;
       margin-bottom: 5px;
     }
     .field-value { 
       background: white;
       padding: 10px;
       border-radius: 6px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #E8DDD0;
     }
     .footer { 
       text-align: center;
       margin-top: 30px;
       padding-top: 20px;
-      border-top: 1px solid #e2e8f0;
-      color: #64748b;
+      border-top: 1px solid #E8DDD0;
+      color: #5A6B7D;
       font-size: 14px;
     }
     .priority-high { border-left-color: #ef4444; }
@@ -92,7 +92,7 @@ export const universalTemplate = `
 
     <!-- Contact Information Section -->
     <div class="section">
-      <h3 style="margin-top: 0; color: #1e40af;">Contact Information</h3>
+      <h3 style="margin-top: 0; color: #002855;">Contact Information</h3>
       <div class="field">
         <div class="field-label">Name:</div>
         <div class="field-value">{{from_name}}{{applicant_name}}{{client_name}}</div>
@@ -122,7 +122,7 @@ export const universalTemplate = `
     <!-- Contact Form Fields -->
     {{#subject}}
     <div class="section">
-      <h3 style="margin-top: 0; color: #1e40af;">Contact Details</h3>
+      <h3 style="margin-top: 0; color: #002855;">Contact Details</h3>
       <div class="field">
         <div class="field-label">Subject:</div>
         <div class="field-value">{{subject}}</div>
@@ -155,7 +155,7 @@ export const universalTemplate = `
     <!-- Quote Request Fields -->
     {{#service_requested}}
     <div class="section">
-      <h3 style="margin-top: 0; color: #1e40af;">Quote Request Details</h3>
+      <h3 style="margin-top: 0; color: #002855;">Quote Request Details</h3>
       <div class="field">
         <div class="field-label">Service Requested:</div>
         <div class="field-value">{{service_requested}}</div>
@@ -190,7 +190,7 @@ export const universalTemplate = `
     <!-- Career Application Fields -->
     {{#position_applied}}
     <div class="section">
-      <h3 style="margin-top: 0; color: #1e40af;">Career Application Details</h3>
+      <h3 style="margin-top: 0; color: #002855;">Career Application Details</h3>
       <div class="field">
         <div class="field-label">Position Applied:</div>
         <div class="field-value">{{position_applied}}</div>
@@ -210,7 +210,7 @@ export const universalTemplate = `
       {{#portfolio_link}}
       <div class="field">
         <div class="field-label">Portfolio:</div>
-        <div class="field-value"><a href="{{portfolio_link}}" style="color: #3b82f6;">{{portfolio_link}}</a></div>
+        <div class="field-value"><a href="{{portfolio_link}}" style="color: #FFC107;">{{portfolio_link}}</a></div>
       </div>
       {{/portfolio_link}}
       <div class="field">
@@ -223,7 +223,7 @@ export const universalTemplate = `
     <!-- Support Request Fields -->
     {{#issue_subject}}
     <div class="section {{#priority_level}}priority-{{priority_level}}{{/priority_level}}">
-      <h3 style="margin-top: 0; color: #1e40af;">Support Request Details</h3>
+      <h3 style="margin-top: 0; color: #002855;">Support Request Details</h3>
       {{#priority_level}}
       <div class="field">
         <div class="field-label">Priority Level:</div>
@@ -263,7 +263,7 @@ export const universalTemplate = `
       <p>This message was sent via the {{form_type}} form on neuraltale.com</p>
       <p style="margin-top: 20px;">
         📧 Reply to: {{reply_to}}<br>
-        🌐 Visit us: <a href="https://neuraltale.com" style="color: #3b82f6;">neuraltale.com</a>
+        🌐 Visit us: <a href="https://neuraltale.com" style="color: #FFC107;">neuraltale.com</a>
       </p>
     </div>
   </div>

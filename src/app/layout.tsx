@@ -128,7 +128,7 @@ export const metadata: Metadata = {
       {
         rel: 'mask-icon',
         url: '/logo.svg',
-        color: '#03213F',
+        color: '#002855',
       },
     ],
   },
@@ -198,7 +198,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
-        <meta name="msapplication-TileColor" content="#03213F" />
+        <meta name="msapplication-TileColor" content="#002855" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <link rel="canonical" href="https://neuraltale.com" />
         
@@ -207,7 +207,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
         <link rel="shortcut icon" href="/logo.svg" />
-        <link rel="mask-icon" href="/logo.svg" color="#03213F" />
+        <link rel="mask-icon" href="/logo.svg" color="#002855" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
         {/* Performance hints */}

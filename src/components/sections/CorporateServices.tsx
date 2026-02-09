@@ -192,24 +192,24 @@ const CorporateServicesPage = () => {
     <>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20" />
+        <section className="relative py-20 bg-[#002855] text-white overflow-hidden">
+          <div className="absolute inset-0 bg-[#002855]/20" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Professional Technology Services
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8">
+              <p className="text-xl md:text-2xl text-amber-100 max-w-4xl mx-auto mb-8">
                 Comprehensive IT solutions and technology services designed for businesses, 
                 enterprises, and organizations seeking professional digital transformation.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <div className="flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2">
-                  <FaBusinessTime className="text-blue-300" />
+                  <FaBusinessTime className="text-amber-300" />
                   <span>Enterprise-Grade Solutions</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2">
-                  <FaShieldAlt className="text-green-300" />
+                  <FaShieldAlt className="text-teal-300" />
                   <span>Security & Compliance</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2">
@@ -241,8 +241,8 @@ const CorporateServicesPage = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex items-center space-x-2 px-6 py-3 rounded-full border-2 transition-all duration-300 hover:scale-105 ${
                     selectedCategory === category.id
-                      ? 'bg-blue-600 text-white border-blue-600'
-                      : 'bg-white text-gray-700 border-gray-300 hover:border-blue-300 hover:text-blue-600'
+                      ? 'bg-amber-500 text-white border-amber-500'
+                      : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
                   }`}
                 >
                   <category.icon className="w-4 h-4" />
@@ -264,8 +264,8 @@ const CorporateServicesPage = () => {
                 >
                   <div className="p-8">
                     <div className="flex items-center mb-6">
-                      <div className="p-3 bg-blue-100 rounded-lg">
-                        <service.icon className="w-8 h-8 text-blue-600" />
+                      <div className="p-3 bg-amber-100 rounded-lg">
+                        <service.icon className="w-8 h-8 text-amber-500" />
                       </div>
                       <div className="ml-4">
                         <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
@@ -279,11 +279,11 @@ const CorporateServicesPage = () => {
 
                     <div className="space-y-4 mb-6">
                       <div className="flex items-center text-sm">
-                        <FaClock className="w-4 h-4 text-blue-600 mr-2" />
+                        <FaClock className="w-4 h-4 text-amber-500 mr-2" />
                         <span className="text-gray-600">Timeline: {service.timeline}</span>
                       </div>
                       <div className="flex items-center text-sm">
-                        <FaTag className="w-4 h-4 text-green-600 mr-2" />
+                        <FaTag className="w-4 h-4 text-teal-600 mr-2" />
                         <span className="text-gray-600">Pricing: {service.pricing}</span>
                       </div>
                       <div className="text-sm">
@@ -297,12 +297,12 @@ const CorporateServicesPage = () => {
                       <div className="space-y-2">
                         {service.features.slice(0, 4).map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-start space-x-2">
-                            <FaCheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                            <FaCheckCircle className="w-4 h-4 text-teal-500 mt-0.5 flex-shrink-0" />
                             <span className="text-sm text-gray-600">{feature}</span>
                           </div>
                         ))}
                         {service.features.length > 4 && (
-                          <div className="text-sm text-blue-600 font-medium">
+                          <div className="text-sm text-amber-500 font-medium">
                             +{service.features.length - 4} more features
                           </div>
                         )}
@@ -312,7 +312,7 @@ const CorporateServicesPage = () => {
                     <div className="flex space-x-3">
                       <button
                         onClick={() => handleQuoteRequest(service.title)}
-                        className="flex-1 bg-blue-600 text-white px-4 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                        className="flex-1 bg-amber-500 text-white px-4 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                       >
                         <span>Get Quote</span>
                         <FaArrowRight className="w-4 h-4" />
@@ -329,10 +329,10 @@ const CorporateServicesPage = () => {
         </section>
 
         {/* Why Choose NEURALTALE */}
-        <section className="py-16  bg-blue-600">
+        <section className="py-16  bg-amber-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-100 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-100 mb-4">
                 Why Choose NEURALTALE?
               </h2>
               <p className="text-lg text-white max-w-3xl mx-auto">
@@ -368,8 +368,8 @@ const CorporateServicesPage = () => {
                   key={benefit.title}
                   className="text-center hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <benefit.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <benefit.icon className="w-8 h-8 text-amber-500" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
                   <p className="text-white">{benefit.description}</p>
@@ -393,7 +393,7 @@ const CorporateServicesPage = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={() => handleQuoteRequest('General Consultation')}
-                  className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                  className="px-8 py-4 bg-white text-amber-500 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300"
                 >
                   Get Free Consultation
                 </button>

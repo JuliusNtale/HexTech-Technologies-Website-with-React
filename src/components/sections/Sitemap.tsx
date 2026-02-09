@@ -127,15 +127,15 @@ function SitemapItemComponent({ item, index, isChild = false }: SitemapItemProps
         className={`block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg group ${
           isChild 
             ? 'bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-300' 
-            : 'bg-white border-gray-200 hover:bg-blue-50 hover:border-blue-300'
+            : 'bg-white border-gray-200 hover:bg-amber-50 hover:border-amber-300'
         }`}
       >
         <div className="flex items-start space-x-4">
-          <div className={`p-3 rounded-lg ${isChild ? 'bg-gray-200' : 'bg-blue-100'} group-hover:scale-110 transition-transform`}>
-            <Icon className={`w-6 h-6 ${isChild ? 'text-gray-600' : 'text-blue-600'}`} />
+          <div className={`p-3 rounded-lg ${isChild ? 'bg-gray-200' : 'bg-amber-100'} group-hover:scale-110 transition-transform`}>
+            <Icon className={`w-6 h-6 ${isChild ? 'text-gray-600' : 'text-amber-500'}`} />
           </div>
           <div className="flex-1">
-            <h3 className={`font-bold mb-2 group-hover:text-blue-600 transition-colors ${
+            <h3 className={`font-bold mb-2 group-hover:text-amber-500 transition-colors ${
               isChild ? 'text-lg text-gray-700' : 'text-xl text-gray-900'
             }`}>
               {item.title}
@@ -143,7 +143,7 @@ function SitemapItemComponent({ item, index, isChild = false }: SitemapItemProps
             <p className="text-gray-600 text-sm leading-relaxed">
               {item.description}
             </p>
-            <div className="mt-3 flex items-center text-blue-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="mt-3 flex items-center text-amber-500 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
               Visit page →
             </div>
           </div>
@@ -169,7 +169,7 @@ function SitemapItemComponent({ item, index, isChild = false }: SitemapItemProps
 
 export default function Sitemap() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -201,7 +201,7 @@ export default function Sitemap() {
           className="mt-16 text-center"
         >
           <p className="text-gray-500 text-sm">
-            Can't find what you're looking for? <Link href="/contact" className="text-blue-600 hover:underline">Contact us</Link> for assistance.
+            Can't find what you're looking for? <Link href="/contact" className="text-amber-500 hover:underline">Contact us</Link> for assistance.
           </p>
         </motion.div>
       </div>
