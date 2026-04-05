@@ -11,19 +11,19 @@ import type { Stat } from '@/types'
 const stats: Stat[] = [
   {
     id: '1',
-    value: 1000,
+    value: 100,
     label: 'Happy Clients',
     suffix: '+',
   },
   {
     id: '2',
-    value: 99.9,
+    value: 90.9,
     label: 'Uptime',
     suffix: '%',
   },
   {
     id: '3',
-    value: 500,
+    value: 50,
     label: 'Projects Completed',
     suffix: '+',
   }
