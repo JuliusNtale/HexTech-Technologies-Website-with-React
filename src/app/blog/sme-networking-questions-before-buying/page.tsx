@@ -1035,7 +1035,7 @@ Print this checklist for your vendor meetings:
 
 **Contact us for your networking assessment**:
 - Email: sme@Neuraltale.co.tz
-- WhatsApp: +25565320829
+- WhatsApp: +255653520829
 - Office visits: Dar es Salaam, Zanzibar, Arusha
 
 ---

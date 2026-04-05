@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { 
+import {
   FaUsers,
   FaGraduationCap,
   FaClock,
@@ -222,8 +222,8 @@ const CareersPage = () => {
     }
   ]
 
-  const filteredPositions = selectedDepartment === 'all' 
-    ? openPositions 
+  const filteredPositions = selectedDepartment === 'all'
+    ? openPositions
     : openPositions.filter(position => position.department === selectedDepartment)
 
   const handleApplicationSubmit = (e: React.FormEvent) => {
@@ -252,7 +252,7 @@ const CareersPage = () => {
               Join Our Innovation Team
             </h1>
             <p className="text-xl md:text-2xl text-amber-50 max-w-4xl mx-auto mb-8">
-              Build your career with Tanzania's leading technology solutions company. 
+              Build your career with Tanzania's leading technology solutions company.
               Help businesses transform and grow through innovative technology.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -280,7 +280,7 @@ const CareersPage = () => {
               Why Choose NeuralTale as Your Career Destination?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We offer more than just a job - we provide a platform for growth, innovation, 
+              We offer more than just a job - we provide a platform for growth, innovation,
               and making a real impact in Tanzania's technology landscape.
             </p>
           </div>
@@ -307,7 +307,7 @@ const CareersPage = () => {
               Current Open Positions
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Explore opportunities to join our growing team and help shape the future of 
+              Explore opportunities to join our growing team and help shape the future of
               technology in Tanzania.
             </p>
           </div>
@@ -318,11 +318,10 @@ const CareersPage = () => {
               <button
                 key={dept.id}
                 onClick={() => setSelectedDepartment(dept.id)}
-                className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${
-                  selectedDepartment === dept.id
+                className={`px-6 py-3 rounded-lg border-2 transition-all duration-300 ${selectedDepartment === dept.id
                     ? 'bg-[#002855] text-white border-[#002855]'
                     : 'bg-white text-gray-700 border-gray-300 hover:border-amber-400 hover:text-amber-500'
-                }`}
+                  }`}
               >
                 <span className="font-medium">{dept.name}</span>
                 <span className="ml-2 text-sm">({dept.count})</span>
@@ -353,16 +352,16 @@ const CareersPage = () => {
                     </div>
                   </div>
                   <button
-                    onClick={() => setApplicationForm({...applicationForm, position: position.title})}
+                    onClick={() => setApplicationForm({ ...applicationForm, position: position.title })}
                     className="mt-4 lg:mt-0 bg-[#002855] text-white px-6 py-2 rounded-lg hover:bg-[#001a3a] transition-colors duration-300 flex items-center space-x-2"
                   >
                     <span>Apply Now</span>
                     <FaArrowRight className="w-4 h-4" />
                   </button>
                 </div>
-                
+
                 <p className="text-gray-600 mb-4">{position.description}</p>
-                
+
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Requirements</h4>
@@ -425,7 +424,7 @@ const CareersPage = () => {
                   </label>
                   <select
                     value={applicationForm.position}
-                    onChange={(e) => setApplicationForm({...applicationForm, position: e.target.value})}
+                    onChange={(e) => setApplicationForm({ ...applicationForm, position: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   >
@@ -444,7 +443,7 @@ const CareersPage = () => {
                   <input
                     type="text"
                     value={applicationForm.name}
-                    onChange={(e) => setApplicationForm({...applicationForm, name: e.target.value})}
+                    onChange={(e) => setApplicationForm({ ...applicationForm, name: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
@@ -459,7 +458,7 @@ const CareersPage = () => {
                   <input
                     type="email"
                     value={applicationForm.email}
-                    onChange={(e) => setApplicationForm({...applicationForm, email: e.target.value})}
+                    onChange={(e) => setApplicationForm({ ...applicationForm, email: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
@@ -471,7 +470,7 @@ const CareersPage = () => {
                   <input
                     type="tel"
                     value={applicationForm.phone}
-                    onChange={(e) => setApplicationForm({...applicationForm, phone: e.target.value})}
+                    onChange={(e) => setApplicationForm({ ...applicationForm, phone: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                     required
                   />
@@ -484,7 +483,7 @@ const CareersPage = () => {
                 </label>
                 <select
                   value={applicationForm.experience}
-                  onChange={(e) => setApplicationForm({...applicationForm, experience: e.target.value})}
+                  onChange={(e) => setApplicationForm({ ...applicationForm, experience: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                   required
                 >
@@ -503,7 +502,7 @@ const CareersPage = () => {
                 </label>
                 <textarea
                   value={applicationForm.coverLetter}
-                  onChange={(e) => setApplicationForm({...applicationForm, coverLetter: e.target.value})}
+                  onChange={(e) => setApplicationForm({ ...applicationForm, coverLetter: e.target.value })}
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
                   placeholder="Tell us about yourself, your experience, and why you're interested in joining our team..."
@@ -535,7 +534,7 @@ const CareersPage = () => {
             Have Questions About Careers?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Our HR team is here to help answer any questions about career opportunities, 
+            Our HR team is here to help answer any questions about career opportunities,
             company culture, or the application process.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -550,7 +549,7 @@ const CareersPage = () => {
               <FaPhone className="w-5 h-5 text-teal-600" />
               <div>
                 <div className="font-semibold text-gray-900">Call HR</div>
-                <div className="text-sm text-gray-600">+25565320829</div>
+                <div className="text-sm text-gray-600">+255653520829</div>
               </div>
             </div>
             <Link

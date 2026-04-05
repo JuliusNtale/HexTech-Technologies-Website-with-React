@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
-import {
-  Mail,
-  Phone,
-  MapPin,
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
   ArrowUp,
   Github,
   Twitter,
@@ -68,7 +68,7 @@ export default function Footer() {
   }
 
   return (
-    <footer ref={ref} className="relative bg-[#002855] border-t border-gray-700 overflow-hidden text-white">
+    <footer className="relative bg-[#002855] border-t border-gray-700 overflow-hidden text-white">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hex-pattern opacity-5" />
@@ -78,50 +78,50 @@ export default function Footer() {
 
       <div className="relative z-10">
         {/* Newsletter Section */}
-
+       
 
         {/* Main Footer Content */}
         <div className="py-16">
-
+         
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
               {/* Brand Section */}
-
+              
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 }}
                 className="lg:col-span-2"
               >
-
+             
                 {/* Newsletter Section */}
-
-                <div className="max-w-7xl mx-auto">
-                  <div>
-                    <h3 className="text-1xl md:text-2xl font-bold text-white ">
-                      Stay Updated with <span className="text-amber-500">NEURALTALE</span>
-                    </h3>
-                    <p className="text-gray-300 text-sm mb-4 mt-3 max-w-2xl mx-auto">
-                      Get the latest insights on technology trends, industry news, and NEURALTALE updates delivered to your inbox.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-2">
-                      <motion.input
-                        whileFocus={{ scale: 1.02 }}
-                        type="email"
-                        placeholder="Enter your email"
-                        className="flex-1 px-2 py-2 rounded-lg bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 transition-all duration-300"
-                      />
-                      <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-3 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
-                      >
-                        Subscribe
-                      </motion.button>
-                    </div>
-                  </div>
-                </div>
+                 
+                 <div className="max-w-7xl mx-auto">
+            <div>
+              <h3 className="text-1xl md:text-2xl font-bold text-white ">
+                Stay Updated with <span className="text-amber-500">NEURALTALE</span>
+              </h3>
+              <p className="text-gray-300 text-sm mb-4 mt-3 max-w-2xl mx-auto">
+                Get the latest insights on technology trends, industry news, and NEURALTALE updates delivered to your inbox.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-2">
+                <motion.input
+                  whileFocus={{ scale: 1.02 }}
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-2 py-2 rounded-lg bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 transition-all duration-300"
+                />
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-3 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+                >
+                  Subscribe
+                </motion.button>
+              </div>
+            </div>
+          </div>
 
                 {/* Contact Info */}
                 <div className="space-y-3 mt-7">
@@ -248,7 +248,7 @@ export default function Footer() {
             const position = positions[i] || { left: 50, top: 50 }
             const duration = 10 + (i * 0.5) // Deterministic duration based on index
             const delay = i * 0.25 // Deterministic delay based on index
-
+            
             return (
               <motion.div
                 key={i}

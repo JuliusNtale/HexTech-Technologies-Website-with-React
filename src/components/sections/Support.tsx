@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { 
+import {
   FaHeadset,
   FaClock,
   FaPhone,
@@ -101,7 +101,7 @@ const SupportPage = () => {
       icon: FaPhone,
       title: '24/7 Phone Support',
       description: 'Call us anytime for urgent technical issues',
-      contact: '+25565320829',
+      contact: '+255653520829',
       availability: 'Available 24/7',
       responseTime: 'Immediate',
       priority: 'Critical & Urgent Issues'
@@ -166,8 +166,8 @@ const SupportPage = () => {
     }
   ]
 
-  const filteredFaqs = selectedCategory === 'all' 
-    ? faqs 
+  const filteredFaqs = selectedCategory === 'all'
+    ? faqs
     : faqs.filter(faq => faq.category === selectedCategory)
 
   const searchFilteredFaqs = filteredFaqs.filter(faq =>
@@ -201,7 +201,7 @@ const SupportPage = () => {
               Expert Support When You Need It
             </h1>
             <p className="text-xl md:text-2xl text-teal-100 max-w-4xl mx-auto mb-8">
-              Get help from our technical experts 24/7. From quick fixes to complex 
+              Get help from our technical experts 24/7. From quick fixes to complex
               troubleshooting, we're here to keep your technology running smoothly.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -232,7 +232,7 @@ const SupportPage = () => {
               Multiple Ways to Get Support
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Choose the support channel that works best for your situation. 
+              Choose the support channel that works best for your situation.
               We're available 24/7 for critical issues.
             </p>
           </div>
@@ -277,15 +277,15 @@ const SupportPage = () => {
               Self-Service Knowledge Base
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Find answers instantly with our comprehensive knowledge base, tutorials, 
+              Find answers instantly with our comprehensive knowledge base, tutorials,
               and documentation.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {knowledgeBase.map((resource, index) => (
-              <Link 
-                key={index} 
+              <Link
+                key={index}
                 href={resource.link}
                 className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors duration-300 block"
               >
@@ -336,11 +336,10 @@ const SupportPage = () => {
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 py-2 rounded-lg border transition-all duration-300 ${
-                    selectedCategory === category.id
+                  className={`px-4 py-2 rounded-lg border transition-all duration-300 ${selectedCategory === category.id
                       ? 'bg-teal-600 text-white border-teal-600'
                       : 'bg-white text-gray-700 border-gray-300 hover:border-teal-300 hover:text-teal-600'
-                  }`}
+                    }`}
                 >
                   {category.name} ({category.count})
                 </button>
@@ -392,7 +391,7 @@ const SupportPage = () => {
               Submit a Support Ticket
             </h2>
             <p className="text-lg text-gray-600">
-              Can't find the answer you're looking for? Submit a support ticket and our 
+              Can't find the answer you're looking for? Submit a support ticket and our
               technical team will help you.
             </p>
           </div>
@@ -407,7 +406,7 @@ const SupportPage = () => {
                   <input
                     type="text"
                     value={ticketForm.name}
-                    onChange={(e) => setTicketForm({...ticketForm, name: e.target.value})}
+                    onChange={(e) => setTicketForm({ ...ticketForm, name: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                     required
                   />
@@ -419,7 +418,7 @@ const SupportPage = () => {
                   <input
                     type="email"
                     value={ticketForm.email}
-                    onChange={(e) => setTicketForm({...ticketForm, email: e.target.value})}
+                    onChange={(e) => setTicketForm({ ...ticketForm, email: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                     required
                   />
@@ -434,7 +433,7 @@ const SupportPage = () => {
                   <input
                     type="text"
                     value={ticketForm.company}
-                    onChange={(e) => setTicketForm({...ticketForm, company: e.target.value})}
+                    onChange={(e) => setTicketForm({ ...ticketForm, company: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                   />
                 </div>
@@ -444,7 +443,7 @@ const SupportPage = () => {
                   </label>
                   <select
                     value={ticketForm.priority}
-                    onChange={(e) => setTicketForm({...ticketForm, priority: e.target.value})}
+                    onChange={(e) => setTicketForm({ ...ticketForm, priority: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                     required
                   >
@@ -462,7 +461,7 @@ const SupportPage = () => {
                 </label>
                 <select
                   value={ticketForm.category}
-                  onChange={(e) => setTicketForm({...ticketForm, category: e.target.value})}
+                  onChange={(e) => setTicketForm({ ...ticketForm, category: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                   required
                 >
@@ -483,7 +482,7 @@ const SupportPage = () => {
                 <input
                   type="text"
                   value={ticketForm.subject}
-                  onChange={(e) => setTicketForm({...ticketForm, subject: e.target.value})}
+                  onChange={(e) => setTicketForm({ ...ticketForm, subject: e.target.value })}
                   placeholder="Brief description of your issue"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                   required
@@ -496,7 +495,7 @@ const SupportPage = () => {
                 </label>
                 <textarea
                   value={ticketForm.description}
-                  onChange={(e) => setTicketForm({...ticketForm, description: e.target.value})}
+                  onChange={(e) => setTicketForm({ ...ticketForm, description: e.target.value })}
                   rows={6}
                   placeholder="Please provide detailed information about your issue, including any error messages, steps to reproduce, and what you've already tried..."
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
@@ -541,16 +540,16 @@ const SupportPage = () => {
             <h2 className="text-3xl font-bold text-red-900">Emergency Support</h2>
           </div>
           <p className="text-lg text-red-700 mb-8">
-            System completely down? Critical security breach? Call our emergency hotline 
+            System completely down? Critical security breach? Call our emergency hotline
             for immediate assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+25565320829"
+              href="tel:+255653520829"
               className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <FaPhone className="w-5 h-5" />
-              <span>Emergency: +25565320829</span>
+              <span>Emergency: +255653520829</span>
             </a>
             <a
               href="https://wa.me/255987654321"
