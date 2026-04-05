@@ -1,11 +1,11 @@
 'use client'
 
+import type { ComponentType } from 'react'
 import { motion } from 'framer-motion'
-import type { IconType } from 'react-icons'
 import { FaBrain, FaShoppingCart, FaRobot, FaChartLine, FaUsers, FaLightbulb } from 'react-icons/fa'
 
 type ProductFeature = {
-  icon: IconType
+  icon: ComponentType<{ className?: string }>
   text: string
 }
 
@@ -18,7 +18,7 @@ type Product = {
   name: string
   tagline: string
   description: string
-  icon: IconType
+  icon: ComponentType<{ className?: string }>
   color: 'blue' | 'green'
   features: ProductFeature[]
   cta: string
@@ -27,13 +27,27 @@ type Product = {
   badges?: ProductBadge[]
 }
 
+function MaliUpLogo({ className }: { className?: string }) {
+  return (
+    <img
+      src="/maliup-logo.png"
+      alt="Mali Up logo"
+      className={className}
+      width={160}
+      height={160}
+      loading="lazy"
+      decoding="async"
+    />
+  )
+}
+
 export default function AIProducts() {
   const products: Product[] = [
     {
       name: 'Mali Up',
       tagline: 'Multi-Tenant SaaS Business Management App',
       description: 'A pocket ERP that unifies sales, invoicing, inventory, finance, customer management, and business analytics in one mobile app.',
-      icon: FaBrain,
+      icon: MaliUpLogo,
       color: 'blue',
       featured: true,
       badges: [
@@ -43,7 +57,8 @@ export default function AIProducts() {
       ],
       features: [
         { icon: FaRobot, text: 'Multi-Tenant Operations for Multiple Businesses' },
-        { icon: FaChartLine, text: 'Sales, Invoicing, Inventory, Finance, CRM, Analytics' }
+        { icon: FaChartLine, text: 'Sales, Invoicing, Inventory, Finance, CRM, Analytics' },
+        { icon: FaLightbulb, text: 'Flutter-Ready UX (Android Primary, iOS Secondary)' }
       ],
       cta: 'Explore Mali Up',
       link: 'https://maliup.neuraltale.com'
@@ -124,10 +139,14 @@ export default function AIProducts() {
                 {/* Product Icon & Name */}
                 <div className="mb-5 flex items-center space-x-3 sm:space-x-4">
                   <div className={`${
-                    product.color === 'blue' ? 'bg-amber-500/20' : 'bg-teal-500/20'
-                  } rounded-xl p-3 sm:p-4`}>
-                    <product.icon className={`w-8 h-8 ${
-                      product.color === 'blue' ? 'text-amber-400' : 'text-teal-400'
+                    product.featured
+                      ? 'shrink-0'
+                      : `${product.color === 'blue' ? 'bg-amber-500/20' : 'bg-teal-500/20'} rounded-xl p-3 sm:p-4`
+                  }`}>
+                    <product.icon className={`${
+                      product.featured
+                        ? 'h-14 w-14 rounded-full object-cover'
+                        : `w-8 h-8 ${product.color === 'blue' ? 'text-amber-400' : 'text-teal-400'}`
                     }`} />
                   </div>
                   <div>

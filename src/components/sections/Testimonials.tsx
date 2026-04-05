@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
-import { FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { useState, useCallback } from 'react'
+import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 interface Testimonial {
   id: number
@@ -14,6 +14,14 @@ interface Testimonial {
   rating: number
   project: string
   results: string[]
+}
+
+interface ProjectShowcase {
+  id: number
+  name: string
+  url: string
+  image: string
+  description: string
 }
 
 const testimonials: Testimonial[] = [
@@ -115,34 +123,49 @@ const testimonials: Testimonial[] = [
   }
 ]
 
+const projectShowcases: ProjectShowcase[] = [
+  {
+    id: 1,
+    name: 'The Link Africa',
+    url: 'https://thelink.africa',
+    image: 'https://image.thum.io/get/width/1200/noanimate/https://thelink.africa',
+    description: 'A modern digital platform focused on connecting users to business opportunities, services, and ecosystem insights across Africa.'
+  },
+  {
+    id: 2,
+    name: 'Neurashop',
+    url: 'https://neurashop.neuraltale.com',
+    image: 'https://image.thum.io/get/width/1200/noanimate/https://neurashop.neuraltale.com',
+    description: 'AI-enhanced e-commerce experience with smart product discovery, personalized recommendations, and conversion-focused storefront UX.'
+  },
+  {
+    id: 3,
+    name: 'Mali Up',
+    url: 'https://maliup.neuraltale.com',
+    image: 'https://image.thum.io/get/width/1200/noanimate/https://maliup.neuraltale.com',
+    description: 'A multi-tenant mobile-first business management product that supports sales, invoicing, inventory, and analytics for African SMBs.'
+  },
+  {
+    id: 4,
+    name: 'Tanzania Tourism',
+    url: 'https://www.tanzaniatourism.go.tz',
+    image: 'https://image.thum.io/get/width/1200/noanimate/https://www.tanzaniatourism.go.tz',
+    description: 'Official tourism portal showcasing destinations, travel information, and promotional content for visitors exploring Tanzania.'
+  }
+]
+
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [selectedCategory, setSelectedCategory] = useState('all')
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
 
-  const categories = useMemo(() => [
-    { id: 'all', name: 'All Industries', count: testimonials.length },
-    { id: 'hospitality', name: 'Hospitality', count: testimonials.filter(t => t.companyType === 'Hospitality').length },
-    { id: 'healthcare', name: 'Healthcare', count: testimonials.filter(t => t.companyType === 'Healthcare').length },
-    { id: 'education', name: 'Education', count: testimonials.filter(t => t.companyType === 'Education').length },
-    { id: 'manufacturing', name: 'Manufacturing', count: testimonials.filter(t => t.companyType === 'Manufacturing').length }
-  ], [])
+  const nextProject = useCallback(() => {
+    setCurrentProjectIndex((prev) => (prev + 1) % projectShowcases.length)
+  }, [])
 
-  const filteredTestimonials = useMemo(() => 
-    selectedCategory === 'all' 
-      ? testimonials 
-      : testimonials.filter(t => t.companyType.toLowerCase() === selectedCategory),
-    [selectedCategory]
-  )
+  const prevProject = useCallback(() => {
+    setCurrentProjectIndex((prev) => (prev - 1 + projectShowcases.length) % projectShowcases.length)
+  }, [])
 
-  const nextTestimonial = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % filteredTestimonials.length)
-  }, [filteredTestimonials.length])
-
-  const prevTestimonial = useCallback(() => {
-    setCurrentIndex((prev) => (prev - 1 + filteredTestimonials.length) % filteredTestimonials.length)
-  }, [filteredTestimonials.length])
-
-  const currentTestimonial = filteredTestimonials[currentIndex] || testimonials[0]
+  const currentProject = projectShowcases[currentProjectIndex]
 
   const renderStars = useCallback((rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -163,122 +186,80 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Clients Say
+            Real Website Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Real feedback from businesses across Tanzania who have transformed their operations with our technology solutions.
+            Explore live websites we have built and launched, with landing-page previews and direct links to each project.
           </p>
         </div>
 
-        {/* Category Filter - Show fewer options on mobile */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-          {categories.map((category, index) => (
-            <button
-              key={category.id}
-              onClick={() => {
-                setSelectedCategory(category.id)
-                setCurrentIndex(0)
-              }}
-              className={`px-3 md:px-5 py-2 md:py-3 rounded-lg border-2 transition-all duration-300 text-sm md:text-base ${
-                selectedCategory === category.id
-                  ? 'bg-amber-500 text-white border-amber-500'
-                  : 'bg-white text-gray-700 border-gray-300 hover:border-amber-300 hover:text-amber-500'
-              } ${
-                // Hide some categories on mobile (keep first 3)
-                index > 2 ? 'hidden sm:inline-block' : ''
-              }`}
-            >
-              <span className="md:hidden">{category.name}</span>
-              <span className="hidden md:inline">{category.name} ({category.count})</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Main Testimonial Display */}
+        {/* Main Project Showcase Display */}
         <div className="max-w-4xl mx-auto ">
-          <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12 relative">
-            {/* Quote Icon */}
-            <div className="absolute top-6 left-6 text-amber-100">
-              <FaQuoteLeft className="w-12 h-12" />
-            </div>
-
+          <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-8 lg:p-10 relative">
             {/* Navigation Arrows */}
             <button
-              onClick={prevTestimonial}
+              onClick={prevProject}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-              aria-label="Previous testimonial"
+              aria-label="Previous project"
             >
               <FaChevronLeft className="w-5 h-5 text-gray-600" />
             </button>
             <button
-              onClick={nextTestimonial}
+              onClick={nextProject}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-              aria-label="Next testimonial"
+              aria-label="Next project"
             >
               <FaChevronRight className="w-5 h-5 text-gray-600" />
             </button>
 
-            <div className="text-center">
-              {/* Rating */}
-              <div className="flex justify-center mb-6">
-                {renderStars(currentTestimonial.rating)}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <a
+                href={currentProject.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src={currentProject.image}
+                  alt={`${currentProject.name} landing page preview`}
+                  className="h-56 sm:h-64 md:h-72 w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
 
-              {/* Testimonial Content */}
-              <blockquote className="text-xl md:text-xl text-gray-700 leading-relaxed mb-8 font-medium italic">
-                "{currentTestimonial.content}"
-              </blockquote>
-
-              {/* Client Info */}
-              <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 mb-3">
-                <div className="w-20 h-20 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold text-xl">
-                  {getInitials(currentTestimonial.name)}
-                </div>
-                <div className="text-center md:text-left">
-                  <h4 className="text-lg font-semibold text-gray-900">
-                    {currentTestimonial.name}
-                  </h4>
-                  <p className="text-amber-500 font-medium">
-                    {currentTestimonial.position}
-                  </p>
-                  <p className="text-gray-600">
-                    {currentTestimonial.company} • {currentTestimonial.location}
-                  </p>
-                </div>
-              </div>
-
-              {/* Project Details - Simplified on mobile */}
-              <div className="bg-gray-50 rounded-lg p-4 md:p-6">
-                <h5 className="font-semibold text-gray-900 mb-3 text-sm md:text-base">
-                  <span className="hidden md:inline">Project: </span>{currentTestimonial.project}
-                </h5>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
-                  {currentTestimonial.results.slice(0, 2).map((result, index) => (
-                    <div key={index} className="text-xs md:text-sm text-gray-600 bg-white rounded p-2 md:p-3">
-                      ✓ {result}
-                    </div>
-                  ))}
-                  {/* Show third result only on desktop */}
-                  {currentTestimonial.results[2] && (
-                    <div className="hidden md:block text-sm text-gray-600 bg-white rounded p-3">
-                      ✓ {currentTestimonial.results[2]}
-                    </div>
-                  )}
-                </div>
+              <div className="text-left">
+                <span className="inline-flex rounded-full bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 mb-3">
+                  Live Project
+                </span>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                  {currentProject.name}
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  {currentProject.description}
+                </p>
+                <a
+                  href={currentProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-lg bg-amber-500 px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-amber-600"
+                >
+                  Visit Website
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Testimonial Indicators */}
+          {/* Project Indicators */}
           <div className="flex justify-center mt-8 space-x-2">
-            {filteredTestimonials.map((_, index) => (
+            {projectShowcases.map((project, index) => (
               <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
+                key={project.id}
+                onClick={() => setCurrentProjectIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-amber-500' : 'bg-amber-200'
+                  index === currentProjectIndex ? 'bg-amber-500' : 'bg-amber-200'
                 }`}
-                aria-label={`Go to testimonial ${index + 1}`}
+                aria-label={`Go to project ${index + 1}`}
               />
             ))}
           </div>
@@ -290,7 +271,7 @@ const Testimonials = () => {
             All Customer Success Stories
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredTestimonials.map((testimonial) => (
+            {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"

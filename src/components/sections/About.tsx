@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Building2, Calendar, MapPin, User, Target, Heart } from 'lucide-react'
-import LogoCloud from '../logo-cloud'
+import TrustIndicators from '../TrustIndicators'
 
 const companyStats = [
   { label: 'Founded', value: '2025', icon: Calendar },
@@ -84,7 +84,7 @@ export default function About() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-         <LogoCloud />
+         <TrustIndicators />
         </motion.div>
 
       
