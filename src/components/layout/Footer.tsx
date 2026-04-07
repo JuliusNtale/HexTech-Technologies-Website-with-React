@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-purple/3 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10">
+      <div ref={ref} className="relative z-10">
         {/* Newsletter Section */}
        
 

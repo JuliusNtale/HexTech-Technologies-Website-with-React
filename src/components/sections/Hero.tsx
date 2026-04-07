@@ -5,6 +5,17 @@ import Link from 'next/link'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import Logo from '@/components/ui/Logo'
 
+const PARTICLES = [
+  { width: 6.8, height: 3.3, top: '39.6%', left: '60.4%', duration: 7.2, delay: 0.2 },
+  { width: 5.4, height: 2.6, top: '9.0%', left: '85.6%', duration: 5.9, delay: 0.6 },
+  { width: 2.9, height: 6.7, top: '60.6%', left: '83.7%', duration: 6.8, delay: 1.1 },
+  { width: 6.0, height: 3.1, top: '70.9%', left: '31.1%', duration: 7.6, delay: 0.4 },
+  { width: 6.7, height: 4.1, top: '96.8%', left: '84.3%', duration: 5.7, delay: 1.4 },
+  { width: 6.9, height: 6.8, top: '31.1%', left: '97.9%', duration: 6.3, delay: 0.8 },
+  { width: 3.5, height: 3.5, top: '65.0%', left: '40.2%', duration: 4.9, delay: 0.5 },
+  { width: 4.8, height: 7.2, top: '86.3%', left: '77.2%', duration: 7.0, delay: 1.0 },
+]
+
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#001529]">
@@ -17,25 +28,25 @@ export default function Hero() {
 
       {/* Floating Particles Animation */}
       <div className="absolute inset-0 pointer-events-none z-10">
-        {[...Array(8)].map((_, i) => (
+        {PARTICLES.map((particle, i) => (
           <motion.div
             key={i}
             className="absolute bg-amber-500/20 rounded-full blur-sm"
             style={{
-              width: Math.random() * 6 + 2,
-              height: Math.random() * 6 + 2,
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
+              width: `${particle.width}px`,
+              height: `${particle.height}px`,
+              top: particle.top,
+              left: particle.left,
             }}
             animate={{
               y: [0, -40, 0],
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 5 + 3,
+              duration: particle.duration,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: Math.random() * 2,
+              delay: particle.delay,
             }}
           />
         ))}

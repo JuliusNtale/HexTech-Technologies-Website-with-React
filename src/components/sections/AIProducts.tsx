@@ -57,8 +57,7 @@ export default function AIProducts() {
       ],
       features: [
         { icon: FaRobot, text: 'Multi-Tenant Operations for Multiple Businesses' },
-        { icon: FaChartLine, text: 'Sales, Invoicing, Inventory, Finance, CRM, Analytics' },
-        { icon: FaLightbulb, text: 'Flutter-Ready UX (Android Primary, iOS Secondary)' }
+        { icon: FaChartLine, text: 'Sales, Invoicing, Inventory, Finance, CRM, Analytics' }
       ],
       cta: 'Explore Mali Up',
       link: 'https://maliup.neuraltale.com'

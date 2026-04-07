@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useCallback } from 'react'
-import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { useState, useCallback, useEffect } from 'react'
+import { FaStar } from 'react-icons/fa'
+
 
 interface Testimonial {
   id: number
@@ -22,25 +23,12 @@ interface ProjectShowcase {
   url: string
   image: string
   description: string
+  focus: string
+  tags: string[]
+  stats: string[]
 }
 
 const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Sarah Mwangi',
-    position: 'General Manager',
-    company: 'Kilimanjaro Hotel',
-    companyType: 'Hospitality',
-    location: 'Arusha',
-    content: 'Neuraltale transformed our guest Wi-Fi experience completely. Before, we had constant complaints about slow internet. Now our guests consistently praise our connectivity in reviews. The TP-Link Omada system they installed has been rock solid for 18 months.',
-    rating: 5,
-    project: 'Complete hotel Wi-Fi infrastructure for 80 rooms',
-    results: [
-      '99.5% network uptime',
-      '40% increase in positive reviews mentioning Wi-Fi',
-      'Zero guest Wi-Fi complaints in the last 12 months'
-    ]
-  },
   {
     id: 2,
     name: 'James Mollel',
@@ -74,38 +62,6 @@ const testimonials: Testimonial[] = [
     ]
   },
   {
-    id: 4,
-    name: 'Peter Msigwa',
-    position: 'IT Manager',
-    company: 'Tanzanite Manufacturing',
-    companyType: 'Manufacturing',
-    location: 'Moshi',
-    content: 'We needed a network that could handle harsh industrial conditions. The solution Neuraltale provided has survived dust, heat, and power fluctuations for over 2 years. Their local support is exceptional - they have never taken more than 4 hours to respond.',
-    rating: 5,
-    project: 'Industrial-grade network for manufacturing facility',
-    results: [
-      '99.8% uptime despite harsh conditions',
-      '4-hour maximum support response time',
-      '60% reduction in network-related downtime'
-    ]
-  },
-  {
-    id: 5,
-    name: 'Grace Mushi',
-    position: 'Principal',
-    company: 'Mwanza Secondary School',
-    companyType: 'Education',
-    location: 'Mwanza',
-    content: 'Neuraltale helped us bring reliable internet to our 800 students. The parental control features and bandwidth management ensure educational use while the student portal makes it easy to manage access. This has revolutionized how we teach.',
-    rating: 5,
-    project: 'Educational network for 800+ students and 45 staff',
-    results: [
-      '100% curriculum now includes digital learning',
-      '80% improvement in student research capabilities',
-      'Reduced internet costs by 35% through better management'
-    ]
-  },
-  {
     id: 6,
     name: 'Mohamed Ali',
     position: 'Owner',
@@ -128,44 +84,70 @@ const projectShowcases: ProjectShowcase[] = [
     id: 1,
     name: 'The Link Africa',
     url: 'https://thelink.africa',
-    image: 'https://image.thum.io/get/width/1200/noanimate/https://thelink.africa',
-    description: 'A modern digital platform focused on connecting users to business opportunities, services, and ecosystem insights across Africa.'
+    image: '/The_link_Hub.png',
+    description: 'A modern digital platform focused on connecting users to business opportunities, services, and ecosystem insights across Africa.',
+    focus: 'Education, industry, and entrepreneurship hub',
+    tags: ['Community', 'Opportunity Network', 'Youth-focused'],
+    stats: ['Brand-led homepage', 'Conversion-focused hero', 'Editorial content sections']
   },
   {
     id: 2,
     name: 'Neurashop',
     url: 'https://neurashop.neuraltale.com',
-    image: 'https://image.thum.io/get/width/1200/noanimate/https://neurashop.neuraltale.com',
-    description: 'AI-enhanced e-commerce experience with smart product discovery, personalized recommendations, and conversion-focused storefront UX.'
+    image: '/Neurashop.png',
+    description: 'AI-enhanced e-commerce experience with smart product discovery, personalized recommendations, and conversion-focused storefront UX.',
+    focus: 'Fast product discovery and storefront conversion',
+    tags: ['E-commerce', 'AI Commerce', 'Mobile Ready'],
+    stats: ['Product-first layout', 'Sales-oriented CTA flow', 'Strong trust signals']
   },
   {
     id: 3,
     name: 'Mali Up',
     url: 'https://maliup.neuraltale.com',
-    image: 'https://image.thum.io/get/width/1200/noanimate/https://maliup.neuraltale.com',
-    description: 'A multi-tenant mobile-first business management product that supports sales, invoicing, inventory, and analytics for African SMBs.'
+    image: '/Mali%20Up.png',
+    description: 'A multi-tenant mobile-first business management product that supports sales, invoicing, inventory, and analytics for African SMBs.',
+    focus: 'Mobile-first SaaS for SMB operations',
+    tags: ['Flutter', 'ERP', 'Android Primary'],
+    stats: ['Dashboard-led UI', 'Module-rich flows', 'Operations-focused design']
   },
   {
     id: 4,
-    name: 'Tanzania Tourism',
-    url: 'https://www.tanzaniatourism.go.tz',
-    image: 'https://image.thum.io/get/width/1200/noanimate/https://www.tanzaniatourism.go.tz',
-    description: 'Official tourism portal showcasing destinations, travel information, and promotional content for visitors exploring Tanzania.'
+    name: ' Barra Beach',
+    url: 'https://barrabeach.tz/',
+    image: '/Barra%20hotel.png',
+    description: 'Official tourism portal showcasing destinations, travel information, and promotional content for visitors exploring Tanzania.',
+    focus: 'Destination storytelling and public-facing promotion',
+    tags: ['Tourism', 'Public Sector', 'Destination Marketing'],
+    stats: ['Image-first presentation', 'Information rich sections', 'Clear destination hierarchy']
   }
 ]
 
 const Testimonials = () => {
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
+  const [projectStartIndex, setProjectStartIndex] = useState(0)
+  const [isProjectRotationPaused, setIsProjectRotationPaused] = useState(false)
 
-  const nextProject = useCallback(() => {
-    setCurrentProjectIndex((prev) => (prev + 1) % projectShowcases.length)
+  const rotateProjects = useCallback(() => {
+    setProjectStartIndex((prev) => (prev + 1) % projectShowcases.length)
   }, [])
 
-  const prevProject = useCallback(() => {
-    setCurrentProjectIndex((prev) => (prev - 1 + projectShowcases.length) % projectShowcases.length)
-  }, [])
+  useEffect(() => {
+    if (isProjectRotationPaused) {
+      return
+    }
 
-  const currentProject = projectShowcases[currentProjectIndex]
+    const intervalId = window.setInterval(() => {
+      rotateProjects()
+    }, 4000)
+
+    return () => {
+      window.clearInterval(intervalId)
+    }
+  }, [rotateProjects, isProjectRotationPaused])
+
+  const visibleProjects = Array.from({ length: Math.min(3, projectShowcases.length) }, (_, index) => {
+    const itemIndex = (projectStartIndex + index) % projectShowcases.length
+    return projectShowcases[itemIndex]
+  })
 
   const renderStars = useCallback((rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -194,72 +176,57 @@ const Testimonials = () => {
         </div>
 
         {/* Main Project Showcase Display */}
-        <div className="max-w-4xl mx-auto ">
-          <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-8 lg:p-10 relative">
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevProject}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-              aria-label="Previous project"
-            >
-              <FaChevronLeft className="w-5 h-5 text-gray-600" />
-            </button>
-            <button
-              onClick={nextProject}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-              aria-label="Next project"
-            >
-              <FaChevronRight className="w-5 h-5 text-gray-600" />
-            </button>
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-5 flex items-center justify-between">
+            <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+              Best Feautured projects
+            </span>
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+              Every 4s
+            </span>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            onMouseEnter={() => setIsProjectRotationPaused(true)}
+            onMouseLeave={() => setIsProjectRotationPaused(false)}
+          >
+            {visibleProjects.map((project) => (
               <a
-                href={currentProject.url}
+                key={project.id}
+                href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block overflow-hidden rounded-xl border border-gray-200"
+                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
               >
-                <img
-                  src={currentProject.image}
-                  alt={`${currentProject.name} landing page preview`}
-                  className="h-56 sm:h-64 md:h-72 w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <div className="flex items-center justify-center bg-[#f8fbff] border-b border-gray-100">
+                  <img
+                    src={project.image}
+                    alt={`${project.name} landing page preview`}
+                    className="h-48 sm:h-56 w-full object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{project.name}</h3>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#002855] mb-2">{project.focus}</p>
+                  <p className="text-sm text-gray-600 line-clamp-2">{project.description}</p>
+                </div>
               </a>
-
-              <div className="text-left">
-                <span className="inline-flex rounded-full bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 mb-3">
-                  Live Project
-                </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                  {currentProject.name}
-                </h3>
-                <p className="text-gray-600 leading-relaxed mb-5">
-                  {currentProject.description}
-                </p>
-                <a
-                  href={currentProject.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg bg-amber-500 px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-amber-600"
-                >
-                  Visit Website
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Project Indicators */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-6 space-x-2">
             {projectShowcases.map((project, index) => (
               <button
                 key={project.id}
-                onClick={() => setCurrentProjectIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentProjectIndex ? 'bg-amber-500' : 'bg-amber-200'
+                onClick={() => setProjectStartIndex(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === projectStartIndex ? 'w-6 bg-amber-500' : 'w-2 bg-amber-200'
                 }`}
-                aria-label={`Go to project ${index + 1}`}
+                aria-label={`Go to project set starting at ${index + 1}`}
               />
             ))}
           </div>
@@ -274,10 +241,11 @@ const Testimonials = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
+                className="group relative overflow-hidden rounded-2xl border border-amber-100 bg-gradient-to-br from-white via-white to-amber-50/70 p-6 shadow-[0_18px_50px_-30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_-30px_rgba(0,0,0,0.32)]"
               >
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-[#002855]" />
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold text-sm mr-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white font-bold text-sm mr-4 shadow-md">
                     {getInitials(testimonial.name)}
                   </div>
                   <div>
@@ -290,12 +258,21 @@ const Testimonials = () => {
                   {renderStars(testimonial.rating)}
                 </div>
                 
-                <p className="text-gray-700 mb-4 line-clamp-3">
+                <p className="text-gray-700 mb-4 line-clamp-3 text-sm leading-relaxed">
                   "{testimonial.content}"
                 </p>
                 
-                <div className="text-sm text-amber-500 font-medium">
-                  {testimonial.companyType} • {testimonial.location}
+                <div className="mb-4 flex items-center justify-between gap-2">
+                  <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+                    {testimonial.companyType}
+                  </span>
+                  <span className="text-xs font-medium uppercase tracking-[0.16em] text-gray-500">
+                    {testimonial.location}
+                  </span>
+                </div>
+
+                <div className="rounded-xl border border-gray-200 bg-white/90 p-4 text-xs font-medium text-gray-600 shadow-sm">
+                  {testimonial.project}
                 </div>
               </div>
             ))}
