@@ -114,7 +114,7 @@ const projectShowcases: ProjectShowcase[] = [
     id: 4,
     name: ' Barra Beach',
     url: 'https://barrabeach.tz/',
-    image: '/Barra%20hotel.png',
+    image: '/barra%20hotel.png',
     description: 'Official tourism portal showcasing destinations, travel information, and promotional content for visitors exploring Tanzania.',
     focus: 'Destination storytelling and public-facing promotion',
     tags: ['Tourism', 'Public Sector', 'Destination Marketing'],
