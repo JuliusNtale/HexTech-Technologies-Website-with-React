@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { FaStar } from 'react-icons/fa'
 
 
@@ -177,6 +177,16 @@ const Testimonials = () => {
 
   const handleNextProject = useCallback(() => {
     scrollToProject(activeProjectIndex + 1)
+  }, [activeProjectIndex, scrollToProject])
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      scrollToProject(activeProjectIndex + 1)
+    }, 2000)
+
+    return () => {
+      window.clearInterval(intervalId)
+    }
   }, [activeProjectIndex, scrollToProject])
 
   const renderStars = useCallback((rating: number) => {
