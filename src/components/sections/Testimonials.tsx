@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { FaStar } from 'react-icons/fa'
 
 
@@ -114,7 +114,7 @@ const projectShowcases: ProjectShowcase[] = [
     id: 4,
     name: ' Barra Beach',
     url: 'https://barrabeach.tz/',
-    image: '/barra%20hotel.png',
+    image: '/barra hotel.png',
     description: 'Official tourism portal showcasing destinations, travel information, and promotional content for visitors exploring Tanzania.',
     focus: 'Destination storytelling and public-facing promotion',
     tags: ['Tourism', 'Public Sector', 'Destination Marketing'],
@@ -123,31 +123,61 @@ const projectShowcases: ProjectShowcase[] = [
 ]
 
 const Testimonials = () => {
-  const [projectStartIndex, setProjectStartIndex] = useState(0)
-  const [isProjectRotationPaused, setIsProjectRotationPaused] = useState(false)
+  const [activeProjectIndex, setActiveProjectIndex] = useState(0)
+  const projectCarouselRef = useRef<HTMLDivElement>(null)
 
-  const rotateProjects = useCallback(() => {
-    setProjectStartIndex((prev) => (prev + 1) % projectShowcases.length)
-  }, [])
+  const scrollToProject = useCallback((index: number) => {
+    const carousel = projectCarouselRef.current
+    const normalizedIndex = (index + projectShowcases.length) % projectShowcases.length
+    const projectCard = carousel?.querySelector<HTMLElement>(`[data-project-index="${normalizedIndex}"]`)
 
-  useEffect(() => {
-    if (isProjectRotationPaused) {
+    if (!projectCard) {
       return
     }
 
-    const intervalId = window.setInterval(() => {
-      rotateProjects()
-    }, 4000)
+    projectCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+    setActiveProjectIndex(normalizedIndex)
+  }, [])
 
-    return () => {
-      window.clearInterval(intervalId)
+  const handleProjectScroll = useCallback(() => {
+    const carousel = projectCarouselRef.current
+
+    if (!carousel) {
+      return
     }
-  }, [rotateProjects, isProjectRotationPaused])
 
-  const visibleProjects = Array.from({ length: Math.min(3, projectShowcases.length) }, (_, index) => {
-    const itemIndex = (projectStartIndex + index) % projectShowcases.length
-    return projectShowcases[itemIndex]
-  })
+    const cards = Array.from(carousel.querySelectorAll<HTMLElement>('[data-project-index]'))
+
+    if (!cards.length) {
+      return
+    }
+
+    const carouselCenter = carousel.scrollLeft + carousel.clientWidth / 2
+    let closestIndex = activeProjectIndex
+    let smallestDistance = Number.POSITIVE_INFINITY
+
+    cards.forEach((card, index) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2
+      const distance = Math.abs(cardCenter - carouselCenter)
+
+      if (distance < smallestDistance) {
+        smallestDistance = distance
+        closestIndex = index
+      }
+    })
+
+    if (closestIndex !== activeProjectIndex) {
+      setActiveProjectIndex(closestIndex)
+    }
+  }, [activeProjectIndex])
+
+  const handlePreviousProject = useCallback(() => {
+    scrollToProject(activeProjectIndex - 1)
+  }, [activeProjectIndex, scrollToProject])
+
+  const handleNextProject = useCallback(() => {
+    scrollToProject(activeProjectIndex + 1)
+  }, [activeProjectIndex, scrollToProject])
 
   const renderStars = useCallback((rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -177,44 +207,69 @@ const Testimonials = () => {
 
         {/* Main Project Showcase Display */}
         <div className="max-w-7xl mx-auto">
-          <div className="mb-5 flex items-center justify-between">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
             <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
-              Best Feautured projects
+              Best featured projects
             </span>
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
-              Every 4s
+              Swipe or use arrows
             </span>
           </div>
 
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-            onMouseEnter={() => setIsProjectRotationPaused(true)}
-            onMouseLeave={() => setIsProjectRotationPaused(false)}
-          >
-            {visibleProjects.map((project) => (
-              <a
-                key={project.id}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="flex items-center justify-center bg-[#f8fbff] border-b border-gray-100">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} landing page preview`}
-                    className="h-48 sm:h-56 w-full object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                    loading="lazy"
-                    decoding="async"
-                  />
+          <div className="relative">
+            <button
+              type="button"
+              onClick={handlePreviousProject}
+              className="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full border border-amber-200 bg-white/95 p-3 text-[#002855] shadow-lg shadow-black/10 transition hover:bg-amber-50"
+              aria-label="Show previous project"
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleNextProject}
+              className="absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full border border-amber-200 bg-white/95 p-3 text-[#002855] shadow-lg shadow-black/10 transition hover:bg-amber-50"
+              aria-label="Show next project"
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+
+            <div
+              ref={projectCarouselRef}
+              className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-2 pr-8 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+              onScroll={handleProjectScroll}
+            >
+              {projectShowcases.map((project, index) => (
+                <div
+                  key={project.id}
+                  data-project-index={index}
+                  className="min-w-full snap-start sm:min-w-[calc(50%-0.625rem)] lg:min-w-[calc(33.333%-0.875rem)]"
+                >
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                  >
+                    <div className="flex items-center justify-center border-b border-gray-100 bg-[#f8fbff]">
+                      <img
+                        src={project.image}
+                        alt={`${project.name} landing page preview`}
+                        className="h-48 w-full object-contain transition-transform duration-300 group-hover:scale-[1.01] sm:h-56"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="mb-1 text-lg font-semibold text-gray-900">{project.name}</h3>
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#002855]">{project.focus}</p>
+                      <p className="line-clamp-2 text-sm text-gray-600">{project.description}</p>
+                    </div>
+                  </a>
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{project.name}</h3>
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#002855] mb-2">{project.focus}</p>
-                  <p className="text-sm text-gray-600 line-clamp-2">{project.description}</p>
-                </div>
-              </a>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Project Indicators */}
@@ -222,11 +277,12 @@ const Testimonials = () => {
             {projectShowcases.map((project, index) => (
               <button
                 key={project.id}
-                onClick={() => setProjectStartIndex(index)}
+                type="button"
+                onClick={() => scrollToProject(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  index === projectStartIndex ? 'w-6 bg-amber-500' : 'w-2 bg-amber-200'
+                  index === activeProjectIndex ? 'w-6 bg-amber-500' : 'w-2 bg-amber-200'
                 }`}
-                aria-label={`Go to project set starting at ${index + 1}`}
+                aria-label={`Go to project ${index + 1}`}
               />
             ))}
           </div>
