@@ -125,17 +125,21 @@ const projectShowcases: ProjectShowcase[] = [
 const Testimonials = () => {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0)
   const projectCarouselRef = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLElement>(null)
+  const [isSectionVisible, setIsSectionVisible] = useState(false)
+  const [isDesktopViewport, setIsDesktopViewport] = useState(false)
 
   const scrollToProject = useCallback((index: number) => {
     const carousel = projectCarouselRef.current
     const normalizedIndex = (index + projectShowcases.length) % projectShowcases.length
     const projectCard = carousel?.querySelector<HTMLElement>(`[data-project-index="${normalizedIndex}"]`)
 
-    if (!projectCard) {
+    if (!carousel || !projectCard) {
       return
     }
 
-    projectCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+    const targetLeft = projectCard.offsetLeft
+    carousel.scrollTo({ left: targetLeft, behavior: 'smooth' })
     setActiveProjectIndex(normalizedIndex)
   }, [])
 
@@ -180,6 +184,46 @@ const Testimonials = () => {
   }, [activeProjectIndex, scrollToProject])
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)')
+
+    const handleViewportChange = (event: MediaQueryListEvent) => {
+      setIsDesktopViewport(event.matches)
+    }
+
+    setIsDesktopViewport(mediaQuery.matches)
+    mediaQuery.addEventListener('change', handleViewportChange)
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleViewportChange)
+    }
+  }, [])
+
+  useEffect(() => {
+    const section = sectionRef.current
+
+    if (!section) {
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSectionVisible(entry.isIntersecting)
+      },
+      { threshold: 0.35 }
+    )
+
+    observer.observe(section)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!isSectionVisible || !isDesktopViewport) {
+      return
+    }
+
     const intervalId = window.setInterval(() => {
       scrollToProject(activeProjectIndex + 1)
     }, 2000)
@@ -187,7 +231,7 @@ const Testimonials = () => {
     return () => {
       window.clearInterval(intervalId)
     }
-  }, [activeProjectIndex, scrollToProject])
+  }, [activeProjectIndex, isSectionVisible, isDesktopViewport, scrollToProject])
 
   const renderStars = useCallback((rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -203,7 +247,7 @@ const Testimonials = () => {
   }, [])
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section ref={sectionRef} className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
