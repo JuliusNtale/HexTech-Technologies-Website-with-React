@@ -120,6 +120,17 @@ const projectShowcases: ProjectShowcase[] = [
     tags: ['Tourism', 'Public Sector', 'Destination Marketing'],
     stats: ['Image-first presentation', 'Information rich sections', 'Clear destination hierarchy']
   }
+  ,
+  {
+    id: 5,
+    name: 'Hillsview Production',
+    url: 'https://www.hillsviewproduction.com',
+    image: '/Hillsview.png',
+    description: 'A media production company delivering high-quality video production, post-production, and multimedia content for brands and events.',
+    focus: 'Video production, post-production, and multimedia services',
+    tags: ['Media', 'Production', 'Video'],
+    stats: ['Portfolio-led homepage', 'Video-first hero', 'Showreel and case studies']
+  }
 ]
 
 const Testimonials = () => {
